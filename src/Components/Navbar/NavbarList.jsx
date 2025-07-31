@@ -10,7 +10,7 @@ const NavbarList = () => {
     ]
   return (
     <div>
-        <ul className='flex gap-5 font-semibold '>
+        <ul className='flex gap-5 font-semibold max-md:hidden '>
             {links.map((curr,idx)=>{
                 return <li key={idx} className='group'>
                     <a className='cursor-pointer hover:text-green-400 transition-all duration-500' href='#'>{curr.link}</a>
