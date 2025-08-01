@@ -5,7 +5,7 @@ import HeroImg from './HeroImg'
 const HeroSection = () => {
   return (
     <div className='w-full mt-10 flex justify-center'>
-      <div className='w-[80%] h-auto flex justify-between items-center md:flex-row max-md:flex-col'>
+      <div className='w-[80%] h-auto flex justify-between items-center md:flex-row max-md:flex-col max-md:gap-10'>
         <HeroContent/>
         <HeroImg/>
       </div>

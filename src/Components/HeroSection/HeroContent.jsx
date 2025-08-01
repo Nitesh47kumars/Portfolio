@@ -4,7 +4,7 @@ import { IoCopy } from "react-icons/io5";
 
 const HeroContent = () => {
   return (
-    <div className="w-full flex flex-col max-md:items-center md:items-start gap-4">
+    <div className="w-full flex flex-col max-md:items-center md:items-start gap-4 max-md:gap-3">
 
       <h1 className="uppercase font-bold text-[#E8AA14] leading-none md:text-[clamp(2rem,5vw,3.7rem)] max-md:text-[clamp(1.5rem,6vw,2rem)]">
         Nitesh Kumar
