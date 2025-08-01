@@ -1,6 +1,7 @@
 import React from 'react'
 import HeroContent from './HeroContent'
 import HeroImg from './HeroImg'
+import HeroOverlay from './HeroOverlay'
 
 const HeroSection = () => {
   return (
@@ -9,6 +10,7 @@ const HeroSection = () => {
         <HeroContent/>
         <HeroImg/>
       </div>
+      <HeroOverlay/>
     </div>
   )
 }
