@@ -4,8 +4,8 @@ import HeroImg from './HeroImg'
 
 const HeroSection = () => {
   return (
-    <div className='w-full p-5'>
-      <div className='flex justify-around'>
+    <div className='w-full mt-10 flex justify-center'>
+      <div className='w-[80%] h-auto flex justify-between items-center md:flex-row max-md:flex-col'>
         <HeroContent/>
         <HeroImg/>
       </div>
