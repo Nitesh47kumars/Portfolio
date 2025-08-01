@@ -15,7 +15,7 @@ const Navbar = () => {
     <nav className='flex justify-center w-full mt-5 max-md:justify-around'>
       <div className='w-[80%] flex justify-between items-center border-2 rounded-full py-2 px-[9px] ps-4'>
         <NavbarLogo/>
-        <div className={`${mobMenu? "sm:block":"sm:hidden"} md:block`}>
+        <div className={`${mobMenu? "block":"hidden"} md:block`}>
           <NavbarList/>
         </div>
         <NavbarBtn/>
