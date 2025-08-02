@@ -9,19 +9,19 @@ const HeroContent = () => {
       <h1 className="uppercase font-bold text-[#E8AA14] leading-none md:text-[clamp(2rem,5vw,3.7rem)] max-md:text-[clamp(1.5rem,6vw,2rem)]">
         Nitesh Kumar
       </h1>
-      <h1 className="uppercase font-semibold text-[#7D869C] leading-tight md:text-[clamp(0.8rem,2vw,1.4rem)] max-md:text-[clamp(0.8rem,3vw,1.5rem)]">
+      <h1 className="uppercase font-semibold text-[#7D869C] leading-tight text-[0.7rem] md:text-[0.7rem] lg:text-[1.2rem]">
         Front-end Web Developer | Video Editor
       </h1>
 
-      <div className="flex flex-col md:flex-row items-center w-full gap-3">
+      <div className="flex flex-col md:flex-row items-center w-full gap-2">
 
-        <button className="w-full md:w-auto flex items-center justify-center gap-2 text-[clamp(0.75rem,2vw,1rem)] font-semibold py-2 px-6 rounded-full bg-gradient-to-r from-[#8e2de2] to-[#ff6a00] hover:scale-105 transition-transform duration-300">
+        <button className="w-40 max-md:w-full flex justify-center items-center gap-1 text-[clamp(0.75rem,2vw,1rem)] font-semibold py-2 px-4 rounded-full bg-gradient-to-r from-[#8e2de2] to-[#ff6a00] hover:scale-105 transition-transform duration-300 whitespace-nowrap">
           Contact Me
-          <FaArrowRight />
+          <FaArrowRight className='inline align-middle mt-0.5'/>
         </button>
 
-        <p className="flex items-center gap-1 text-[clamp(0.8rem,1vw,1rem)] cursor-pointer whitespace-nowrap">
-          <Copy/>
+        <p className="flex items-center md:text-[clamp(0.8rem,1vw,1rem)] cursor-pointer whitespace-nowrap">
+          <Copy className='h-5'/>
           niteshShah028@gmail.com
         </p>
 
