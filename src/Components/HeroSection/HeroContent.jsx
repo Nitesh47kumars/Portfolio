@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaArrowRight } from "react-icons/fa";
-import { IoCopy } from "react-icons/io5";
+import {Copy} from '../Icons/Icon'
 
 const HeroContent = () => {
   return (
@@ -21,7 +21,7 @@ const HeroContent = () => {
         </button>
 
         <p className="flex items-center gap-1 text-[clamp(0.8rem,1vw,1rem)] cursor-pointer whitespace-nowrap">
-          <IoCopy />
+          <Copy/>
           niteshShah028@gmail.com
         </p>
 
