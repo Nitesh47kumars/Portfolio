@@ -31,7 +31,7 @@ const Copy = ({
       style={{
         cursor: "pointer",
         userSelect: "none",
-        padding: "8px",
+        padding: "0px",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",

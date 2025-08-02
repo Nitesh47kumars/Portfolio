@@ -4,3 +4,34 @@ body{
     color: white;
     background-color: #000000;
 }
+
+
+
+
+.semi-arc {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    border-radius: 50%;
+    background: none;
+  }
+  
+  .semi-arc::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    border-radius: 50%;
+    background: conic-gradient(
+      from 180deg,
+      transparent 30%, 
+      #3b82f6 50%, 
+      transparent 70%
+    );
+    -webkit-mask: radial-gradient(
+      farthest-side,
+      transparent calc(100% - 4px),
+      black calc(100% - 4px)
+    );
+  }
+  
