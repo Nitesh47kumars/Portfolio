@@ -2,7 +2,11 @@ import React from "react";
 
 const LandingBase = () => {
   return (
-    <div className="absolute w-full min-h-[120%] top-0 left-0 -z-10 bg-gradient-to-b from-[#0d0d0d] via-[#1a0033] to-black overflow-hidden">
+    <div className="absolute w-full min-h-[120%] top-0 left-0 -z-10 overflow-hidden"
+    style={{
+      'background': 'linear-gradient(to bottom,#0d0d0d 30%,#1a0033,#000000'
+    }}
+    >
       
       {/* ✨ Star Field */}
       <div className="absolute inset-0 z-0">
@@ -31,7 +35,7 @@ const LandingBase = () => {
       {/* 🌗 Glowing Curved Horizon */}
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full h-[250px] rounded-full bg-transparent">
         {/* 🌟 Bright Arc Line */}
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 sm:w-[80%] max-sm:w-full h-[4px] bg-gradient-to-r from-transparent via-white to-transparent rounded-t-full shadow-[0_0_50px_white]" />
+        <div className="absolute top-5 max-md:top-13 left-1/2 -translate-x-1/2 sm:w-[80%] max-sm:w-full h-[4px] bg-gradient-to-r from-transparent via-white to-transparent rounded-t-full shadow-[0_0_50px_white]" />
 
         {/* 🌫️ Soft Glow Beneath Arc */}
         <div className="absolute top-1 left-0 w-full h-full bg-gradient-to-b from-white/40 to-transparent rounded-full blur-[5rem]" />
