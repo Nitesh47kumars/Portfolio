@@ -2,11 +2,9 @@ import React from 'react'
 
 const HeroOverlay = () => {
   return (
-    <div className='h-full w-full overflow-hidden'>
-      <div className='absolute h-40 w-40 max-md:hidden top-0 right-0 bg-[#FF0000] rounded-full blur-[5rem] -z-10 animate-pulse'></div>
-      <div className='absolute h-40 w-40 max-md:hidden top-0 right-[14rem] bg-[#ff9d00] rounded-full blur-[5rem] -z-10 animate-pulse'></div>
-      <div className='absolute h-60 w-60 top-60 left-[4rem] max-md:top-20  bg-[#ff00008d] rounded-full blur-[5rem] -z-10'></div>
-      <div className='absolute h-80 w-80 top-120 left-[-6rem] bg-[#ff9d0088] rounded-full blur-[5rem] -z-10'></div>
+    <div className='h-full w-screen overflow-hidden'>
+      <div className='absolute h-100 w-20 top-0 right-0 max-md:top-20  bg-[#000c92] rounded-l-full blur-[7rem] -z-2'></div>
+      <div className='absolute h-100 w-20 top-0 left-0 bg-[#94620b] rounded-r-full blur-[7rem] -z-2'></div>
     </div>
   )
 }
