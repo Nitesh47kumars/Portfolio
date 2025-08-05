@@ -23,7 +23,7 @@ const Navbar = () => {
       <div className='w-[80%] flex justify-between items-center border-2 rounded-full py-2 px-[9px] ps-4'>
         <NavbarLogo/>
         <div className={`${mobMenu? "block" : "hidden"} md:block`}>
-          <NavbarList/>
+          <NavbarList setMobMenu={setMobMenu}/>
         </div>
         <NavbarBtn/>
       </div>
