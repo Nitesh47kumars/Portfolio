@@ -5,7 +5,8 @@ import AboutImage from './AboutImage'
 const About = () => {
   return (
     <div
-    className='relative max-md:mt-80 md:mt-120 pb-15 w-full flex justify-center items-center'>
+    id='about'
+    className='relative max-md:mt-70 md:mt-110 pb-40 w-full flex justify-center items-center'>
         <div className='w-[80%] flex lg:flex-row max-lg:flex-col lg:justify-between items-center'>
             <AboutContent/>
             <AboutImage/>
