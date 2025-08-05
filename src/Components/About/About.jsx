@@ -6,7 +6,7 @@ const About = () => {
   return (
     <div
     id='about'
-    className='relative max-md:mt-70 md:mt-110 pb-40 w-full flex justify-center items-center'>
+    className='relative max-md:mt-70 md:mt-110 md:pb-20 w-full flex justify-center items-center'>
         <div className='w-[80%] flex lg:flex-row max-lg:flex-col lg:justify-between items-center'>
             <AboutContent/>
             <AboutImage/>
