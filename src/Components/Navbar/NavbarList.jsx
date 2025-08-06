@@ -14,6 +14,8 @@ const NavbarList = ({setMobMenu}) => {
             {links.map((curr,idx)=>{
                 return <li key={idx} className='group'>
                     <Link
+                        smooth={true}
+                        duration={500}
                         to={curr.section}
                         onClick={()=>setMobMenu(false)}
                         className='cursor-pointer group-hover:text-green-400 transition-all duration-500'>{curr.link}</Link>
