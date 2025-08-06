@@ -3,8 +3,8 @@ import React from 'react'
 const AboutImage = () => {
   return (
     <div className='overflow-hidden lg:w-[40%] relative'>
-      <div className='lg:w-[100%] lg:h-100 max-lg:h-150 object-cover overflow-hidden
-      max-lg:translate-y-[-10rem] '>
+      <div className='w-full lg:h-100 max-lg:h-140 max-md:h-100 max-sm:h-100 object-cover overflow-hidden
+      max-lg:translate-y-[-10rem] max-sm:translate-y-[-5rem] max-md:translate-y-[-4rem]'>
         <video src='/video.mp4'
           loop
           muted
