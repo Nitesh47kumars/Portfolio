@@ -11,7 +11,7 @@ const HeroContent = () => {
         variants={animation("down",0.2)}
         initial={"hidden"}
         whileInView={"show"}
-        viewport={{one:false,amout:0}}
+        viewport={{one:false,amount:0.2}}
         className="uppercase font-bold text-[#E8AA14] leading-none md:text-[clamp(2rem,5vw,3.7rem)] max-md:text-[clamp(1.8rem,6vw,2rem)]">
           Nitesh Kumar
       </motion.h1>
