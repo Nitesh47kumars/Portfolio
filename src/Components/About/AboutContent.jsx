@@ -35,8 +35,8 @@ const AboutContent = () => {
 
             <br/>
 
-        <div className='flex flex-col gap-5 max-lg:text-center md:leading-8
-            max-sm:w-[90vw] max-sm:text-[clamp(10px,2vw,15px)]'>
+        <div className='flex flex-col max-sm:gap-3 gap-5 max-lg:text-center md:leading-6
+            max-sm:w-[80vw] max-sm:text-[clamp(10px,2vw,15px)] lg:text-[clamp(10px,2vw,14px)]'>
             <motion.p
                 variants={animation("right",0.2)}
                 initial={"hidden"}
