@@ -5,7 +5,7 @@ import { animation } from '../../FramerMotion/Animation';
 const AboutContent = () => {
   return (
     <div
-    className='flex flex-col max-lg:w-full lg:w-[60%] max-md:w-130 md:tracking-widest
+    className='flex flex-col max-lg:w-full lg:w-[60%] max-md:w-full md:tracking-widest
         max-lg:items-center'>
         <motion.h1
         variants={animation("right",0.1)}

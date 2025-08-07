@@ -5,6 +5,3 @@ body{
     background-color: #000000;
     font-family: outfit-fallback;
 }
-::-webkit-scrollbar{
-    display: none;
-}
