@@ -10,7 +10,7 @@ const NavbarList = ({setMobMenu}) => {
     ]
   return (
     <div>
-        <ul className='flex gap-10 max-md:gap-6 z-10 font-bold md:flex-row max-md:flex-col max-md:absolute max-md:top-[85px] max-md:py-4 max-md:left-0 max-md:w-full max-md:text-center max-md:backdrop-blur-lg'>
+        <ul className='flex gap-10 max-md:gap-6 z-1 font-bold md:flex-row max-md:flex-col max-md:absolute max-md:top-[80px] max-md:py-6 max-md:left-0 max-md:w-full max-md:text-center max-md:backdrop-blur-sm'>
             {links.map((curr,idx)=>{
                 return <li key={idx} className='group'>
                     <Link
