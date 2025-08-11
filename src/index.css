@@ -4,8 +4,6 @@ body{
     color: white;
     background-color: #000000;
     font-family: outfit-fallback;
-    height: 100%;
-    overflow: hidden;
 }
 
 .lenis.lenis-smooth {

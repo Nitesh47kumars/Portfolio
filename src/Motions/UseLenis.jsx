@@ -6,7 +6,7 @@ const useLenis = () => {
     const lenis = new Lenis({
       smooth: true,
       duration: 1.2,
-      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // Optional custom easing
+      smoothTouch:false,
     });
 
     function raf(time) {
@@ -15,11 +15,6 @@ const useLenis = () => {
     }
 
     requestAnimationFrame(raf);
-
-    // Optional: listen to scroll
-    // lenis.on('scroll', (e) => {
-    //   console.log(e);
-    // });
 
     return () => {
       lenis.destroy();
