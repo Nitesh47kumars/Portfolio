@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaArrowRight } from "react-icons/fa";
-import {Copy} from '../Icons/Icon'
+import {Copy} from '../../Icons/Icon'
 import {motion} from "motion/react"
 import { animation } from '../../FramerMotion/Animation';
 const HeroContent = () => {
@@ -11,7 +11,7 @@ const HeroContent = () => {
         variants={animation("down",0.2)}
         initial={"hidden"}
         whileInView={"show"}
-        viewport={{one:false,amount:0.2}}
+        viewport={{once:true, amount: 0}}
         className="uppercase font-bold text-[#E8AA14] leading-none md:text-[clamp(2rem,5vw,3.7rem)] max-md:text-[clamp(1.8rem,6vw,2rem)]">
           Nitesh Kumar
       </motion.h1>
