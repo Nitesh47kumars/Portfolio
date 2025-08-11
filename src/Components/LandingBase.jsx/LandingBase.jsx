@@ -1,7 +1,6 @@
-
 import React, { useMemo } from "react";
 import {motion} from "motion/react"
-import {animation} from "../../FramerMotion/Animation"
+import {animation} from "../../Motions/Animation"
 import {generateStars} from "./GenerateStars"
 
 const LandingBase = () => {

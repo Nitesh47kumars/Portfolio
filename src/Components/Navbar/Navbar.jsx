@@ -4,7 +4,7 @@ import NavbarList from './NavbarList'
 import NavbarBtn from './NavbarBtn'
 import { GiHamburgerMenu } from "react-icons/gi";
 import {motion} from "motion/react"
-import {animation} from "../../FramerMotion/Animation"
+import {animation} from "../../Motions/Animation"
 
 const Navbar = () => {
   const [mobMenu,setMobMenu] = useState(false);

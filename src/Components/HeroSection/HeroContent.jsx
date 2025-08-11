@@ -2,7 +2,7 @@ import React from 'react';
 import { FaArrowRight } from "react-icons/fa";
 import {Copy} from '../../Icons/Icon'
 import {motion} from "motion/react"
-import { animation } from '../../FramerMotion/Animation';
+import { animation } from '../../Motions/Animation';
 const HeroContent = () => {
   return (
     <div className="w-full flex flex-col max-md:items-center md:items-start gap-4 max-md:gap-3">

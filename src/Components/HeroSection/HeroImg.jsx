@@ -1,6 +1,6 @@
 import React from 'react'
 import {motion} from 'motion/react'
-import {animation} from '../../FramerMotion/Animation'
+import {animation} from '../../Motions/Animation'
 const HeroImg = () => {
   return (
     <motion.div

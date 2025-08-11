@@ -4,8 +4,10 @@ import HeroSection from './Components/HeroSection/HeroSection'
 import LandingBase from './Components/LandingBase.jsx/LandingBase'
 import Navbar from './Components/Navbar/Navbar'
 import Skills from './Components/Skills/Skills'
-function App() {
+import useLenis from './Motions/UseLenis';
 
+function App() {
+  useLenis();
   return (
     <>
       <Navbar/>
