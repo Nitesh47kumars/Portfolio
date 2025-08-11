@@ -1,15 +1,15 @@
 import React from 'react'
-import Frondend from './Frondend'
 import Motion from './Motion'
 import Tools from './Tools'
 import Hobbies from './Hobbies'
 import Email from './Email'
+import Frontend from './Frontend'
 
 const Skills = () => {
   return (
-    <div className=' text-black w-full mt-20 flex justify-center items-center'>
-        <div className='w-[80%] grid grid-cols-3 gap-4'>
-            <Frondend/>
+    <div className=' text-black w-full flex justify-center items-center'>
+        <div className='w-[80%] grid grid-cols-3 gap-4 my-20'>
+            <Frontend/>
             <Motion/>
             <Tools/>
             <Email/>
