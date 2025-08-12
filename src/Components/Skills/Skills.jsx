@@ -7,7 +7,7 @@ import Frontend from './Frontend'
 
 const Skills = () => {
   return (
-    <div className=' text-black w-full flex justify-center items-center'>
+    <div id='skills' className=' text-black w-full flex justify-center items-center'>
         <div className='w-[80%] grid grid-cols-3 gap-4 my-20'>
             <Frontend/>
             <Motion/>
