@@ -5,7 +5,7 @@ import {animation} from '../../Motions/Animation'
 const Email = () => {
   return (
     <motion.div
-      variants={animation("left",0.2)}
+      variants={animation("scale",0.2)}
       initial={"hidden"}
       whileInView={"show"}
       viewport={{once:false, amount:0}}
