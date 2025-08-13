@@ -11,9 +11,9 @@ const Skills = () => {
         <div className='w-[80%] grid grid-cols-3 gap-5 my-20'>
             <Frontend/>
             <Motion/>
-            <Tools/>
-            <Email/>
             <Hobbies/>
+            <Email/>
+            <Tools/>
         </div>
     </div>
   )
