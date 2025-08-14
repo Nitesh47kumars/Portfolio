@@ -47,7 +47,7 @@ const Frontend = () => {
           return (
             <motion.li
               key={idx}
-              variants={animation("up", 0.3)}
+              variants={animation("scale", 0.2)}
               initial="hidden"
               whileInView="show"
               viewport={{ once: false, amount: 0 }}
