@@ -44,28 +44,33 @@ const Frontend = () => {
         <ul className='flex justify-between items-center p-5'>
           {lang.map((curr,idx)=>{
             let containerSize = "";
+            let delayClass = "";
             
             switch(idx){
               case 0:
               case 4:
                 containerSize = "h-20 w-20";
+                delayClass = "delay-[200ms]";
                 break;
               case 1:
               case 3:
                 containerSize = "h-22 w-22";
+                delayClass = "delay-[100ms]";
                 break;
               case 2:
                 containerSize = "h-24 w-24";
+                delayClass = "delay-[0ms]";
                 break;
               default:
                 containerSize = "h-20 w-20";
+                delayClass = "delay-[0ms]";
                 break;
             }
             return <li
               key={idx}
               className='flex flex-col items-center'
               >
-                  <div className={`${containerSize} rounded-[20px] border-2 border-[#A5AEB81F] p-2 transition-all duration-500 md:group-hover:-translate-y-2 md:group-hover:border-indigo-400
+                <div className={`${containerSize} ${delayClass} rounded-[20px] border-2 border-[#A5AEB81F] p-2 transition-all duration-500 md:group-hover:-translate-y-2 md:group-hover:border-indigo-400
                 hover:border-blue-600`}>
                     <div className="grid h-full place-items-center rounded-xl border-2 border-[#A5AEB81F]/10 bg-[#EDEEF0] dark:border-[#5A5F661F]/10 dark:bg-[#1A1B1E]"
                       style={{'box-shadow':'rgba(165, 174, 184, 0.32) 0px 2px 1.5px 0px inset'}}>
