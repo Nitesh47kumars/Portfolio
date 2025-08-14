@@ -3,12 +3,27 @@ import {motion} from 'motion/react'
 import {animation} from '../../Motions/Animation'
 
 const Frontend = () => {
-  const images = [
-    '/HTML5_Badge.svg.png',
-    '/CSS3_logo.svg.png',
-    '/Unofficial_JavaScript_logo_2.svg.png',
-    '/React-icon.svg.png',
-    '/tailwind-icon-md.png'
+  const lang = [
+    {
+      name: "HTML",
+      icon: "/HTML5_Badge.svg.png"
+    },
+    {
+      name: "CSS",
+      icon: "/CSS3_logo.svg.png"
+    },
+    {
+      name: "JavaScript",
+      icon: "/Unofficial_JavaScript_logo_2.svg.png"
+    },
+    {
+      name: "React",
+      icon: "/React-icon.svg.png"
+    },
+    {
+      name: "TailwindCSS",
+      icon: "/tailwind-icon-md.png"
+    },
   ]
   return (
     <motion.div
@@ -27,7 +42,7 @@ const Frontend = () => {
         className='text-center text-white text-xl'>Frontend Skills</motion.h1>
 
         <ul className='flex justify-between items-center p-5'>
-          {images.map((curr,idx)=>{
+          {lang.map((curr,idx)=>{
             let containerSize = "";
             
             switch(idx){
@@ -47,13 +62,17 @@ const Frontend = () => {
                 break;
             }
             return <li
-            key={idx}
-            className={`${containerSize} rounded-[20px] border-2 border-[#A5AEB81F] p-2 transition-all duration-500 md:group-hover:-translate-y-2 md:group-hover:border-indigo-400
-              hover:border-blue-600`}>
-                <div className="grid h-full place-items-center rounded-xl border-2 border-[#A5AEB81F]/10 bg-[#EDEEF0] dark:border-[#5A5F661F]/10 dark:bg-[#1A1B1E]"
-                  style={{'box-shadow':'rgba(165, 174, 184, 0.32) 0px 2px 1.5px 0px inset'}}>
-                  <img className="h-[40px] w-[45px] object-cover" src={curr} alt="img"/>
-                </div>
+              key={idx}
+              className='flex flex-col items-center'
+              >
+                  <div className={`${containerSize} rounded-[20px] border-2 border-[#A5AEB81F] p-2 transition-all duration-500 md:group-hover:-translate-y-2 md:group-hover:border-indigo-400
+                hover:border-blue-600`}>
+                    <div className="grid h-full place-items-center rounded-xl border-2 border-[#A5AEB81F]/10 bg-[#EDEEF0] dark:border-[#5A5F661F]/10 dark:bg-[#1A1B1E]"
+                      style={{'box-shadow':'rgba(165, 174, 184, 0.32) 0px 2px 1.5px 0px inset'}}>
+                      <img className="h-[40px] w-[45px] object-cover" src={curr.icon} alt="img"/>
+                    </div>
+                  </div>
+                  <h1 className='text-white opacity-0 group-hover:opacity-100 transition-all duration-500'>{curr.name}</h1>
             </li>
           })}
         </ul>
