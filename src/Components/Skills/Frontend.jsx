@@ -77,7 +77,7 @@ const Frontend = () => {
                       <img className="h-[40px] w-[45px] object-cover" src={curr.icon} alt="img"/>
                     </div>
                   </div>
-                  <h1 className='text-white opacity-0 group-hover:opacity-100 transition-all duration-500'>{curr.name}</h1>
+                  <h1 className={`text-white ${delayClass} opacity-0 -translate-y-1 group-hover:opacity-100 transition-all duration-500`}>{curr.name}</h1>
             </li>
           })}
         </ul>
