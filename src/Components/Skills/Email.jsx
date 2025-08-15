@@ -15,7 +15,7 @@ const Email = () => {
     >
       <div className="absolute top-0 left-0 z-[-1] inset-0">
         <img
-          className="h-full w-full"
+          className="h-full w-full blur-[1px]"
           src="/premium_photo-1686309673130-36e6a28333a3.avif"
         />
       </div>
@@ -26,8 +26,9 @@ const Email = () => {
         </h1>
         <button
           type="button"
-          className="items-center gap-2 py-3 text-base text-black dark:text-white/75 outline-hidden transition-all duration-300 cursor-pointer hover:text-black/60 dark:hover:text-white/90 flex w-[80%] justify-center rounded-md bg-white/10 px-8 shadow-[inset_0_3px_10px_#ffffff3f]
-          backdrop-blur-[1px] font-bold"
+          style={{ textShadow: "1px 1px 1px rgba(0, 0, 0, 0.8)" }}
+          className="items-center gap-2 py-3 text-base text-black dark:text-white/75 outline-hidden transition-all duration-500 cursor-pointer hover:text-black/60 dark:hover:text-white/100 flex w-[80%] justify-center rounded-md bg-white/10 px-8 shadow-[inset_0_3px_10px_#ffffff3f]
+          backdrop-blur-[1px] font-bold tracking-wide text-shadow-lg"
           >
           <Copy className='h-5 p-0'/>
           niteshshah@gmail.com
