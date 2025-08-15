@@ -1,4 +1,5 @@
 import React from "react";
+import {Copy} from "../../Icons/Icon"
 import { motion } from "motion/react";
 import { animation } from "../../Motions/Animation";
 
@@ -9,15 +10,15 @@ const Email = () => {
       initial={"hidden"}
       whileInView={"show"}
       viewport={{ once: false, amount: 0 }}
-      className="h-[200px] rounded
-      shadow-[inset_0_0_60px_rgba(225,225,225,0.2)] hover:shadow-[inset_0_0px_80px_rgba(255,255,255,0.2)] overflow-hidden"
+      className="h-[200px] rounded relative transition-shadow duration-500
+      shadow-[inset_0_0_60px_rgba(0,0,0,0.3)] hover:shadow-[inset_0_0px_80px_rgba(0,0,0,0.6)] overflow-hidden"
     >
-      {/* <div>
+      <div className="absolute top-0 left-0 z-[-1] inset-0">
         <img
           className="h-full w-full"
-          src="https://png.pngtree.com/png-clipart/20200401/original/pngtree-white-and-black-torn-paper-effect-png-image_5332084.jpg"
+          src="/premium_photo-1686309673130-36e6a28333a3.avif"
         />
-      </div> */}
+      </div>
       <div className="h-full flex flex-col items-center justify-around">
         <h1 className="text-white w-[90%] text-[1.3rem]">
           Feel free to reach out for collaborations, freelance work, or just to
@@ -25,8 +26,10 @@ const Email = () => {
         </h1>
         <button
           type="button"
-          className="items-center gap-2 py-3 text-base font-light text-black dark:text-white/75 outline-hidden transition-all duration-300 cursor-pointer hover:text-black/60 dark:hover:text-white/90 flex w-[80%] justify-center rounded-md bg-white/10 px-8 shadow-[inset_0_3px_10px_#ffffff3f]"
+          className="items-center gap-2 py-3 text-base text-black dark:text-white/75 outline-hidden transition-all duration-300 cursor-pointer hover:text-black/60 dark:hover:text-white/90 flex w-[80%] justify-center rounded-md bg-white/10 px-8 shadow-[inset_0_3px_10px_#ffffff3f]
+          backdrop-blur-[1px] font-bold"
           >
+          <Copy className='h-5 p-0'/>
           niteshshah@gmail.com
         </button>
       </div>
