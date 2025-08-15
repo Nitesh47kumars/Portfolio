@@ -1,5 +1,5 @@
 import React from "react";
-import {Copy} from "../../Icons/Icon"
+import {Copy} from "../../UI/Icon"
 import { motion } from "motion/react";
 import { animation } from "../../Motions/Animation";
 

@@ -1,3 +1,4 @@
+import Button  from './UI/Button'
 import About from './Components/About/About'
 import HeroOverlay from './Components/HeroSection/HeroOverlay'
 import HeroSection from './Components/HeroSection/HeroSection'
@@ -16,6 +17,7 @@ function App() {
       <LandingBase/>
       <About/>
       <Skills/>
+      <Button/>
     </>
   )
 }

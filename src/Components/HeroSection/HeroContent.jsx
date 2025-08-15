@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaArrowRight } from "react-icons/fa";
-import {Copy} from '../../Icons/Icon'
+import {Copy} from '../../UI/Icon'
 import {motion} from "motion/react"
 import { animation } from '../../Motions/Animation';
 const HeroContent = () => {
