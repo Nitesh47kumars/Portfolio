@@ -20,12 +20,16 @@ const Email = () => {
         />
       </div>
       <div className="h-full flex flex-col items-center justify-around">
-        <h1
+        <motion.h1
+        variants={animation("scale", 0.2)}
+        initial={"hidden"}
+        whileInView={"show"}
+        viewport={{ once: false, amount: 0 }}
         className="text-white w-[90%] text-[1.3rem]"
         style={{ textShadow: "1px 1px 1px rgba(0, 0, 0, 0.8)" }}>
           Feel free to reach out for collaborations, freelance work, or just to
           say hello!
-        </h1>
+        </motion.h1>
         <button
           type="button"
           style={{ textShadow: "1px 1px 1px rgba(0, 0, 0, 0.8)" }}
