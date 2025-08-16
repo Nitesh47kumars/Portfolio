@@ -47,7 +47,8 @@ const Navbar = () => {
       initial="hidden"
       whileInView="show"
       viewport={{once:true}}
-      className='flex justify-center w-full mt-5 max-md:justify-around'>
+      className='flex justify-center w-full max-md:justify-around
+      fixed top-0 z-2 py-5 backdrop-blur-[2px]'>
       <div className='w-[80%] flex justify-between items-center border-2 rounded-full py-2 px-[9px] ps-4'>
         <NavbarLogo/>
         <div
