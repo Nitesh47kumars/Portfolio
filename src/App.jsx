@@ -17,7 +17,6 @@ function App() {
       <LandingBase/>
       <About/>
       <Skills/>
-      <Button/>
     </>
   )
 }
