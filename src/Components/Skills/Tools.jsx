@@ -4,11 +4,11 @@ import {animation} from '../../Motions/Animation'
 
 const Tools = () => {
   const icons = [
-    {name:'Figma',icon:'/ToolsIcon/Figma-logo.svg.png'},
-    {name:'Figma',icon:'/ToolsIcon/framer-motion.svg'},
-    {name:'Figma',icon:'/ToolsIcon/Git_icon.svg.png'},
-    {name:'Figma',icon:'/ToolsIcon/lenis-new-smooth-scroll-library.png'},
-    {name:'Figma',icon:'/ToolsIcon/Octicons-mark-github.svg.png'},
+    {name:'Figma',icon:'/ToolsIcon/8096528.png'},
+    {name:'Git',icon:'/ToolsIcon/Git_icon.svg.png'},
+    {name:'Framer-Motion',icon:'/ToolsIcon/framer-motion.svg'},
+    {name:'Github',icon:'/ToolsIcon/github.svg'},
+    {name:'Lenis-JS',icon:'/ToolsIcon/lenis-new-smooth-scroll-library.png'},
     
   ]
 
@@ -34,7 +34,7 @@ const Tools = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0 }}
-        className="text-center text-white text-xl"
+        className="text-center text-white text-[21px] tracking-widest"
       >
         Tools
       </motion.h1>
@@ -42,13 +42,17 @@ const Tools = () => {
       <ul className='flex flex-1 h-full justify-around items-center'>
         {icons.map((curr,idx)=>{
           const {size,delay} = getItemStyle(idx)
-          return <li
+          return <motion.li
+          variants={animation("scale",0.2)}
+          initial="hidden"
+          whileInView="show"
           key={idx}
+          className='flex flex-col items-center'
           >
             <div
-                className={`${size} ${delay} rounded-[20px] border-2 border-[#A5AEB81F] p-2
-                  transition-all duration-500 md:group-hover:-translate-y-2
-                  md:group-hover:border-indigo-400 hover:border-blue-600`}
+              className={`${size} ${delay} rounded-[20px] border-2 border-[#A5AEB81F] p-2
+                transition-all duration-500 md:group-hover:-translate-y-2
+                md:group-hover:border-indigo-400 hover:border-blue-600`}
               >
                 <div
                   className="grid h-full place-items-center rounded-xl border-2 border-[#A5AEB81F]/10
@@ -59,13 +63,14 @@ const Tools = () => {
                   }}
                 >
                   <img
-                    className="h-[40px] w-[45px] object-cover"
+                    className="h-[40px] w-[40px] object-cover"
                     src={curr.icon}
                     alt={`${curr.name} icon`}
                   />
                 </div>
-              </div>
-          </li>
+            </div>
+            <h1 className={` ${delay} duration-500 text-white -translate-y-1 opacity-0 group-hover:opacity-100`}>{curr.name}</h1>
+          </motion.li>
         })}
       </ul>
     </motion.div>
