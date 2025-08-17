@@ -35,7 +35,7 @@ const Frontend = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0 }}
-        className="text-center text-white text-xl"
+        className="text-center text-white text-xl text-shadow-[1px_1px_10px_white]"
       >
         Frontend Skills
       </motion.h1>

@@ -34,7 +34,7 @@ const Tools = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0 }}
-        className="text-center text-white text-[21px] tracking-widest"
+        className="text-center text-white text-[21px] tracking-widest text-shadow-[1px_1px_8px_white]"
       >
         Tools
       </motion.h1>
