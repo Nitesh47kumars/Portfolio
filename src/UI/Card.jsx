@@ -8,6 +8,8 @@ const Card = () => {
         <p><span>Box-1</span></p>
         <p><span>Box-2</span></p>
         <p><span>Box-3</span></p>
+        <p><span>Box-4</span></p>
+        <p><span>Box-5</span></p>
       </div>
     </StyledWrapper>
   );
@@ -15,15 +17,14 @@ const Card = () => {
 
 const StyledWrapper = styled.div`
   .card {
-    width: 350px;
-    height: 354px;
+    width: 380px;
+    height: 380px;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
     gap: 5px;
-    padding: 0.4em;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     overflow: hidden;
+    box-shadow: 0 0 10px rgba(225,225,225,0.3); 
   }
 
   .card p {
@@ -45,7 +46,6 @@ const StyledWrapper = styled.div`
   .card p span {
     padding: 0.2em;
     text-align: center;
-    transform: rotate(-0deg);
     transition: transform 0.5s;
     text-transform: uppercase;
     color: #00ffeb;
