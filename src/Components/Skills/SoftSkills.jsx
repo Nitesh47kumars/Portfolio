@@ -13,8 +13,9 @@ const SoftSkills = () => {
       className='row-span-2 h-full rounded
       shadow-[inset_-6px_6px_60px_rgba(225,225,225,0.2)] hover:shadow-[inset_0_0px_80px_rgba(255,255,255,0.2)]'>
         <h1>Soft Skills</h1>
-
-      <Card/>
+        <div className='flex flex-col items-center w-full'>
+          <Card/>
+        </div>
     </motion.div>
   )
 }
