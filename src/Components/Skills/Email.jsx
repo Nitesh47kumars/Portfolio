@@ -11,12 +11,12 @@ const Email = () => {
       whileInView={"show"}
       viewport={{ once: false, amount: 0 }}
       className="h-[200px] rounded relative transition-shadow duration-500
-      shadow-[inset_0_0_60px_rgba(0,0,0,0.3)] hover:shadow-[inset_0_0px_80px_rgba(0,0,0,0.6)] overflow-hidden"
+      shadow-[inset_0_0_20px_rgba(0,0,0,0.3)] hover:shadow-[inset_0_0px_80px_rgba(0,0,0,0.6)] overflow-hidden"
     >
-      <div className="absolute top-0 left-0 z-[-1] inset-0">
+      <div className="absolute top-0 left-0 z-[-1] ">
         <img
           className="h-full w-full blur-[1px]"
-          src="https://plus.unsplash.com/premium_photo-1681400019731-5d7cc4cafb9d?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          src="/Email-bg.avif"
         />
       </div>
       <div className="h-full flex flex-col items-center justify-around">
