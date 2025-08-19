@@ -41,14 +41,15 @@ const HobbyCard
 const StyledWrapper = styled.div`
   .HobbyCard{
     width: 300px;
-    height: 80px;
-    background: #243137;
+    height: 100px;
     position: relative;
     display: grid;
     place-content: center;
     border-radius: 10px;
     overflow: hidden;
     transition: all 0.5s ease-in-out;
+        background:rgba(225,225,225,0.1);
+
   }
 
   #logo-main, #logo-second {
