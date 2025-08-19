@@ -17,26 +17,27 @@ const Card = () => {
 
 const StyledWrapper = styled.div`
   .card {
-    width: 380px;
-    height: 380px;
-    border-radius: 8px;
+    width: 350px;
+    height: 350px;
+    border-radius: 2px;
     display: flex;
     flex-direction: column;
     gap: 5px;
     overflow: hidden;
-    box-shadow: 0 0 10px rgba(225,225,225,0.3); 
   }
 
   .card p {
     flex: 1;
     overflow: hidden;
     cursor: pointer;
-    border-radius: 8px;
-    transition: flex 0.8s;
-    background: linear-gradient(145deg, #212121, #000);
+    border-radius: 2px;
+    transition: 0.8s;
+    background:linear-gradient(145deg,#333,#000);
     display: flex;
     justify-content: center;
     align-items: center;
+    
+    box-shadow: 0 0 5px rgba(225,225,225,0.2);
   }
 
   .card p:hover {
