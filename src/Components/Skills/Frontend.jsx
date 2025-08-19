@@ -26,9 +26,10 @@ const Frontend = () => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0 }}
+      style={{background:"linear-gradient(145deg,#444,#000 60%)"}}
+
       className="col-span-2 p-5 h-[200px] rounded bg-black group transition-shadow duration-500
-        shadow-[inset_0px_0px_80px_rgba(225,225,225,0.15)]
-        hover:shadow-[inset_0_-35px_7rem_rgba(255,255,255,0.2)]"
+        shadow-[inset_0_0_40px_rgba(180,180,180,0.1)]"
     >
       <motion.h1
         variants={animation("scale", 0.2)}

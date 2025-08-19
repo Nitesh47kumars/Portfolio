@@ -32,12 +32,11 @@ const StyledWrapper = styled.div`
     cursor: pointer;
     border-radius: 2px;
     transition: 0.8s;
-    background:linear-gradient(145deg,#333,#000);
+    background:rgba(225,225,225,0.1);
     display: flex;
     justify-content: center;
     align-items: center;
     
-    box-shadow: 0 0 5px rgba(225,225,225,0.2);
   }
 
   .card p:hover {
