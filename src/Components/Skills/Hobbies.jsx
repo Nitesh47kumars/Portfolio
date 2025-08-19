@@ -10,8 +10,9 @@ const Hobbies = () => {
       initial={"hidden"}
       whileInView={"show"}
       viewport={{ once: false, amount: 0 }}
+      style={{background:"linear-gradient(145deg,#333,#000 40%)"}}
       className="row-span-2 rounded bg-black text-white p-5
-      shadow-[inset_-6px_-6px_60px_rgba(225,225,225,0.2)] hover:shadow-[inset_0_0px_80px_rgba(255,255,255,0.2)]"
+      shadow-[inset_0_0_50px_rgba(225,225,225,0.1)]"
     >
       <h1 className="text-center text-white text-xl text-shadow-[1px_1px_10px_white]">
         Hobbies...
