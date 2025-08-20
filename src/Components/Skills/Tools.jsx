@@ -27,7 +27,7 @@ const Tools = () => {
       initial={"hidden"}
       whileInView={"show"}
       viewport={{once:false, amount:0}}
-      style={{background:"linear-gradient(145deg,#000 30%,#444)"}}
+      style={{background:"linear-gradient(145deg,#444,#000 60%)"}}
       className='h-[200px] col-span-2 rounded py-5 group transition-shadow duration-500
         shadow-[inset_0_0_40px_rgba(180,180,180,0.1)]'>
       <motion.h1
