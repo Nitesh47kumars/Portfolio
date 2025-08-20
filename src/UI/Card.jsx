@@ -4,19 +4,47 @@ import styled from 'styled-components';
 const Card = () => {
   return (
     <StyledWrapper>
-      <div className="card">
-        <p><span>Box-1</span></p>
-        <p><span>Box-2</span></p>
-        <p><span>Box-3</span></p>
-        <p><span>Box-4</span></p>
-        <p><span>Box-5</span></p>
+      <div className="cards">
+        <div className='card'>
+          <h1>Creativity</h1>
+          <ul>
+            <li>Thinking outside the box</li>
+            <li>Generating innovative ideas</li>
+            <li>Visual storytelling</li>
+          </ul>
+        </div>
+        <div className='card'>
+          <h1>Adaptability</h1>
+          <ul>
+            <li>Comfortable with change</li>
+            <li>Quick learner</li>
+            <li>Open to feedback</li>
+          </ul>
+        </div>
+        <div className='card'>
+          <h1>Time Management</h1>
+          <ul>
+            <li>Prioritizing tasks</li>
+            <li>Meeting deadlines</li>
+            <li>Staying organized under pressure</li>
+          </ul>
+        </div>
+        <div className='card'>
+          <h1>Teamwork & Collaboration</h1>
+          <ul>
+            <li>Working effectively in teams</li>
+            <li>Cross-functional collaboration</li>
+            <li>Respect for diverse perspectives</li>
+          </ul>
+        </div>
+        
       </div>
     </StyledWrapper>
   );
 }
 
 const StyledWrapper = styled.div`
-  .card {
+  .cards {
     width: 350px;
     height: 350px;
     border-radius: 2px;
@@ -26,7 +54,7 @@ const StyledWrapper = styled.div`
     overflow: hidden;
   }
 
-  .card p {
+  .card {
     flex: 1;
     overflow: hidden;
     cursor: pointer;
@@ -34,47 +62,46 @@ const StyledWrapper = styled.div`
     transition: 0.8s;
     background:rgba(225,225,225,0.1);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     
   }
 
-  .card p:hover {
+  .card:hover {
     flex: 4;
   }
 
-  .card p span {
+  .card h1{
+    font-size: 1.3rem;
+    color:white;
+    text-shadow: 1px 1px 10px white;
+  }
+
+  .card li{
     padding: 0.2em;
     text-align: center;
-    transition: transform 0.5s;
-    text-transform: uppercase;
+    transition: transform 5s;
     color: #00ffeb;
-    font-weight: "bold";
-    letter-spacing: 0.1em;
+    font-size: 0.9rem;
     position: relative;
     z-index: 1;
   }
-
-  .card p:hover span {
-    transform: rotate(0);
+    
+  .card ul{
+    display:flex;
+    flex-direction:column;
+    align-items:start;
+    height:0px;
+    width:80%;
+    transition:0.61s;
+    position: relative;
+    top:20px;
   }
-
-  .card p::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(255, 255, 255, 0.1);
-    z-index: 0;
-    transition: opacity 0.5s;
-    pointer-events: none;
-    opacity: 0;
-  }
-
-  .card p:hover::before {
-    opacity: 1;
+    
+  .card:hover ul{
+    height: 50px;
+    top:0;
   }`;
 
 export default Card;
