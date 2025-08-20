@@ -8,17 +8,17 @@ const Card = () => {
         <div className='card'>
           <h1>Creativity</h1>
           <ul>
+            <li>Visual storytelling</li>
             <li>Thinking outside the box</li>
             <li>Generating innovative ideas</li>
-            <li>Visual storytelling</li>
           </ul>
         </div>
         <div className='card'>
           <h1>Adaptability</h1>
           <ul>
-            <li>Comfortable with change</li>
             <li>Quick learner</li>
             <li>Open to feedback</li>
+            <li>Comfortable with change</li>
           </ul>
         </div>
         <div className='card'>
@@ -75,7 +75,7 @@ const StyledWrapper = styled.div`
   .card h1{
     font-size: 1.3rem;
     color:white;
-    text-shadow: 1px 1px 10px white;
+    text-shadow: 1px 1px 10px black;
   }
 
   .card li{
@@ -89,9 +89,6 @@ const StyledWrapper = styled.div`
   }
     
   .card ul{
-    display:flex;
-    flex-direction:column;
-    align-items:start;
     height:0px;
     width:80%;
     transition:0.61s;
@@ -100,8 +97,7 @@ const StyledWrapper = styled.div`
   }
     
   .card:hover ul{
-    height: 50px;
-    top:0;
+    height: 100px;
   }`;
 
 export default Card;
