@@ -26,12 +26,12 @@ const HobbyCard = () => {
         const {playingGame} = curr;
         return <div key={idx} className='hobbycard'>
           {playingGame.map((icon,i)=>{
-              return <div className='w-full h-[120%] flex justify-around'>
+              return <div className='image-wrapper'>
                 <img
                   key={i}
                   src={icon.image}
                   alt={icon.name}
-                  className='w-full h-full object-cover rotate-10'/>
+                  className='image'/>
               </div>
             }
           )}
@@ -56,12 +56,29 @@ const StyledWrapper = styled.div`
     justify-content: center;
     overflow: hidden;
     transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
-        background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100%);
-
+    background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100%);
   }
 
   .hobbycard:hover {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .image-wrapper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .image {
+    width: 100px;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transform: rotate(10deg) scale(1.15);
+    transition: all .5s ease;
+  }
+  
+  .hobbycard:hover .image{
+    transform: translateY(-100%);
   }
 
   .hobbycard-content {
@@ -73,7 +90,6 @@ const StyledWrapper = styled.div`
     height: 100%;
     padding: 5px 10px;
     box-sizing: border-box;
-    background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100%);
     opacity: 0;
     transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
   }
