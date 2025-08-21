@@ -35,7 +35,7 @@ const HobbyCard = () => {
               <img
                 src={img.image}
                 alt={img.name}
-                style={{width:'100px',zIndex: 5-i}}
+                style={{width:'95px',zIndex: 5-i}}
                 className="h-full object-cover transform rotate-[10deg] scale-120 transition-all duration-500 group-hover:-translate-y-[110%] group-hover:rotate-0"
               />
             </div>
