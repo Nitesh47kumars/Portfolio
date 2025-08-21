@@ -20,7 +20,6 @@ const Hobbies = () => {
       <div className="flex flex-col items-center justify-center gap-2">
         <HobbyCard/>
         <HobbyCard/>
-        <HobbyCard/>
       </div>
     </motion.div>
   );
