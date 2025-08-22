@@ -5,7 +5,7 @@ const HobbyCard = () => {
     {
       playingGame: {
         description:
-          "I enjoy playing video games as a way to relax and challenge my strategic thinking. It helps improve my problem-solving skills, teamwork, and quick decision-making under pressure.",
+          "Passionate about video games, enjoying the challenge, creativity, and strategic thinking they inspire.",
         items: [
           {
             name: "GTA 5",
@@ -13,7 +13,7 @@ const HobbyCard = () => {
           },
           {
             name: "God of War",
-            image: "/Hobbies_Icon/God_of_War.jpg",
+            image: "/Hobbies_Icon/Kratos.jpg",
           },
           {
             name: "Pubg",
@@ -25,15 +25,31 @@ const HobbyCard = () => {
     {
       videoEditing: {
         description:
-          "Video editing allows me to express creativity and tell compelling stories through visuals. I enjoy learning new transitions and techniques to improve my skills.",
+          "Enjoys video editing as a creative outlet to tell stories and bring ideas to life through visuals.",
         items: [
           {
             name: "Capcut",
-            image: "/Hobbies_Icon/capcut.png",
+            image: "https://capsapk.com/wp-content/uploads/2024/01/images-_8_.jpg",
           },
           {
             name: "Premium pro",
-            image: "/Hobbies_Icon/Adobe_Premiere_Pro_CC_icon.svg.png",
+            image: "/Hobbies_Icon/Editing.jpg",
+          },
+        ],
+      },
+    },
+    {
+      listeningToMusic: {
+        description:
+          "Enjoys listening to music as a way to relax and stay inspired.",
+        items: [
+          {
+            name: "Capcut",
+            image: "/Hobbies_Icon/Spotify.4ae62b85-3d44-495f-a354-de1b0c447387",
+          },
+          {
+            name: "Premium pro",
+            image: "/Hobbies_Icon/Youtube.jpg",
           },
         ],
       },
@@ -49,7 +65,7 @@ const HobbyCard = () => {
         return (
           <div
             key={idx}
-            className="flex relative w-[300px] h-[108px] rounded-md overflow-hidden bg-gradient-to-br from-yellow-500 via-pink-500 to-pink-700 transition-all duration-500 hover:shadow-lg group"
+            className="flex relative w-[300px] h-[90px] rounded-md overflow-hidden bg-gradient-to-br from-yellow-500 via-pink-500 to-pink-700 transition-all duration-500 hover:shadow-lg group"
           >
             {/* Images */}
             {hobby.items.map((img, i) => (
@@ -61,13 +77,13 @@ const HobbyCard = () => {
                   src={img.image}
                   alt={img.name}
                   style={{zIndex: 5 - i }}
-                  className="h-full w-full object-cover transform rotate-[6deg] scale-120 transition-all duration-500 group-hover:-translate-y-[110%] group-hover:rotate-0"
+                  className="h-full w-full object-cover transform rotate-[6deg] scale-120 transition-all duration-500 group-hover:-translate-y-[115%] group-hover:rotate-0"
                 />
               </div>
             ))}
 
             {/* Hover Content */}
-            <div className="absolute top-[120%] left-1/2 transform -translate-x-1/2 -translate-y-1/2  w-full h-full px-3 py-2 opacity-0 transition-all duration-500 group-hover:top-1/2 group-hover:opacity-100 bg-black/60 backdrop-blur-md">
+            <div className="absolute top-[120%] left-1/2 transform -translate-x-1/2 -translate-y-1/2  w-full h-full px-3 py-2 opacity-0 transition-all duration-500 group-hover:top-1/2 group-hover:opacity-100 bg-black/50 backdrop-blur-md">
               <h1 className="text-white text-center font-bold text-lg m-0 capitalize">
                 {hobbyKey.replace(/([A-Z])/g, " $1")}
               </h1>
