@@ -67,7 +67,7 @@ const HobbyCard = () => {
             ))}
 
             {/* Hover Content */}
-            <div className="absolute top-[120%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full px-3 py-2 opacity-0 transition-all duration-500 group-hover:top-1/2 group-hover:opacity-100 bg-black/60 backdrop-blur-md">
+            <div className="absolute top-[120%] left-1/2 transform -translate-x-1/2 -translate-y-1/2  w-full h-full px-3 py-2 opacity-0 transition-all duration-500 group-hover:top-1/2 group-hover:opacity-100 bg-black/60 backdrop-blur-md">
               <h1 className="text-white text-center font-bold text-lg m-0 capitalize">
                 {hobbyKey.replace(/([A-Z])/g, " $1")}
               </h1>
