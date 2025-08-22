@@ -3,11 +3,11 @@ import { motion } from 'motion/react';
 import { animation } from '../../Motions/Animation';
 
 const lang = [
-  { name: "HTML", icon: "/HTML5_Badge.svg.png" },
-  { name: "CSS", icon: "/CSS3_logo.svg.png" },
-  { name: "JavaScript", icon: "/Unofficial_JavaScript_logo_2.svg.png" },
-  { name: "React", icon: "/React-icon.svg.png" },
-  { name: "TailwindCSS", icon: "/tailwind-icon-md.png" },
+  { name: "HTML", icon: "/Frontend/HTML5_Badge.svg.png" },
+  { name: "CSS", icon: "/Frontend/CSS3_logo.svg.png" },
+  { name: "JavaScript", icon: "/Frontend/Unofficial_JavaScript_logo_2.svg.png" },
+  { name: "React", icon: "/Frontend/React-icon.svg.png" },
+  { name: "TailwindCSS", icon: "/Frontend/tailwind-icon-md.png"},
 ];
 
 const getItemStyle = (index) => {
