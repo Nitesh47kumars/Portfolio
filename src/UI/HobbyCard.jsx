@@ -29,7 +29,7 @@ const HobbyCard = () => {
         items: [
           {
             name: "Capcut",
-            image: "https://capsapk.com/wp-content/uploads/2024/01/images-_8_.jpg",
+            image: "/Hobbies_Icon/Capcut.jpg",
           },
           {
             name: "Premium pro",
@@ -57,7 +57,7 @@ const HobbyCard = () => {
   ];
 
   return (
-    <div className="flex gap-6 flex-wrap justify-center">
+    <div className="flex gap-6 flex-wrap justify-center overflow-hidden">
       {hobbiesData.map((hobbyObj, idx) => {
         const hobbyKey = Object.keys(hobbyObj)[0];
         const hobby = hobbyObj[hobbyKey];
@@ -77,13 +77,13 @@ const HobbyCard = () => {
                   src={img.image}
                   alt={img.name}
                   style={{zIndex: 5 - i }}
-                  className="h-full w-full object-cover transform rotate-[6deg] scale-120 transition-all duration-500 group-hover:-translate-y-[115%] group-hover:rotate-0"
+                  className="h-full w-full object-cover transform rotate-[6deg] scale-120 transition-all duration-500 group-hover:-translate-y-[116%] group-hover:rotate-0"
                 />
               </div>
             ))}
 
             {/* Hover Content */}
-            <div className="absolute top-[120%] left-1/2 transform -translate-x-1/2 -translate-y-1/2  w-full h-full px-3 py-2 opacity-0 transition-all duration-500 group-hover:top-1/2 group-hover:opacity-100 bg-black/50 backdrop-blur-md">
+            <div className="absolute top-[120%] left-1/2 transform -translate-x-1/2 -translate-y-1/2  w-full h-full opacity-0 transition-all duration-500 group-hover:top-1/2 group-hover:opacity-100 bg-black/50 backdrop-blur-md flex flex-col justify-center items-center px-2">
               <h1 className="text-white text-center font-bold text-lg m-0 capitalize">
                 {hobbyKey.replace(/([A-Z])/g, " $1")}
               </h1>
