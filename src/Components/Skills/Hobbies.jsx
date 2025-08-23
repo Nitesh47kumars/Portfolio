@@ -17,7 +17,7 @@ const Hobbies = () => {
       <h1 className="text-center text-white text-xl mb-3 text-shadow-[1px_1px_10px_white]">
         Hobbies...
       </h1>
-      <div className="flex flex-col items-center justify-center gap-2">
+      <div className="flex flex-col items-center justify-center">
         <HobbyCard/>
       </div>
     </motion.div>

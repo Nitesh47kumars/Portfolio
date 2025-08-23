@@ -65,7 +65,7 @@ const HobbyCard = () => {
         return (
           <div
             key={idx}
-            className="flex relative w-[300px] h-[90px] rounded-md overflow-hidden bg-gradient-to-br from-yellow-500 via-pink-500 to-pink-700 transition-all duration-500 hover:shadow-lg group"
+            className="flex relative w-[300px] h-[90px] rounded overflow-hidden bg-gradient-to-br from-yellow-500 via-pink-500 to-pink-700 transition-all duration-500 hover:shadow-lg group"
           >
             {/* Images */}
             {hobby.items.map((img, i) => (
@@ -83,11 +83,11 @@ const HobbyCard = () => {
             ))}
 
             {/* Hover Content */}
-            <div className="absolute top-[120%] left-1/2 transform -translate-x-1/2 -translate-y-1/2  w-full h-full opacity-0 transition-all duration-500 group-hover:top-1/2 group-hover:opacity-100 bg-black/50 backdrop-blur-md flex flex-col justify-center items-center px-2">
-              <h1 className="text-white text-center font-bold text-lg m-0 capitalize">
+            <div className="absolute top-[120%] left-1/2 transform -translate-x-1/2 -translate-y-1/2  w-full h-full opacity-0 transition-all duration-500 group-hover:top-1/2 group-hover:opacity-100 backdrop-blur-md flex flex-col justify-center items-center px-2">
+              <h1 className="text-white text-center font-bold text-lg m-0 capitalize drop-shadow-[0px_0px_8px_black]">
                 {hobbyKey.replace(/([A-Z])/g, " $1")}
               </h1>
-              <p className="text-[14px] leading-4 text-white/80 text-center">
+              <p className="text-[14px] leading-4 text-white/80 text-center drop-shadow-[0px_0px_8px_black]">
                 {hobby.description}
               </p>
             </div>
