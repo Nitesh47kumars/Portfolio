@@ -1,12 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import {Copy} from "../../UI/Copy"
+import {Check} from "../../UI/Check"
 import { motion } from "motion/react";
 import { animation } from "../../Motions/Animation";
 
 const Email = () => {
+  const [copy,setCopy] = useState(false);
+
   const handleCopy = () =>{
+    setCopy(true);
     navigator.clipboard.writeText("niteshshah028@gmail.com");
+    setTimeout(()=>{
+      setCopy(false);
+    },1000);
   }
+  
   return (
     <motion.div
       variants={animation("scale", 0.2)}
@@ -44,7 +52,7 @@ const Email = () => {
           className="items-center gap-2 py-3 text-base text-black dark:text-white/75 outline-hidden transition-all duration-500 cursor-pointer hover:text-black/60 dark:hover:text-white/100 flex w-[80%] justify-center rounded-md bg-white/10 px-8 shadow-[inset_0_3px_10px_#ffffff3f]
           backdrop-blur-[1px] font-bold tracking-wide text-shadow-lg"
           >
-          <Copy className='h-5 p-0'/>
+          {copy? <Check/> : <Copy/>}
           niteshshah@gmail.com
         </motion.button>
       </div>

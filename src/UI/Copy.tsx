@@ -18,8 +18,8 @@ const defaultTransition: Transition = {
 };
 
 const Copy = ({
-  width = 28,
-  height = 28,
+  width = 24,
+  height = 24,
   strokeWidth = 2,
   stroke = "#ffffff",
   ...props
@@ -31,7 +31,6 @@ const Copy = ({
       style={{
         cursor: "pointer",
         userSelect: "none",
-        padding: "0px",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
