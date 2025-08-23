@@ -1,9 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FaArrowRight } from "react-icons/fa";
 import {Copy} from '../../UI/Copy'
-import {motion} from "motion/react"
+import {Check} from '../../UI/Check'
+import {motion, useAnimation} from "motion/react"
 import { animation } from '../../Motions/Animation';
+
 const HeroContent = () => {
+  const [copy, setCopy] = useState(false);
+  const controls = useAnimation();
+
+  const handleCopy = () => {
+    setCopy(true);
+    navigator.clipboard.writeText("niteshshah028@gmail.com");
+    setTimeout(() => {
+      setCopy(false);
+    }, 1000);
+  };
+
   return (
     <div className="w-full flex flex-col max-md:items-center md:items-start gap-4 max-md:gap-3">
 
@@ -36,15 +49,18 @@ const HeroContent = () => {
           <FaArrowRight className='inline align-middle mt-0.5'/>
         </button>
 
-        <motion.p
+        <motion.button
+          onClick={handleCopy}
+          onMouseEnter={() => controls.start("animate")}
+          onMouseLeave={() => controls.start("normal")}
           variants={animation("up",0.2)}
           initial={"hidden"}
           whileInView={"show"}
           viewport={{once:true,amount:0}}
           className="flex items-center md:text-[clamp(0.8rem,1vw,1rem)] cursor-pointer whitespace-nowrap">
-          <Copy className='h-5 p-0'/>
+          {copy ? <Check className='mx-2' /> : <Copy controls={controls} className='mx-2'/>}
           niteshShah028@gmail.com
-        </motion.p>
+        </motion.button>
 
       </motion.div>
     </div>

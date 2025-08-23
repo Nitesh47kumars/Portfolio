@@ -1,13 +1,14 @@
 "use client";
 
-import { motion, useAnimation } from "motion/react";
-import type { Variants } from "motion/react";
+import { motion, useAnimation, type Variants } from "framer-motion";
+import React, { useEffect } from "react";
 
 interface CheckProps extends React.SVGAttributes<SVGSVGElement> {
   width?: number;
   height?: number;
   strokeWidth?: number;
   stroke?: string;
+  controls?: any; // you can make this AnimationControls if you want strict typing
 }
 
 const checkVariants: Variants = {
@@ -36,17 +37,19 @@ const Check = ({
   height = 24,
   strokeWidth = 2,
   stroke = "#ffffff",
+  controls,
   ...props
 }: CheckProps) => {
-  const controls = useAnimation();
+  // If controls are not provided, create our own
+  const internalControls = useAnimation();
 
-  const handleHoverStart = () => {
-    controls.start("animate");
-  };
+  // Use external controls if provided, otherwise internal
+  const animationControls = controls ?? internalControls;
 
-  const handleHoverEnd = () => {
-    controls.start("normal");
-  };
+  // For demo, let's animate on mount:
+  useEffect(() => {
+    animationControls.start("animate");
+  }, [animationControls]);
 
   return (
     <div
@@ -57,8 +60,6 @@ const Check = ({
         alignItems: "center",
         justifyContent: "center",
       }}
-      onMouseEnter={handleHoverStart}
-      onMouseLeave={handleHoverEnd}
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -76,7 +77,7 @@ const Check = ({
           d="M20 6 9 17l-5-5"
           variants={checkVariants}
           initial="normal"
-          animate={controls}
+          animate={animationControls}
           style={{ transformOrigin: "center" }}
         />
       </svg>

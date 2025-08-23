@@ -1,13 +1,12 @@
-"use client";
-
 import type { Transition } from "motion/react";
-import { motion, useAnimation } from "motion/react";
+import { motion, useAnimation} from "motion/react";
 
 interface CopyProps extends React.SVGAttributes<SVGSVGElement> {
   width?: number;
   height?: number;
   strokeWidth?: number;
   stroke?: string;
+  controls?: ReturnType<typeof useAnimation>;// ✅ Made optional
 }
 
 const defaultTransition: Transition = {
@@ -22,9 +21,11 @@ const Copy = ({
   height = 24,
   strokeWidth = 2,
   stroke = "#ffffff",
+  controls,
   ...props
 }: CopyProps) => {
-  const controls = useAnimation();
+  const fallbackControls = useAnimation(); // ✅ fallback animation controls
+  const animationControls = controls ?? fallbackControls; // ✅ use prop if given, fallback otherwise
 
   return (
     <div
@@ -35,8 +36,6 @@ const Copy = ({
         alignItems: "center",
         justifyContent: "center",
       }}
-      onMouseEnter={() => controls.start("animate")}
-      onMouseLeave={() => controls.start("normal")}
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -61,7 +60,7 @@ const Copy = ({
             normal: { translateY: 0, translateX: 0 },
             animate: { translateY: -3, translateX: -3 },
           }}
-          animate={controls}
+          animate={animationControls}
           transition={defaultTransition}
         />
         <motion.path
@@ -70,8 +69,8 @@ const Copy = ({
             normal: { x: 0, y: 0 },
             animate: { x: 3, y: 3 },
           }}
+          animate={animationControls}
           transition={defaultTransition}
-          animate={controls}
         />
       </svg>
     </div>
