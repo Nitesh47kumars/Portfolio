@@ -11,7 +11,7 @@ const AboutContent = () => {
         variants={animation("right",0.1)}
         initial={"hidden"}
         whileInView={"show"}
-        viewport={{once:false,amount:0.2}}
+        viewport={{once:true,amount:0}}
         className='max-lg:text-center max-sm:text-sm'>About Me!</motion.h1>
 
             <br/>
@@ -20,7 +20,7 @@ const AboutContent = () => {
         variants={animation("right",0)}
         initial={"hidden"}
         whileInView={"show"}
-        viewport={{one:false,amout:0.2}}
+        viewport={{once:true,amount:0}}
             className='text-5xl font-bold lg:text-[clamp(40px,4vw,48px)] max-lg:text-center
             max-sm:text-[clamp(22px,4vw,35px)] max-lg:text-[clamp(35px,2vw,40px)] whitespace-nowrap'
             style={{
@@ -41,21 +41,24 @@ const AboutContent = () => {
                 variants={animation("right",0.2)}
                 initial={"hidden"}
                 whileInView={"show"}
-                viewport={{one:false,amout:0.2}}>
+                viewport={{once:true,amount:0}}
+                >
                 Hi! I’m Nitesh Kumar, a 19-year-old passionate web developer and video editor. Currently, I’m a second-year BCA student, diving deep into the world of coding and design. I have hands-on experience with HTML, CSS, JavaScript, React, and Tailwind CSS, and I love creating clean, responsive, and user-friendly websites.
             </motion.p>
             <motion.p
                 variants={animation("right",0.3)}
                 initial={"hidden"}
                 whileInView={"show"}
-                viewport={{one:false,amout:0.2}}>
+                viewport={{once:true,amount:0}}
+                >
                 Alongside web development, I also enjoy video editing, which helps me bring creativity and storytelling into my projects. This portfolio is my first step to showcase my skills, projects, and journey as I grow in the tech world.
             </motion.p>
             <motion.p
                 variants={animation("right",0.4)}
                 initial={"hidden"}
                 whileInView={"show"}
-                viewport={{one:false,amout:0.2}}>
+                viewport={{once:true,amount:0}}
+                >
                 I’m excited to connect, learn, and create meaningful digital experiences. Let’s build something amazing together!
             </motion.p>
         </div>

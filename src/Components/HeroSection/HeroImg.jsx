@@ -7,7 +7,7 @@ const HeroImg = () => {
       variants={animation("left",0.2)}
       initial={"hidden"}
       whileInView={"show"}
-      viewport={{one:false,amout:0}}
+      viewport={{once:true,amount:0}}
       className='flex justify-center items-center relative'>
         <div className='rounded-full overflow-hidden flex justify-center items-center bg-red-300 md:w-60 md:h-60 lg:w-80 lg:h-80 max-md:w-70 max-md:h-70 max-sm:h-60 max-sm:w-60'>
             <img className='h-full w-full object-cover' src='/Pic.jpg' alt='Photo'/>

@@ -25,7 +25,7 @@ const Frontend = () => {
       variants={animation("up", 0.2)}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: false, amount: 0 }}
+      viewport={{once:true,amount:0}}
       style={{background:"linear-gradient(145deg,#444,#000 60%)"}}
 
       className="col-span-2 p-5 h-[200px] rounded bg-black group transition-shadow duration-500
@@ -35,7 +35,7 @@ const Frontend = () => {
         variants={animation("scale", 0.2)}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: false, amount: 0 }}
+        viewport={{once:true,amount:0}}
         className="text-center text-white text-xl text-shadow-[1px_1px_10px_white]"
       >
         Frontend Skills
@@ -51,7 +51,7 @@ const Frontend = () => {
               variants={animation("scale", 0.2)}
               initial="hidden"
               whileInView="show"
-              viewport={{ once: false, amount: 0 }}
+              viewport={{once:true,amount:0}}
               className="flex flex-col items-center"
             >
               <div

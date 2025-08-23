@@ -26,7 +26,7 @@ const Tools = () => {
       variants={animation("down",0.2)}
       initial={"hidden"}
       whileInView={"show"}
-      viewport={{once:false, amount:0}}
+      viewport={{once:true,amount:0}}
       style={{background:"linear-gradient(145deg,#444,#000 60%)"}}
       className='h-[200px] col-span-2 rounded py-5 group transition-shadow duration-500
         shadow-[inset_0_0_40px_rgba(180,180,180,0.1)]'>
@@ -34,7 +34,7 @@ const Tools = () => {
         variants={animation("scale", 0.2)}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: false, amount: 0 }}
+        viewport={{once:true,amount:0}}
         className="text-center text-white text-[21px] tracking-widest text-shadow-[1px_1px_8px_white]"
       >
         Tools
@@ -48,6 +48,7 @@ const Tools = () => {
           initial="hidden"
           whileInView="show"
           key={idx}
+          viewport={{once:true,amount:0}}
           className='flex flex-col items-center'
           >
             <div

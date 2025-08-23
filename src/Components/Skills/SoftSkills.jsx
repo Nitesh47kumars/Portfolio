@@ -9,7 +9,7 @@ const SoftSkills = () => {
       variants={animation("right", 0.2)}
       initial={"hidden"}
       whileInView={"show"}
-      viewport={{ once: false, amount: 0 }}
+      viewport={{once:true,amount:0}}
       style={{background:"linear-gradient(145deg,#333,#000 40%)"}}
       className="md:row-span-2 max-md:row-span-1 h-full rounded p-5
       shadow-[inset_0_0_50px_rgba(225,225,225,0.1)]"

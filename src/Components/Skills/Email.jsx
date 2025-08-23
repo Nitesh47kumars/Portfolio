@@ -9,7 +9,7 @@ const Email = () => {
       variants={animation("scale", 0.2)}
       initial={"hidden"}
       whileInView={"show"}
-      viewport={{ once: false, amount: 0 }}
+      viewport={{once:true,amount:0}}
       className="h-[200px] rounded relative transition-shadow duration-500
       shadow-[inset_0_0_20px_rgba(0,0,0,0.3)] hover:shadow-[inset_0_0px_80px_rgba(0,0,0,0.6)] overflow-hidden"
     >
@@ -21,10 +21,10 @@ const Email = () => {
       </div>
       <div className="h-full flex flex-col items-center justify-around">
         <motion.h1
-        variants={animation("scale", 0.2)}
+        variants={animation("down", 0.2)}
         initial={"hidden"}
         whileInView={"show"}
-        viewport={{ once: false, amount: 0 }}
+        viewport={{once:true,amount:0}}
         className="text-white w-[90%] text-[1.3rem]"
         style={{ textShadow: "1px 1px 1px rgba(0, 0, 0, 0.8)" }}>
           Feel free to reach out for collaborations, freelance work, or just to
