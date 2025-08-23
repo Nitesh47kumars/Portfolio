@@ -21,7 +21,7 @@ const Email = () => {
       </div>
       <div className="h-full flex flex-col items-center justify-around">
         <motion.h1
-        variants={animation("down", 0.2)}
+        variants={animation("", 0.6)}
         initial={"hidden"}
         whileInView={"show"}
         viewport={{once:true,amount:0}}
@@ -30,7 +30,11 @@ const Email = () => {
           Feel free to reach out for collaborations, freelance work, or just to
           say hello!
         </motion.h1>
-        <button
+        <motion.button
+        variants={animation("", 0.6)}
+        initial={"hidden"}
+        whileInView={"show"}
+        viewport={{once:true,amount:0}}
           type="button"
           style={{ textShadow: "1px 1px 1px rgba(0, 0, 0, 0.8)" }}
           className="items-center gap-2 py-3 text-base text-black dark:text-white/75 outline-hidden transition-all duration-500 cursor-pointer hover:text-black/60 dark:hover:text-white/100 flex w-[80%] justify-center rounded-md bg-white/10 px-8 shadow-[inset_0_3px_10px_#ffffff3f]
@@ -38,7 +42,7 @@ const Email = () => {
           >
           <Copy className='h-5 p-0'/>
           niteshshah@gmail.com
-        </button>
+        </motion.button>
       </div>
     </motion.div>
   );
