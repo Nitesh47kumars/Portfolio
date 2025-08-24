@@ -65,7 +65,7 @@ const HobbyCard = () => {
         return (
           <div
             key={idx}
-            className="flex relative w-[300px] h-[90px] rounded overflow-hidden bg-gradient-to-br from-yellow-500 via-pink-500 to-pink-700 transition-all duration-500 hover:shadow-lg group"
+            className="flex relative w-[95%] h-[90px] rounded overflow-hidden bg-gradient-to-br from-yellow-500 via-pink-500 to-pink-700 transition-all duration-500 hover:shadow-lg group"
           >
             {/* Images */}
             {hobby.items.map((img, i) => (
