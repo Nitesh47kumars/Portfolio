@@ -28,7 +28,7 @@ const Frontend = () => {
       viewport={{once:true,amount:0}}
       style={{background:"linear-gradient(145deg,#444,#000 60%)"}}
 
-      className="md:col-span-4 p-5 h-[200px] rounded bg-black group transition-shadow duration-500
+      className="relative md:col-span-4 p-5 max-md:p-3 h-[200px] rounded bg-black group transition-shadow duration-500
         shadow-[inset_0_0_40px_rgba(180,180,180,0.1)]"
     >
       <motion.h1
@@ -41,7 +41,7 @@ const Frontend = () => {
         Frontend Skills
       </motion.h1>
 
-      <ul className="flex justify-between items-center p-5">
+      <ul className="flex justify-between items-center h-full p-5 max-md:p-2 max-sm:grid max-sm:grid-cols-3">
         {lang.map((curr, idx) => {
           const { size, delay } = getItemStyle(idx);
 
@@ -55,12 +55,12 @@ const Frontend = () => {
               className="flex flex-col items-center"
             >
               <div
-                className={`${size} ${delay} rounded-[20px] border-2 border-[#A5AEB81F] p-2
+                className={`${size} max-md:h-15 max-md:w-15 ${delay} rounded-[15px] max-md:rounded-[10px] border-2 border-[#A5AEB81F] p-2 max-md:p-1
                   transition-all duration-500 md:group-hover:-translate-y-2
                   md:group-hover:border-indigo-400 hover:border-blue-600`}
               >
                 <div
-                  className="grid h-full place-items-center rounded-xl border-2 border-[#A5AEB81F]/10
+                  className="grid h-full place-items-center rounded-[10px] max-md:rounded-[8px] border-2 border-[#A5AEB81F]/10
                     bg-[#EDEEF0] dark:border-[#5A5F661F]/10 dark:bg-[#1A1B1E]"
                   style={{
                     boxShadow:
@@ -68,7 +68,7 @@ const Frontend = () => {
                   }}
                 >
                   <img
-                    className="h-[40px] w-[45px] object-cover"
+                    className="h-[60%] w-[68%] object-cover"
                     src={curr.icon}
                     alt={`${curr.name} icon`}
                   />
