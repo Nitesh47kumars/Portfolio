@@ -28,7 +28,7 @@ const Tools = () => {
       whileInView={"show"}
       viewport={{once:true,amount:0}}
       style={{background:"linear-gradient(145deg,#444,#000 60%)"}}
-      className='h-[200px] col-span-2 rounded py-5 group transition-shadow duration-500
+      className='h-[200px] md:col-span-4 rounded py-5 group transition-shadow duration-500
         shadow-[inset_0_0_40px_rgba(180,180,180,0.1)]'>
       <motion.h1
         variants={animation("scale", 0.2)}

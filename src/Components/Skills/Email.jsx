@@ -22,7 +22,7 @@ const Email = () => {
       initial={"hidden"}
       whileInView={"show"}
       viewport={{ once: true, amount: 0 }}
-      className="h-[200px] rounded relative transition-shadow duration-500
+      className="md:col-span-2 h-[200px] w-full rounded relative transition-shadow duration-500
       shadow-[inset_0_0_20px_rgba(0,0,0,0.3)] hover:shadow-[inset_0_0px_80px_rgba(0,0,0,0.6)] overflow-hidden"
     >
       <div className="absolute top-0 left-0 z-[-1] ">

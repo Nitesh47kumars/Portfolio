@@ -8,7 +8,7 @@ import SoftSkills from './SoftSkills'
 const Skills = () => {
   return (
     <div id='skills' className=' text-black w-full flex justify-center items-center'>
-        <div className='w-[80%] grid md:grid-cols-3 max-md:grid-cols-1 md:gap-5 md:my-20'>
+        <div className='w-[80%] grid md:grid-cols-6 max-md:grid-cols-1 gap-5 md:my-20'>
             <Frontend/>
             <SoftSkills/>
             <Hobbies/>

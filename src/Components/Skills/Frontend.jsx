@@ -28,7 +28,7 @@ const Frontend = () => {
       viewport={{once:true,amount:0}}
       style={{background:"linear-gradient(145deg,#444,#000 60%)"}}
 
-      className="col-span-2 p-5 h-[200px] rounded bg-black group transition-shadow duration-500
+      className="md:col-span-4 p-5 h-[200px] rounded bg-black group transition-shadow duration-500
         shadow-[inset_0_0_40px_rgba(180,180,180,0.1)]"
     >
       <motion.h1
