@@ -71,7 +71,7 @@ const HobbyCard = () => {
             {hobby.items.map((img, i) => (
               <div
                 key={i}
-                className="w-full h-full flex justify-center items-center"
+                className="w-full h-full flex justify-center items-center z-0"
               >
                 <img
                   src={img.image}
