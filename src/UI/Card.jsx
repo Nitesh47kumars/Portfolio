@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 
 const Card = () => {
   const cardData = [
@@ -24,19 +24,37 @@ const Card = () => {
     },
   ];
 
+  const [activeIndex, setActiveIndex] = useState(null);
+
+  // Mobile detection (basic, can be improved)
+  const isMobile = typeof window !== 'undefined' && window.innerWidth <= 768;
+
+  const toggleCard = (index) => {
+    if (activeIndex === index) {
+      setActiveIndex(null);
+    } else {
+      setActiveIndex(index);
+    }
+  };
+
+
   return (
     <div className="w-[95%] h-[350px] flex flex-col gap-1 overflow-hidden">
       {cardData.map((curr, idx) => {
         const { title, points } = curr;
+        const isActive = activeIndex === idx;
         return (
           <div
             key={idx}
-            className="card group flex-1 overflow-hidden cursor-pointer rounded-sm transition-all duration-600 bg-[rgba(225,225,225,0.1)] flex flex-col justify-center items-center hover:flex-[4]"
+            onClick={() => isMobile && toggleCard(idx)}
+            className={`card group flex-1 overflow-hidden cursor-pointer rounded-sm transition-all duration-600 bg-[rgba(225,225,225,0.1)]
+              flex flex-col justify-center items-center ${isMobile ? (isActive ? 'flex-[4]' : '') : 'hover:flex-[4] cursor-pointer'}`}
           >
             <h1 className="text-white text-[clamp(1rem,1vw,1.3rem)] drop-shadow-[1px_1px_10px_black] text-nowrap">
               {title}
             </h1>
-            <ul className="h-0 relative top-3 transition-all duration-500 overflow-hidden group-hover:h-[100px]">
+            <ul className={`h-0 relative top-3 transition-all duration-500 overflow-hidden
+              ${isMobile ? (isActive ? 'h-[90px]' : 'h-0') : 'group-hover:h-[100px]'}`}>
               {points.map((point, i) => (
                 <li
                   key={i}
