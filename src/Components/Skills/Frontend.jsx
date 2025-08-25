@@ -28,7 +28,7 @@ const Frontend = () => {
       viewport={{once:true,amount:0}}
       style={{background:"linear-gradient(145deg,#444,#000 60%)"}}
 
-      className="relative md:col-span-4 p-5 max-md:p-3 h-[200px] rounded bg-black group transition-shadow duration-500
+      className="relative md:col-span-4 p-5 md:h-[200px] max-sm:h-[265px] rounded bg-black group transition-shadow duration-500
         shadow-[inset_0_0_40px_rgba(180,180,180,0.1)]"
     >
       <motion.h1
@@ -41,7 +41,7 @@ const Frontend = () => {
         Frontend Skills
       </motion.h1>
 
-      <ul className="flex justify-between items-center h-full p-5 max-md:p-2 max-sm:grid max-sm:grid-cols-3">
+      <ul className="flex justify-between items-center h-full sm:p-5 max-sm:py-4 max-sm:pb-5 max-sm:grid max-sm:grid-cols-3 ">
         {lang.map((curr, idx) => {
           const { size, delay } = getItemStyle(idx);
 
@@ -76,8 +76,8 @@ const Frontend = () => {
               </div>
 
               <h1
-                className={`text-white ${delay} opacity-0 -translate-y-1
-                  group-hover:opacity-100 transition-all duration-500`}
+                className={`text-white ${delay} md:opacity-0 -translate-y-1
+                  group-hover:opacity-100 max-md:text-[12px] max-md:translate-y-1.5 transition-all duration-500`}
               >
                 {curr.name}
               </h1>

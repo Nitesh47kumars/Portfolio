@@ -25,8 +25,7 @@ const Card = () => {
   ];
 
   return (
-    <div className="w-[95%] h-[350px] flex flex-col gap-1 overflow-hidden
-    max-md:w-[250px] max-md:h-[250px]">
+    <div className="w-[95%] h-[350px] flex flex-col gap-1 overflow-hidden">
       {cardData.map((curr, idx) => {
         const { title, points } = curr;
         return (
