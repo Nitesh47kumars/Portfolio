@@ -18,7 +18,7 @@ const Email = () => {
 
   return (
     <motion.div
-      variants={animation("scale", 0.2)}
+      variants={animation("scale", 0.4)}
       initial={"hidden"}
       whileInView={"show"}
       viewport={{ once: true, amount: 0 }}

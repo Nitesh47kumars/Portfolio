@@ -22,7 +22,7 @@ const Tools = () => {
 
   return (
     <motion.div
-      variants={animation('down', 0.2)}
+      variants={animation('down', 0.4)}
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, amount: 0 }}
@@ -31,7 +31,7 @@ const Tools = () => {
         shadow-[inset_0_0_40px_rgba(180,180,180,0.1)]"
     >
       <motion.h1
-        variants={animation('scale', 0.2)}
+        variants={animation('scale', 0.4)}
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0 }}

@@ -6,7 +6,7 @@ import HobbyCard from "../../UI/HobbyCard";
 const Hobbies = () => {
   return (
     <motion.div
-      variants={animation("left", 0.2)}
+      variants={animation("left", 0.4)}
       initial={"hidden"}
       whileInView={"show"}
       viewport={{once:true,amount:0}}
@@ -14,9 +14,14 @@ const Hobbies = () => {
       className="w-full md:col-span-2 md:row-span-2 max-md:row-span-1 h-full rounded bg-black text-white p-5
       shadow-[inset_0_0_50px_rgba(225,225,225,0.1)]"
     >
-      <h1 className="text-center text-white text-xl mb-3 text-shadow-[1px_1px_10px_white]">
+      <motion.h1
+      variants={animation("scale", 0.4)}
+      initial="hidden"
+      whileInView="show"
+      viewport={{once:true,amount:0}}
+      className="text-center text-white text-xl mb-3 text-shadow-[1px_1px_10px_white]">
         Hobbies...
-      </h1>
+      </motion.h1>
       <div className="flex flex-col items-center justify-center">
         <HobbyCard/>
       </div>
