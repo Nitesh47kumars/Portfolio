@@ -1,18 +1,18 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 
 const HobbyCard = () => {
   const [activeIndex, setActiveIndex] = useState(null);
   const [isMobile, setIsMobile] = useState(false);
 
-  // Detect screen width for mobile interaction
+  // Detect screen width on resize
   useEffect(() => {
-    const checkMobile = () => setIsMobile(window.innerWidth <= 768);
-    checkMobile();
-    window.addEventListener('resize', checkMobile);
-    return () => window.removeEventListener('resize', checkMobile);
+    const updateIsMobile = () => setIsMobile(window.innerWidth <= 768);
+    updateIsMobile();
+    window.addEventListener('resize', updateIsMobile);
+    return () => window.removeEventListener('resize', updateIsMobile);
   }, []);
 
-  const hobbiesData = [
+  const hobbiesData = useMemo(() => [
     {
       playingGame: {
         description:
@@ -39,72 +39,67 @@ const HobbyCard = () => {
         description:
           "Enjoys listening to music as a way to relax and stay inspired.",
         items: [
-          {
-            name: "Spotify",
-            image: "/Hobbies_Icon/Spotify.4ae62b85-3d44-495f-a354-de1b0c447387",
-          },
-          {
-            name: "YouTube",
-            image: "/Hobbies_Icon/Youtube.jpg",
-          },
+          { name: "Spotify", image: "/Hobbies_Icon/Spotify.4ae62b85-3d44-495f-a354-de1b0c447387" },
+          { name: "YouTube", image: "/Hobbies_Icon/Youtube.jpg" },
         ],
       },
     },
-  ];
+  ], []);
+
+  const formatTitle = (key) => key.replace(/([A-Z])/g, ' $1');
 
   return (
-    <div className="flex gap-6 flex-wrap justify-center overflow-hidden">
+    <div className="flex flex-wrap justify-center gap-6 overflow-hidden">
       {hobbiesData.map((hobbyObj, idx) => {
-        const hobbyKey = Object.keys(hobbyObj)[0];
-        const hobby = hobbyObj[hobbyKey];
+        const key = Object.keys(hobbyObj)[0];
+        const { description, items } = hobbyObj[key];
         const isActive = activeIndex === idx;
+
+        const cardClass = `relative flex w-[95%] h-[90px] rounded overflow-hidden 
+          bg-gradient-to-br from-yellow-500 via-pink-500 to-pink-700 transition-all duration-500 
+          ${isMobile ? 'cursor-pointer' : 'group hover:shadow-lg'}`;
+
+        const overlayClass = `absolute left-1/2 transform -translate-x-1/2 w-full h-full px-2 
+          backdrop-blur-md flex flex-col justify-center items-center transition-all duration-500 
+          ${
+            isMobile
+              ? isActive
+                ? 'top-0 opacity-100'
+                : 'top-[120%] opacity-0'
+              : 'top-[120%] opacity-0 group-hover:top-0 group-hover:opacity-100'
+          }`;
 
         return (
           <div
             key={idx}
+            className={cardClass}
             onClick={() => isMobile && setActiveIndex(isActive ? null : idx)}
-            className={`flex relative w-[95%] h-[90px] rounded overflow-hidden bg-gradient-to-br from-yellow-500 via-pink-500 to-pink-700 transition-all duration-500 ${
-              isMobile ? 'cursor-pointer' : 'group hover:shadow-lg'
-            }`}
           >
             {/* Images */}
-            {hobby.items.map((img, i) => (
-              <div
-                key={i}
-                className="w-full h-full flex justify-center items-center z-0"
-              >
+            {items.map((img, i) => (
+              <div key={i} className="w-full h-full flex justify-center items-center z-0">
                 <img
                   src={img.image}
                   alt={img.name}
                   style={{ zIndex: 5 - i }}
-                  className={`h-full w-full object-cover transform rotate-[6deg] scale-130 transition-all duration-500 ${
+                  className={`h-full w-full object-cover transform scale-130 rotate-[6deg] transition-all duration-500 ${
                     isMobile
                       ? isActive
-                        ? '-translate-y-[116%] rotate-0'
-                        : ''
+                        ? '-translate-y-[135%] rotate-0'
+                        : 'translate-y-[4%] scale-135'
                       : 'group-hover:-translate-y-[116%] group-hover:rotate-0'
                   }`}
                 />
               </div>
             ))}
 
-            {/* Description Overlay */}
-            <div
-              className={`absolute left-1/2 transform -translate-x-1/2 w-full h-full backdrop-blur-md flex flex-col justify-center items-center px-2 transition-all duration-500
-                ${
-                  isMobile
-                    ? isActive
-                      ? 'top-[0%] opacity-100'
-                      : 'top-[120%] opacity-0'
-                    : 'top-[120%] opacity-0 group-hover:top-[0%] group-hover:opacity-100'
-                }
-              `}
-            >
-              <h1 className="text-white text-center font-bold text-[clamp(1rem,1vw,1.2rem)] capitalize drop-shadow-[0px_0px_8px_black]">
-                {hobbyKey.replace(/([A-Z])/g, " $1")}
+            {/* Description */}
+            <div className={overlayClass}>
+              <h1 className="text-white text-center font-bold text-[clamp(1rem,1vw,1.2rem)] capitalize drop-shadow-[0_0_8px_black]">
+                {formatTitle(key)}
               </h1>
-              <p className="text-[clamp(0.8rem,1vw,1rem)] leading-4 text-white/80 text-center drop-shadow-[0px_0px_8px_black]">
-                {hobby.description}
+              <p className="text-[clamp(0.8rem,1vw,1rem)] leading-4 text-white/80 text-center drop-shadow-[0_0_8px_black]">
+                {description}
               </p>
             </div>
           </div>

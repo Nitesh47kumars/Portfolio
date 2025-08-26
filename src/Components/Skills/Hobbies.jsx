@@ -7,23 +7,25 @@ const Hobbies = () => {
   return (
     <motion.div
       variants={animation("left", 0.4)}
-      initial={"hidden"}
-      whileInView={"show"}
-      viewport={{once:true,amount:0}}
-      style={{background:"linear-gradient(145deg,#333,#000 40%)"}}
-      className="w-full md:col-span-3 lg:col-span-2 md:row-span-3 lg:row-span-2 max-md:row-span-1 h-full rounded bg-black text-white p-5
-      shadow-[inset_0_0_50px_rgba(225,225,225,0.1)]"
-    >
-      <motion.h1
-      variants={animation("scale", 0.4)}
       initial="hidden"
       whileInView="show"
-      viewport={{once:true,amount:0}}
-      className="text-center text-white text-xl mb-3 text-shadow-[1px_1px_10px_white]">
+      viewport={{ once: true, amount: 0 }}
+      style={{ background: "linear-gradient(145deg, #333, #000 40%)" }}
+      className="w-full md:col-span-3 lg:col-span-2 md:row-span-3 lg:row-span-2 max-md:row-span-1
+                 rounded bg-black text-white p-5 shadow-[inset_0_0_50px_rgba(225,225,225,0.1)]"
+    >
+      <motion.h1
+        variants={animation("scale", 0.4)}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0 }}
+        className="text-center text-xl mb-3 text-shadow-[1px_1px_10px_white]"
+      >
         Hobbies...
       </motion.h1>
+
       <div className="flex flex-col items-center justify-center">
-        <HobbyCard/>
+        <HobbyCard />
       </div>
     </motion.div>
   );
