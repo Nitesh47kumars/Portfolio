@@ -77,7 +77,7 @@ const HobbyCard = () => {
                   src={img.image}
                   alt={img.name}
                   style={{ zIndex: 5 - i }}
-                  className={`h-full w-full object-cover transform rotate-[6deg] scale-120 transition-all duration-500 ${
+                  className={`h-full w-full object-cover transform rotate-[6deg] scale-130 transition-all duration-500 ${
                     isMobile
                       ? isActive
                         ? '-translate-y-[116%] rotate-0'
