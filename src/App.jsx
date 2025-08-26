@@ -6,6 +6,7 @@ import LandingBase from './Components/LandingBase.jsx/LandingBase'
 import Navbar from './Components/Navbar/Navbar'
 import Skills from './Components/Skills/Skills'
 import useLenis from './Motions/UseLenis';
+import BlackHole from './UI/BlackHole'
 
 function App() {
   useLenis();
@@ -16,6 +17,9 @@ function App() {
       <HeroOverlay/>
       <LandingBase/>
       <About/>
+      <div>
+      <BlackHole/>
+      </div>
       <Skills/>
       <ContactSection/>
     </>
