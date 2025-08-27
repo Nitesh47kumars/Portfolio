@@ -17,9 +17,7 @@ function App() {
       <HeroOverlay/>
       <LandingBase/>
       <About/>
-      <div>
       <BlackHole/>
-      </div>
       <Skills/>
       <ContactSection/>
     </>
