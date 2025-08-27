@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const BlackHole = () => {
 
   return (
-    <div className="relative flex justify-center items-center h-[360px] bg-black overflow-hidden z-[2]">
+    <div className="relative flex justify-center items-center h-[360px] bg-black overflow-hidden">
       <div className="relative w-[380px] bg-red-400 h-[380px] rounded-lg shadow-[inset_0_0_10px_white] overflow-hidden">
         <video
           autoPlay
