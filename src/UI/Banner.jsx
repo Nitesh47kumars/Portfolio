@@ -17,7 +17,7 @@ const Banner = () => {
     <div>
       <section className="my-20 py-20 relative overflow-hidden">
         {/* Background bar */}
-        <div className="absolute inset-0 z-0 translate-y-10 rotate-6 bg-gradient-to-r from-[#6799fe] to-[#0255fb] py-4 opacity-60 md:rotate-3 lg:translate-y-16 lg:py-8"></div>
+        <div className="absolute h-16 inset-0 z-0 translate-y-10 rotate-6 bg-gradient-to-r from-[#6799fe] to-[#0255fb] py-4 opacity-60 md:rotate-3 lg:translate-y-16 lg:py-8"></div>
 
         {/* Marquee wrapper */}
         <div className="relative z-10 -mx-1 flex -rotate-3 items-center justify-center overflow-hidden bg-gradient-to-r from-[#6799fe] to-[#0255fb] py-1.5 lg:py-3">
@@ -43,7 +43,7 @@ const Banner = () => {
                 <span className="text-sm font-semibold tracking-[0.2em] text-gray-50 uppercase md:text-lg lg:text-xl">
                   {text}
                 </span>
-                <img src="./star.svg" alt="star" className="w-5 lg:w-7" />
+                <img src="https://img.lovepik.com/element/45013/1025.png_860.png" alt="star" className="w-5 lg:w-7" />
               </div>
             ))}
           </div>
