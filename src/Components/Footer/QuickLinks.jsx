@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 
 const links = ["Home", "About", "Projects", "Contact"];
 
@@ -8,13 +9,15 @@ const QuickLinks = () => (
     <ul className="space-y-3">
       {links.map((link) => (
         <li key={link}>
-          <a
-            href={`/${link.toLowerCase()}`}
-            className="text-gray-400 hover:text-white transition-all duration-300 ease-out text-sm relative inline-block group"
+          <Link
+          smooth={true}
+          duration={600}
+            to={link.toLowerCase()}
+            className="text-gray-400 hover:text-white transition-all duration-300 ease-out text-sm relative inline-block cursor-pointer group"
           >
             {link}
             <span className="absolute -bottom-0.5 left-0 w-0 h-px bg-white transition-all duration-300 ease-out group-hover:w-full"></span>
-          </a>
+          </Link>
         </li>
       ))}
     </ul>
