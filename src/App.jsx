@@ -1,5 +1,5 @@
 import About from './Components/About/About'
-import ContactSection from './Components/Contact/ContactSection'
+import Footer from './Components/Footer/Footer'
 import HeroOverlay from './Components/HeroSection/HeroOverlay'
 import HeroSection from './Components/HeroSection/HeroSection'
 import LandingBase from './Components/LandingBase.jsx/LandingBase'
@@ -21,7 +21,7 @@ function App() {
       <Skills/>
       <Banner/>
       <BlackHole/>
-      <ContactSection/>
+      <Footer/>
     </>
   )
 }
