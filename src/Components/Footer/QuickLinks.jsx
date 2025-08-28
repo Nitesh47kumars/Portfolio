@@ -10,8 +10,8 @@ const QuickLinks = () => (
       {links.map((link) => (
         <li key={link}>
           <Link
-          smooth={true}
-          duration={600}
+            smooth={true}
+            duration={600}
             to={link.toLowerCase()}
             className="text-gray-400 hover:text-white transition-all duration-300 ease-out text-sm relative inline-block cursor-pointer group"
           >
