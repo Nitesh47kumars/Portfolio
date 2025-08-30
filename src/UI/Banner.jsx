@@ -1,19 +1,19 @@
 import React from 'react';
 
 const marqueeItems = [
-  'Accessible',
-  'Responsive',
-  'Dynamic',
-  'Scalable',
-  'Search Optimized',
-  'Interactive',
-  'Secure',
-  'Reliable',
-  'Engaging',
+  'Video Editing Passionate',
+  'Gaming Enthusiast',
+  'Create Stunning Content',
+  'Level Up Your Skills',
+  'Explore New Realms',
+  'Editing Magic',
+  'Gamers Never Stop',
+  'Master Every Frame',
+  'Game On, Create On',
+  'Action Packed Creations',
 ];
 
 const Banner = () => {
-  // Single block to duplicate for seamless looping
   const MarqueeContent = () => (
     <>
       {marqueeItems.map((text, index) => (
@@ -24,7 +24,11 @@ const Banner = () => {
           <span className="text-sm font-semibold tracking-widest text-gray-50 uppercase sm:text-base md:text-lg lg:text-xl">
             {text}
           </span>
-          <img src="/star.svg" alt="star" className="w-5 sm:w-6 md:w-7 lg:w-8" />
+          <img
+            src="/Star.webp"
+            alt="star"
+            className="w-5 sm:w-6 md:w-7 lg:w-8"
+          />
         </div>
       ))}
     </>
@@ -33,18 +37,15 @@ const Banner = () => {
   return (
     <div>
       <section className="w-full my-20 py-20 relative overflow-hidden z-[-1]">
-        {/* Decorative Background Bar */}
-        <div className="w-full absolute h-15 inset-0 z-0 translate-y-18 rotate-6 bg-gradient-to-r from-[#1F487E] to-[#247BA0] py-4 opacity-60 sm:h-13 sm:translate-y-19 sm:rotate-6 md:rotate-4 lg:translate-y-18 lg:rotate-3.5 lg:py-8 scale-x-102"></div>
+        <div className="w-full absolute h-15 inset-0 z-0 translate-y-18 rotate-6 bg-gradient-to-r from-[#003366] to-[#00509E] py-4 opacity-60 sm:h-13 sm:translate-y-19 sm:rotate-6 md:rotate-4 lg:translate-y-18 lg:rotate-3.5 lg:py-8 scale-x-102"></div>
 
-        {/* Marquee Container */}
-        <div className="relative h-11 flex -rotate-2 items-center justify-center overflow-hidden bg-gradient-to-r from-[#30BCED] to-[#07A0C3] py-1.5 lg:py-7 group scale-x-102 sm:h-12 sm:-rotate-2">
+        <div className="relative h-11 flex -rotate-2 items-center justify-center overflow-hidden bg-gradient-to-r from-[#002D58] to-[#004F80] py-1.5 lg:py-7 group scale-x-102 sm:h-12 sm:-rotate-2">
           <div className="flex whitespace-nowrap gap-8 animate-marquee group-hover:paused">
             <MarqueeContent />
             <MarqueeContent />
           </div>
         </div>
 
-        {/* Animation Styles */}
         <style>
           {`
             @keyframes marquee {
