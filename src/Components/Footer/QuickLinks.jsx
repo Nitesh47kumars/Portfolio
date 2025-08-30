@@ -6,7 +6,7 @@ const links = ["Home", "About", "Projects", "Contact"];
 const QuickLinks = () => (
   <section className="space-y-4">
     <h4 className="font-semibold lg:text-center">Quick Links</h4>
-    <ul className="space-y-3 flex flex-col lg:items-center">
+    <ul className="space-y-3 lg:text-center">
       {links.map((link) => (
         <li key={link}>
           <Link
