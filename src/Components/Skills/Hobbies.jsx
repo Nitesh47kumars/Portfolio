@@ -6,7 +6,7 @@ import HobbyCard from "../../UI/HobbyCard";
 const Hobbies = () => {
   return (
     <motion.div
-      variants={animation("left", 0.4)}
+      variants={animation("left", 0.2)}
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, amount: 0 }}
@@ -15,7 +15,7 @@ const Hobbies = () => {
                  rounded bg-black text-white p-5 shadow-[inset_0_0_50px_rgba(225,225,225,0.1)]"
     >
       <motion.h1
-        variants={animation("scale", 0.4)}
+        variants={animation("scale", 0.2)}
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0 }}

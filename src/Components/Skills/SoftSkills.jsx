@@ -6,7 +6,7 @@ import Card from "../../UI/Card";
 const SoftSkills = () => {
   return (
     <motion.div
-      variants={animation("right", 0.4)}
+      variants={animation("right", 0.2)}
       initial={"hidden"}
       whileInView={"show"}
       viewport={{once:true,amount:0}}
@@ -15,7 +15,7 @@ const SoftSkills = () => {
       shadow-[inset_0_0_50px_rgba(225,225,225,0.1)]"
     >
       <motion.h1
-      variants={animation("scale", 0.4)}
+      variants={animation("scale", 0.2)}
       initial="hidden"
       whileInView="show"
       viewport={{once:true,amount:0}}

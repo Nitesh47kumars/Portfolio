@@ -18,7 +18,7 @@ const Email = () => {
 
   return (
     <motion.div
-      variants={animation("scale", 0.4)}
+      variants={animation("scale", 0.2)}
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, amount: 0 }}
@@ -34,7 +34,7 @@ const Email = () => {
 
       <div className="h-full flex flex-col items-center justify-around text-center">
         <motion.h1
-          variants={animation("", 0.6)}
+          variants={animation("", 0.4)}
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, amount: 0 }}
@@ -49,7 +49,7 @@ const Email = () => {
           onClick={handleCopy}
           onMouseEnter={() => controls.start("animate")}
           onMouseLeave={() => controls.start("normal")}
-          variants={animation("", 0.6)}
+          variants={animation("", 0.4)}
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, amount: 0 }}

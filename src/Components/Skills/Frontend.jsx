@@ -22,7 +22,7 @@ const getItemStyle = (index) => {
 const Frontend = () => {
   return (
     <motion.div
-      variants={animation("up", 0.4)}
+      variants={animation("up", 0.2)}
       initial="hidden"
       whileInView="show"
       viewport={{once:true,amount:0}}
@@ -32,7 +32,7 @@ const Frontend = () => {
         shadow-[inset_0_0_40px_rgba(180,180,180,0.1)]"
     >
       <motion.h1
-        variants={animation("scale", 0.4)}
+        variants={animation("scale", 0.2)}
         initial="hidden"
         whileInView="show"
         viewport={{once:true,amount:0}}

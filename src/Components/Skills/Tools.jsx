@@ -19,13 +19,13 @@ const Tools = () => {
 
   return (
     <motion.div
-      variants={animation("down", 0.4)}
+      variants={animation("down", 0.2)}
       {...motionProps}
       style={{ background: "linear-gradient(145deg,#444,#000 60%)" }}
       className="relative md:col-span-6 lg:col-span-4 p-5 md:h-[200px] max-sm:h-[265px] rounded bg-black group transition-shadow duration-500 shadow-[inset_0_0_40px_rgba(180,180,180,0.1)]"
     >
       <motion.h1
-        variants={animation("scale", 0.4)}
+        variants={animation("scale", 0.2)}
         {...motionProps}
         className="text-center text-white text-xl text-shadow-[1px_1px_10px_white]"
       >
