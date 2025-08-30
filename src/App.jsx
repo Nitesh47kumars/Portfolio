@@ -7,6 +7,7 @@ import Skills from './Components/Skills/Skills'
 import useLenis from './Motions/UseLenis';
 import Banner from './UI/Banner'
 import BottomContent from './UI/BottomContent'
+import Project from './Components/Projects/Project'
 
 function App() {
   useLenis();
@@ -19,6 +20,7 @@ function App() {
       <About/>
       <Banner/>
       <Skills/>
+      <Project/>
       <BottomContent/>
     </>
   )

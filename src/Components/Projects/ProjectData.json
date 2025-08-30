@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Snippix",
+    "description": "A platform for creating and sharing code snippets with a clean and intuitive design. It allows you to create, share, and discover code snippets with ease.",
+    "features": [
+      "Choose from over 10+ code editor themes (light and dark) and 12+ handpicked monospace fonts.",
+      "Automatic syntax highlighting powered by Highlight.js for all major programming languages.",
+      "Export your snippet as PNG or SVG, copy it to your clipboard, or generate a shareable permalink.",
+      "Change font size, background styles, padding, window controls, line numbers, and more — Snippix adapts to your aesthetic.",
+      "Drag to resize the snippet container, and use keyboard shortcuts (via react-hotkeys-hook) for a faster workflow."
+    ],
+    "technologies": [
+      "Next.js",
+      "React",
+      "Tailwind CSS",
+      "TypeScript",
+      "Zustand",
+      "Shadcn",
+      "Highlight.js",
+      "react-hotkeys-hook"
+    ]
+  }
+]
