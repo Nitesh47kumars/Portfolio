@@ -19,12 +19,12 @@ const Banner = () => {
       {marqueeItems.map((text, index) => (
         <div
           key={index}
-          className="inline-flex items-center gap-2 lg:gap-4 px-4"
+          className="inline-flex items-center gap-2 sm:gap-4 px-4"
         >
-          <span className="text-sm font-semibold tracking-[0.2em] text-gray-50 uppercase md:text-lg lg:text-xl">
+          <span className="text-sm font-semibold tracking-widest text-gray-50 uppercase sm:text-base md:text-lg lg:text-xl">
             {text}
           </span>
-          <img src="/star.svg" alt="star" className="w-5 lg:w-7" />
+          <img src="/star.svg" alt="star" className="w-5 sm:w-6 md:w-7 lg:w-8" />
         </div>
       ))}
     </>
@@ -32,12 +32,12 @@ const Banner = () => {
 
   return (
     <div>
-      <section className="my-20 py-20 relative overflow-hidden">
+      <section className="w-full my-20 py-20 relative overflow-hidden z-[-1]">
         {/* Decorative Background Bar */}
-        <div className="absolute h-16 inset-0 z-0 translate-y-10 rotate-6 bg-gradient-to-r from-[#6799fe] to-[#0255fb] py-4 opacity-60 md:rotate-3 lg:translate-y-16 lg:py-8"></div>
+        <div className="w-full absolute h-15 inset-0 z-0 translate-y-18 rotate-6 bg-gradient-to-r from-[#1F487E] to-[#247BA0] py-4 opacity-60 sm:h-13 sm:translate-y-19 sm:rotate-6 md:rotate-4 lg:translate-y-18 lg:rotate-3.5 lg:py-8 scale-x-102"></div>
 
         {/* Marquee Container */}
-        <div className="relative z-10 -mx-1 flex -rotate-3 items-center justify-center overflow-hidden bg-gradient-to-r from-[#6799fe] to-[#0255fb] py-1.5 lg:py-3 group">
+        <div className="relative h-11 flex -rotate-2 items-center justify-center overflow-hidden bg-gradient-to-r from-[#30BCED] to-[#07A0C3] py-1.5 lg:py-7 group scale-x-102 sm:h-12 sm:-rotate-2">
           <div className="flex whitespace-nowrap gap-8 animate-marquee group-hover:paused">
             <MarqueeContent />
             <MarqueeContent />
