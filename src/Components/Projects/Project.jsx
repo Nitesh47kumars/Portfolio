@@ -3,18 +3,6 @@ import ProjectData from "./ProjectData.json";
 import './Project.css'
 import { FaArrowRight } from "react-icons/fa";
 
-// "linear-gradient(195deg, #F97316 30%, #EF4444 70%, #FACC15 100%)"
-
-// "linear-gradient(185deg, #312E81 40%, #7C3AED 75%, #E9D5FF 105%)"
-
-// "linear-gradient(185deg, #312E81 40%, #7C3AED 75%, #E9D5FF 105%)"
-
-
-// teal: "text-emerald-200",
-//   ocean: "text-pink-200",
-//   sunset: "text-yellow-200",
-//   lavender: "text-purple-200",
-
 const Project = () => {
   return (
     <div className=" w-full max-md:my-40 md:my-30 place-items-center">
@@ -61,7 +49,7 @@ const Project = () => {
                   className={`h-full w-full border-8 border-[#292525] rounded-3xl
                   flex flex-col lg:justify-between justify-end items-center group overflow-hidden`}
                 >
-                  <div className={`max-lg:hidden  flex items-start justify-center gap-5 ${color} px-5 mt-5`}>
+                  <div className={`max-lg:hidden flex items-start justify-center gap-5 ${color} px-5 mt-7`}>
                     <h1 className={`text-2xl font-semibold px-4 ${color} text-shadow-sm`}>
                       {header}
                     </h1>

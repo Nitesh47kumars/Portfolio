@@ -3,7 +3,7 @@
     "title": "Snippix",
     "image":"./Project/Project.jpg",
     "header":"A platform for creating and sharing code snippets with a clean and intutive design.",
-    "color":"text-pink-200",
+    "color":"text-cyan-200",
     "background":"linear-gradient(195deg, #001D4A 30%, #006992 70%, #475569 100%)",
     "description": "A platform for creating and sharing code snippets with a clean and intuitive design. It allows you to create, share, and discover code snippets with ease.",
     "features": [
