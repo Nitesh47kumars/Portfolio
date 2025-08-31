@@ -4,7 +4,53 @@
     "image":"./Project/Project.jpg",
     "header":"A platform for creating and sharing code snippets with a clean and intutive design.",
     "color":"text-pink-200",
-    "background":"linear-gradient(200deg, #0EA5E9 20%, #6366F1 60%, #A855F7 90%, #F9A8D4 110%)",
+    "background":"linear-gradient(195deg, #001D4A 30%, #006992 70%, #475569 100%)",
+    "description": "A platform for creating and sharing code snippets with a clean and intuitive design. It allows you to create, share, and discover code snippets with ease.",
+    "features": [
+      "Choose from over 10+ code editor themes (light and dark) and 12+ handpicked monospace fonts.",
+      "Automatic syntax highlighting powered by Highlight.js for all major programming languages.",
+      "Export your snippet as PNG or SVG, copy it to your clipboard, or generate a shareable permalink.",
+      "Change font size, background styles, padding, window controls, line numbers, and more — Snippix adapts to your aesthetic.",
+      "Drag to resize the snippet container, and use keyboard shortcuts (via react-hotkeys-hook) for a faster workflow."
+    ],
+    "technologies": [
+      "React",
+      "Tailwind CSS",
+      "javaScript",
+      "Vercel",   
+      "Framer-Motion"
+    ]
+  }
+  ,
+  {
+    "title": "Project 2",
+    "image":"./Project/Project.jpg",
+    "header":"A platform for creating and sharing code snippets with a clean and intutive design.",
+    "color":"text-purple-200",
+    "background":"linear-gradient(185deg, #312E81 40%, #7C3AED 75%, #E9D5FF 105%)",
+    "description": "A platform for creating and sharing code snippets with a clean and intuitive design. It allows you to create, share, and discover code snippets with ease.",
+    "features": [
+      "Choose from over 10+ code editor themes (light and dark) and 12+ handpicked monospace fonts.",
+      "Automatic syntax highlighting powered by Highlight.js for all major programming languages.",
+      "Export your snippet as PNG or SVG, copy it to your clipboard, or generate a shareable permalink.",
+      "Change font size, background styles, padding, window controls, line numbers, and more — Snippix adapts to your aesthetic.",
+      "Drag to resize the snippet container, and use keyboard shortcuts (via react-hotkeys-hook) for a faster workflow."
+    ],
+    "technologies": [
+      "React",
+      "Tailwind CSS",
+      "javaScript",
+      "Vercel",   
+      "Framer-Motion"
+    ]
+  }
+  ,
+  {
+    "title": "Project 3",
+    "image":"./Project/Project.jpg",
+    "header":"A platform for creating and sharing code snippets with a clean and intutive design.",
+    "color":"text-yellow-200",
+    "background":"linear-gradient(195deg, #FF8C61 30%, #E8C547 70%, #FF8C61 100%)",
     "description": "A platform for creating and sharing code snippets with a clean and intuitive design. It allows you to create, share, and discover code snippets with ease.",
     "features": [
       "Choose from over 10+ code editor themes (light and dark) and 12+ handpicked monospace fonts.",

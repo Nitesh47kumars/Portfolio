@@ -17,7 +17,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 const Project = () => {
   return (
-    <div className="w-full max-md:my-40 md:my-30 place-items-center">
+    <div className=" w-full max-md:my-40 md:my-30 place-items-center">
       <div className="w-[90%] xl:w-[80%] flex flex-col gap-20 items-center">
       <h2
         className="relative text-4xl tracking-tight sm:text-5xl md:mb-20 md:text-6xl text-balance text-center"
