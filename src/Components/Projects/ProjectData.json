@@ -47,11 +47,11 @@
   ,
   {
     "title": "Reactfolio",
-    "image":"./Project/Project.jpg",
+    "image":"./Project/ReactFolio.png",
     "header":"A platform for creating and sharing code snippets with a clean and intutive design.",
     "color":"text-yellow-200",
     "background":"linear-gradient(195deg, #FF8C61 30%, #E8C547 70%, #FF8C61 100%)",
-    "description": "A modern, responsive personal portfolio built with React. It showcases my skills, projects, and includes smooth animations and interactions. It allows you to create, share, and discover code snippets with ease.",
+    "description": "A modern, responsive personal portfolio built with React. It showcases my skills, projects, and includes smooth animations and interactions.",
     "features": [
       "Seamless smooth scrolling across all sections using Lenis.js for an enhanced user experience",
       "Animated UI elements powered by Framer Motion, bringing components to life with smooth transitions",

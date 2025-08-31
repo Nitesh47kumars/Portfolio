@@ -6,7 +6,7 @@ import { FaArrowRight } from "react-icons/fa";
 const Project = () => {
   return (
     <div className=" w-full max-md:my-40 md:my-30 place-items-center">
-      <div className="w-[90%] xl:w-[80%] flex flex-col gap-20 items-center">
+      <div className="w-[90%] xl:w-[80%] flex flex-col gap-20 md:gap-10 items-center">
       <h2
         className="relative text-4xl tracking-tight sm:text-5xl md:mb-20 md:text-6xl text-balance text-center"
         style={{
@@ -25,6 +25,7 @@ const Project = () => {
         </p>
       </h2>
 
+      <div className="flex flex-col gap-20 lg:gap-30">
         {ProjectData.map((project, idx) => {
           const {
             title,
@@ -40,13 +41,13 @@ const Project = () => {
           return (
             <div
               key={idx}
-              className="w-full flex justify-around gap-10 max-md:flex-col"
+              className="w-full flex justify-around items-center gap-10 max-md:flex-col"
             >
               {/* Left: Image and header */}
-              <a href="#" className="md:w-[60%] lg:min-h-[500px] border border-white/50 rounded-3xl">
+              <a href="#" className="md:w-[60%] border border-white/50 rounded-3xl">
                 <div
                 style={{background:background}}
-                  className={`h-full w-full border-8 border-[#292525] rounded-3xl
+                  className={`h-full lg:min-h-[500px] w-full border-8 border-[#292525] rounded-3xl
                   flex flex-col lg:justify-between justify-end items-center group overflow-hidden`}
                 >
                   <div className={`max-lg:hidden flex items-start justify-center gap-5 ${color} px-5 mt-7`}>
@@ -59,8 +60,8 @@ const Project = () => {
                     alt={title}
                     loading="lazy"
                     src={image}
-                    className="md:h-[22rem)] max-lg:mt-6 lg:h-[23rem] w-full max-w-[85%] object-cover lg:group-hover:translsate-y-10 translate-y-6 -rotate-3 rounded-t-lg border-[1.5px] border-white/20 transition-all duration-300 will-change-transform 
-                    lg:block lg:rotate-0 lg:group-hover:scale-[1.08] lg:group-hover:-rotate-3 shadow-[0_0_30px_#000]"
+                    className="md:h-[16rem] max-lg:mt-6 lg:h-[22rem] w-full max-w-[85%] object-cover lg:group-hover:translsate-y-10 translate-y-6 -rotate-3 rounded-t-lg border-[1.5px] border-white/20 transition-all duration-300 will-change-transform 
+                    lg:block lg:rotate-0 lg:group-hover:scale-[1.08] lg:group-hover:-rotate-3 shadow-[0_0_25px_#000]"
                   />
                 </div>
               </a>
@@ -68,10 +69,11 @@ const Project = () => {
               {/* Right: Text, features, tech */}
               <div className="md:w-[40%]">
                 <li className="list-none">
-                  <h1 className="text-2xl font-bold tracking-wider">{title}</h1>
-                  <p className="text-white/70 my-3">{description}</p>
+                  <h1 className="text-3xl font-bold tracking-wider leading-4">{title}</h1>
+                  <p className="text-white/70 my-4">{description}</p>
 
-                  <ul className="flex flex-col gap-3 my-6">
+                  {/* Features */}
+                  <div className="flex flex-col gap-3 lg:my-6">
                     {features.map((feature, i) => (
                       <div
                         key={i}
@@ -89,8 +91,9 @@ const Project = () => {
                         <p className="text-[16px]">{feature}</p>
                       </div>
                     ))}
-                  </ul>
+                  </div>
                   
+                  {/* Tech Stack */}
                   <div className="w-full sm:w-[80%] md:w-[70%] flex flex-wrap gap-3 items-start justify-start">
                     {technologies.map((tech, i) => (
                       <div
@@ -106,6 +109,9 @@ const Project = () => {
             </div>
           );
         })}
+
+
+        </div>
       </div>
     </div>
   );
