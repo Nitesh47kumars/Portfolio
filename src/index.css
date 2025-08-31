@@ -15,6 +15,23 @@ body{
 }
 
 
+::-webkit-scrollbar {
+  width: 1.5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #5c5c5c;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #DDDDDD;
+}
+
 
 @keyframes marquee {
     0% {
