@@ -68,9 +68,10 @@ const Project = () => {
               {/* Right: Text, features, tech */}
               <div className="md:w-[40%]">
                 <li className="list-none">
-                  <h1 className="text-2xl font-bold">{title}</h1>
+                  <h1 className="text-2xl font-bold tracking-wider">{title}</h1>
                   <p className="text-white/70 my-3">{description}</p>
-                  <ul>
+
+                  <ul className="flex flex-col gap-3 my-6">
                     {features.map((feature, i) => (
                       <div
                         key={i}
@@ -89,7 +90,8 @@ const Project = () => {
                       </div>
                     ))}
                   </ul>
-                  <div className="w-full sm:w-[80%] md:w-[70%] flex flex-wrap gap-3 mt-10 items-start justify-start">
+                  
+                  <div className="w-full sm:w-[80%] md:w-[70%] flex flex-wrap gap-3 items-start justify-start">
                     {technologies.map((tech, i) => (
                       <div
                         key={i}

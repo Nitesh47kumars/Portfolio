@@ -46,25 +46,25 @@
   }
   ,
   {
-    "title": "Project 3",
+    "title": "Reactfolio",
     "image":"./Project/Project.jpg",
     "header":"A platform for creating and sharing code snippets with a clean and intutive design.",
     "color":"text-yellow-200",
     "background":"linear-gradient(195deg, #FF8C61 30%, #E8C547 70%, #FF8C61 100%)",
-    "description": "A platform for creating and sharing code snippets with a clean and intuitive design. It allows you to create, share, and discover code snippets with ease.",
+    "description": "A modern, responsive personal portfolio built with React. It showcases my skills, projects, and includes smooth animations and interactions. It allows you to create, share, and discover code snippets with ease.",
     "features": [
-      "Choose from over 10+ code editor themes (light and dark) and 12+ handpicked monospace fonts.",
-      "Automatic syntax highlighting powered by Highlight.js for all major programming languages.",
-      "Export your snippet as PNG or SVG, copy it to your clipboard, or generate a shareable permalink.",
-      "Change font size, background styles, padding, window controls, line numbers, and more — Snippix adapts to your aesthetic.",
-      "Drag to resize the snippet container, and use keyboard shortcuts (via react-hotkeys-hook) for a faster workflow."
+      "Seamless smooth scrolling across all sections using Lenis.js for an enhanced user experience",
+      "Animated UI elements powered by Framer Motion, bringing components to life with smooth transitions",
+      "Reusable and modular components built in React for easier maintenance and scalability",
+      "Visually engaging animated icons integrated and customized from Gradienty.codes for added interactivity"
     ],
     "technologies": [
       "React",
       "Tailwind CSS",
-      "javaScript",
-      "Vercel",   
-      "Framer-Motion"
+      "Framer Motion",
+      "Lenis.js",   
+      "React-Icons",
+      "Gradienty Animated Icons"
     ]
   }
 ]
