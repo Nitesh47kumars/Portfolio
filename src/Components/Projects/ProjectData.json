@@ -1,7 +1,7 @@
 [
   {
     "title": "Snippix",
-    "image":"./Project/Project.jpg",
+    "image":"./Project/ReactFolio.png",
     "header":"A platform for creating and sharing code snippets with a clean and intutive design.",
     "color":"text-cyan-200",
     "background":"linear-gradient(195deg, #001D4A 30%, #006992 70%, #475569 100%)",
@@ -24,7 +24,7 @@
   ,
   {
     "title": "Project 2",
-    "image":"./Project/Project.jpg",
+    "image":"./Project/ReactFolio.png",
     "header":"A platform for creating and sharing code snippets with a clean and intutive design.",
     "color":"text-purple-200",
     "background":"linear-gradient(185deg, #312E81 40%, #7C3AED 75%, #E9D5FF 105%)",

@@ -47,8 +47,8 @@ const Project = () => {
               <a href="#" className="md:w-[60%] border border-white/50 rounded-3xl">
                 <div
                 style={{background:background}}
-                  className={`h-full lg:min-h-[500px] w-full border-8 border-[#292525] rounded-3xl
-                  flex flex-col lg:justify-between justify-end items-center group overflow-hidden`}
+                  className={`min-h-[170px] lg:min-h-[500px] w-full border-8 border-[#292525] rounded-3xl
+                  flex flex-col lg:justify-between justify-end max-sm:justify-center items-center group overflow-hidden`}
                 >
                   <div className={`max-lg:hidden flex items-start justify-center gap-5 ${color} px-5 mt-7`}>
                     <h1 className={`text-2xl font-semibold px-4 ${color} text-shadow-sm`}>
@@ -60,7 +60,7 @@ const Project = () => {
                     alt={title}
                     loading="lazy"
                     src={image}
-                    className="md:h-[16rem] max-lg:mt-6 lg:h-[22rem] w-full max-w-[85%] object-cover lg:group-hover:translsate-y-10 translate-y-6 -rotate-3 rounded-t-lg border-[1.5px] border-white/20 transition-all duration-300 will-change-transform 
+                    className="h-full max-sm:min-h-[125px] md:h-[12rem] lg:h-[15rem] xl:min-h-[17rem] w-[95%] lg:w-[88%] max-lg:max-w-[90%] object-cover lg:group-hover:translsate-y-10 translate-y-6 -rotate-3 rounded-t-lg border-[1.5px] border-white/20 transition-all duration-300 will-change-transform 
                     lg:block lg:rotate-0 lg:group-hover:scale-[1.08] lg:group-hover:-rotate-3 shadow-[0_0_25px_#000]"
                   />
                 </div>
@@ -69,8 +69,8 @@ const Project = () => {
               {/* Right: Text, features, tech */}
               <div className="md:w-[40%]">
                 <li className="list-none">
-                  <h1 className="text-3xl font-bold tracking-wider leading-4">{title}</h1>
-                  <p className="text-white/70 my-4">{description}</p>
+                  <h1 className="text-3xl max-sm:text-2xl font-bold tracking-wider leading-4">{title}</h1>
+                  <p className="text-white/70 text-[clamp(0.8rem,1vw,0.5rem)] my-4">{description}</p>
 
                   {/* Features */}
                   <div className="flex flex-col gap-3 lg:my-6">
