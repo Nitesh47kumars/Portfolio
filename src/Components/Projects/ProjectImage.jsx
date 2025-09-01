@@ -24,7 +24,7 @@ const ProjectImage = ({ image, header, color, background, title }) => {
           max-sm:min-h-[125px]
           md:h-[12rem] lg:h-[15rem] xl:min-h-[17rem]
           translate-y-6 -rotate-3
-          lg:translate-y-0 lg:rotate-0 lg:group-hover:scale-[1.08] lg:group-hover:-rotate-3"
+          lg:translate-y-1 lg:group-hover:translate-y-3 lg:rotate-0 lg:group-hover:scale-[1.08] lg:group-hover:-rotate-3"
       />
     </div>
   );
