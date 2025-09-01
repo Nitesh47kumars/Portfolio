@@ -36,7 +36,8 @@ const Banner = () => {
 
   return (
     <div>
-      <section className="w-full my-20 py-20 relative overflow-hidden z-[-1]">
+      <section className="w-full my-10 py-20 relative overflow-hidden z-[-1]
+        sm:my-20 lg:my-30">
         <div className="w-full absolute h-15 inset-0 z-0 translate-y-18 rotate-6 bg-gradient-to-r from-[#003366] to-[#00509E] py-4 opacity-60 sm:h-13 sm:translate-y-19 sm:rotate-6 md:rotate-4 lg:translate-y-18 lg:rotate-3.5 lg:py-8 scale-x-102"></div>
 
         <div className="relative h-11 flex -rotate-2 items-center justify-center overflow-hidden bg-gradient-to-r from-[#002D58] to-[#004F80] py-1.5 lg:py-7 group scale-x-102 sm:h-12 sm:-rotate-2">

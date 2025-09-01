@@ -6,10 +6,10 @@ import './Project.css';
 
 const Project = () => {
   return (
-    <div className="w-full max-md:my-40 md:my-30 place-items-center">
-      <div className="w-[90%] xl:w-[80%] flex flex-col gap-20 md:gap-10 items-center">
+    <div id="projects" className="w-full max-lg:my-30 lg:my-50 place-items-center">
+      <div className="w-[90%] xl:w-[80%] flex flex-col gap-15 md:gap-10 items-center">
         <ProjectHeading />
-        <div className="flex flex-col gap-20 lg:gap-30">
+        <div className="flex flex-col gap-15 lg:gap-25">
           {ProjectData.map((project, idx) => (
             <ProjectCard key={idx} {...project} />
           ))}

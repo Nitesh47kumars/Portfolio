@@ -3,7 +3,7 @@ import Footer from './Footer'
 
 const BottomContent = () => {
   return (
-    <div className='relative min-h-[600px] flex justify-center items-center max-md:mt-30'>
+    <div className='relative min-h-[600px] flex justify-center items-center'>
 
       <div className='absolute left-0 top-0 w-full h-full inset-0'
       style={{ backgroundImage: 'linear-gradient(to top, transparent 75%, black 99%)' }}

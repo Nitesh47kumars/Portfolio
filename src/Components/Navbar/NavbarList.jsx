@@ -6,6 +6,7 @@ const NavbarList = ({setMobMenu}) => {
         {link: "Home",section:"home"},
         {link: "About Me",section:"about"},
         {link: "Skills",section:"skills"},
+        {link: "Projects",section:"projects"},
         {link: "Contact Me",section:"contact"},
     ]
   return (
@@ -17,6 +18,7 @@ const NavbarList = ({setMobMenu}) => {
                         smooth={true}
                         duration={600}
                         to={curr.section}
+                        offset={-100}
                         onClick={()=>setMobMenu(false)}
                         className='cursor-pointer group-hover:text-green-400 transition-all duration-500'>{curr.link}</Link>
                     <div className='h-[1px] mx-auto bg-green-400 w-0 group-hover:w-full transition-all duration-500'/>

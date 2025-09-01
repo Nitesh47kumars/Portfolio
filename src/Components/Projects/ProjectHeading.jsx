@@ -4,7 +4,7 @@ import {animation} from '../../Motions/Animation'
 
 const ProjectHeading = () => {
   return (
-    <motion.h2
+    <motion.div
       variants={animation("scale",0.2)}
       initial={"hidden"}
       whileInView={"show"}
@@ -22,7 +22,7 @@ const ProjectHeading = () => {
         <span>Curated </span>
         <span className="text-colorfull tracking-wide">Work</span>
       </p>
-    </motion.h2>
+    </motion.div>
   );
 };
 

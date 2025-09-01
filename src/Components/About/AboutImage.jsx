@@ -11,7 +11,7 @@ const AboutImage = () => {
     viewport={{once:true,amount:0}}
     className='overflow-hidden lg:w-[40%] relative -z-1'>
       <div className='w-full lg:h-120 max-lg:h-140 max-md:h-100 max-sm:h-100 object-cover overflow-hidden
-      max-lg:translate-y-[-10rem] max-sm:translate-y-[-5rem] max-md:translate-y-[-4rem]'>
+      max-lg:translate-y-[-1rem]'>
         <video src='/video.mp4'
           loop
           muted
