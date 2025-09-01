@@ -1,53 +1,61 @@
 [
   {
-    "title": "Snippix",
-    "image":"./Project/ReactFolio.png",
-    "header":"A platform for creating and sharing code snippets with a clean and intutive design.",
-    "color":"text-cyan-200",
+    "title": "Pokemon",
+    "image": "./Project/Pokemon.png",
+    "Link": "https://pokemon-five-inky.vercel.app/",
+    "header": "A responsive web app showcasing Pokémon stats using the PokéAPI with advanced data mapping and search functionality.",
+    "color": "text-cyan-300",
     "background":"linear-gradient(195deg, #001D4A 30%, #006992 70%, #475569 100%)",
-    "description": "A platform for creating and sharing code snippets with a clean and intuitive design. It allows you to create, share, and discover code snippets with ease.",
+    "description": "A clean, searchable Pokémon showcase built with React and pure CSS. It fetches detailed data like type, stats, and abilities using complex API structures.",
     "features": [
-      "Choose from over 10+ code editor themes (light and dark) and 12+ handpicked monospace fonts.",
-      "Automatic syntax highlighting powered by Highlight.js for all major programming languages.",
-      "Export your snippet as PNG or SVG, copy it to your clipboard, or generate a shareable permalink.",
-      "Change font size, background styles, padding, window controls, line numbers, and more — Snippix adapts to your aesthetic.",
-      "Drag to resize the snippet container, and use keyboard shortcuts (via react-hotkeys-hook) for a faster workflow."
+      "Search functionality to filter Pokémon by name instantly.",
+      "Displays Pokémon info like type, size, stats, abilities, and experience.",
+      "Utilizes nested `.map()` methods to extract data from complex API responses.",
+      "Responsive UI styled using pure CSS without any utility frameworks.",
+      "Loader/Spinner UI while data is being fetched.",
+      "Error handling for invalid or failed API responses."
     ],
     "technologies": [
       "React",
-      "Tailwind CSS",
-      "javaScript",
-      "Vercel",   
-      "Framer-Motion"
+      "JavaScript",
+      "CSS3 (Pure)",
+      "PokéAPI",
+      "Vercel",
+      "Axios"
     ]
   }
   ,
   {
-    "title": "Project 2",
-    "image":"./Project/ReactFolio.png",
-    "header":"A platform for creating and sharing code snippets with a clean and intutive design.",
-    "color":"text-purple-200",
+    "title": "Info-Nation",
+    "image": "./Project/InfoNation.png",
+    "Link": "https://info-nation-eight.vercel.app/posts",
+    "header": "A multi-section React application using modern routing and real-world API practices.",
+    "color": "text-purple-300",
     "background":"linear-gradient(185deg, #312E81 40%, #7C3AED 75%, #E9D5FF 105%)",
-    "description": "A platform for creating and sharing code snippets with a clean and intuitive design. It allows you to create, share, and discover code snippets with ease.",
+    "description": "A modular React project combining multiple small components like Country Explorer, API CRUD practice, Accordion, and more — all built with the latest React Router DOM.",
     "features": [
-      "Choose from over 10+ code editor themes (light and dark) and 12+ handpicked monospace fonts.",
-      "Automatic syntax highlighting powered by Highlight.js for all major programming languages.",
-      "Export your snippet as PNG or SVG, copy it to your clipboard, or generate a shareable permalink.",
-      "Change font size, background styles, padding, window controls, line numbers, and more — Snippix adapts to your aesthetic.",
-      "Drag to resize the snippet container, and use keyboard shortcuts (via react-hotkeys-hook) for a faster workflow."
+      "Home: A simple landing page with header, footer, image, and link to Country section.",
+      "Country: Fetches and displays all country data with search, sort (ASC/DESC), filter by region, and detailed country pages.",
+      "About: Shows interesting facts about 10 countries using modern CSS layout and animation.",
+      "Contact: A form to input name, email, and message — logs data to console instead of sending.",
+      "Accordion: Displays 5 React-related Q&A sections using interactive accordion UI.",
+      "API Practice: Add/Edit/Delete items using real APIs and controlled inputs styled with CSS3.",
+      "GitHub: External link redirects to my GitHub profile."
     ],
     "technologies": [
       "React",
-      "Tailwind CSS",
-      "javaScript",
-      "Vercel",   
-      "Framer-Motion"
+      "React Router DOM (v6+)",
+      "JavaScript",
+      "CSS3",
+      "REST APIs",
+      "Vercel"
     ]
   }
   ,
   {
     "title": "Reactfolio",
     "image":"./Project/ReactFolio.png",
+    "Link":"#",
     "header":"A platform for creating and sharing code snippets with a clean and intutive design.",
     "color":"text-yellow-200",
     "background":"linear-gradient(195deg, #FF8C61 30%, #E8C547 70%, #FF8C61 100%)",

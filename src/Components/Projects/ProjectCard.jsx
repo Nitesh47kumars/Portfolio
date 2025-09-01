@@ -12,7 +12,7 @@ const ProjectCard = (props) => {
         initial={"hidden"}
         whileInView={"show"}
         viewport={{once:true,amount:0}}
-        href="#" className="md:w-[60%] border border-white/50 rounded-3xl"
+        href={props.Link} className="md:w-[60%] border border-white/50 rounded-3xl"
       >
         <ProjectImage image={props.image} header={props.header} color={props.color} background={props.background} title={props.title} />
       </motion.a>
