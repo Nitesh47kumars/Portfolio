@@ -1,19 +1,44 @@
 import React from "react";
+import {motion} from 'motion/react'
+import {animation} from '../../Motions/Animation'
 
 const ProjectDetails = ({ title, description, features, technologies }) => {
   return (
     <div className="list-none">
-      <h1 className="text-3xl max-sm:text-2xl font-bold tracking-wider leading-4">
+      <motion.h1
+      variants={animation("right",0)}
+      initial={"hidden"}
+      whileInView={"show"}
+      viewport={{once:true,amount:0}} 
+      className="text-3xl max-sm:text-2xl font-bold tracking-wider leading-4">
         {title}
-      </h1>
-      <p className="text-white/70 max-lg:text-[clamp(10px,2vw,13px)] my-4">
+      </motion.h1>
+      <motion.p 
+      variants={animation("right",0.1)}
+      initial={"hidden"}
+      whileInView={"show"}
+      viewport={{once:true,amount:0}}
+      className="text-white/70 max-lg:text-[clamp(10px,2vw,13px)] my-4">
         {description}
-      </p>
+      </motion.p>
 
       {/* Features */}
-      <div className="hidden lg:flex flex-col gap-3 my-6">
+      <motion.div
+        variants={animation("right",0.2)}
+        initial={"hidden"}
+        whileInView={"show"}
+        viewport={{once:true,amount:0}}
+        className="hidden lg:flex flex-col gap-3 my-6"
+      >
         {features.map((feature, i) => (
-          <div key={i} className="flex items-center">
+          <motion.div 
+            variants={animation("right",i * 0.2)}
+            initial={"hidden"}
+            whileInView={"show"}
+            viewport={{once:true,amount:0}}
+            key={i}
+            className="flex items-center"
+          >
             <svg
               width="24"
               height="24"
@@ -23,21 +48,31 @@ const ProjectDetails = ({ title, description, features, technologies }) => {
               <path d="M12 1C12 1 12 8 10 10C8 12 1 12 1 12C1 12 8 12 10 14C12 16 12 23 12 23C12 23 12 16 14 14C16 12 23 12 23 12C23 12 16 12 14 10C12 8 12 1 12 1Z" />
             </svg>
             <p className="text-[14px]">{feature}</p>
-          </div>
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
 
       {/* Technologies */}
-      <div className="w-full sm:w-[80%] md:w-[70%] flex flex-wrap gap-3 items-start">
+      <motion.div
+        variants={animation("scale",0.2)}
+        initial={"hidden"}
+        whileInView={"show"}
+        viewport={{once:true,amount:0}}
+        className="w-full sm:w-[80%] md:w-[70%] flex flex-wrap gap-3 items-start"
+      >
         {technologies.map((tech, i) => (
-          <div
+          <motion.div 
+            variants={animation("scale",i * 0.1)}
+            initial={"hidden"}
+            whileInView={"show"}
+            viewport={{once:true,amount:0}}
             key={i}
             className="h-7 px-2 rounded-xl bg-neutral-900 border text-[10px] sm:text-xs flex items-center justify-center"
           >
             {tech}
-          </div>
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
     </div>
   );
 };
