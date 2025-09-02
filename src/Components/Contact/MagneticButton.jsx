@@ -9,10 +9,10 @@ const MagneticButton = () => {
 
     const handleMouseMove = (e) => {
       const rect = button.getBoundingClientRect();
-      const x = e.clientX - rect.left - rect.width / 2;
-      const y = e.clientY - rect.top - rect.height / 2;
+      const x = e.clientX - rect.left - rect.width ;
+      const y = e.clientY - rect.top - rect.height;
 
-      button.style.transform = `translate(${x * 0.2}px, ${y * 0.2}px)`;
+      button.style.transform = `translate(${x * 0.2 }px, ${y * 0.2}px)`;
     };
 
     const resetPosition = () => {
@@ -31,7 +31,7 @@ const MagneticButton = () => {
   }, []);
 
   return (
-    <div className="relative inline-block my-10">
+    <div className="relative inline-block p-5">
       <button
         ref={buttonRef}
         className="
