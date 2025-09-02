@@ -1,61 +1,36 @@
 import React from 'react';
-import styled from 'styled-components';
 
 const ConnectButton = ({ icon, alt }) => {
+  const isImage = icon?.type === 'img';
+
+  const styledIcon = React.cloneElement(icon, {
+    className: `
+      w-[80%] h-[80%] object-contain
+      transition-transform duration-300 ease-in-out
+      ${isImage ? 'group-hover:scale-110' : 'group-hover:scale-90 fill-[#333]'}
+    `
+  });
+
   return (
-    <StyledWrapper>
-      <button className="btn" aria-label={alt}>
-        {icon}
-      </button>
-    </StyledWrapper>
+    <button
+      aria-label={alt}
+      className={`
+        group
+        flex items-center justify-center
+        bg-[#e3edf7]
+        w-[45px] h-[45px]
+        rounded-[10px] p-2
+        border border-transparent
+        shadow-[6px_6px_10px_-1px_rgba(0,0,0,0.15),0px_0px_10px_-1px_rgba(255,255,255,0.7)]
+        transition-transform duration-500
+        hover:shadow-[inset_4px_4px_6px_-1px_rgba(0,0,0,0.2),inset_-4px_-4px_6px_-1px_rgba(255,255,255,0.7),-0.5px_-0.5px_0px_rgba(255,255,255,1),0.5px_0.5px_0px_rgba(0,0,0,0.15),0px_12px_10px_-10px_rgba(0,0,0,0.05)]
+        hover:border-[rgba(0,0,0,0.1)]
+        hover:translate-y-[0.2em]
+      `}
+    >
+      {styledIcon}
+    </button>
   );
 };
-
-const StyledWrapper = styled.div`
-  .btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #e3edf7;
-    padding: 1em;
-    border-radius: 10px;
-    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
-                0px 0px 10px -1px rgba(255, 255, 255, 0.7);
-    border: 1px solid rgba(0, 0, 0, 0);
-    cursor: pointer;
-    transition: transform 0.5s;
-    width: 35px;
-    height: 35px;
-  }
-
-  .btn:hover {
-    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
-                inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
-                -0.5px -0.5px 0px rgba(255, 255, 255, 1),
-                0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
-                0px 12px 10px -10px rgba(0, 0, 0, 0.05);
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    transform: translateY(0.2em);
-  }
-
-  /* Image and SVG take full button size */
-  .btn img{
-    width: 100%;
-    height: 100%;
-    transform:scale(13);
-    object-fit: cover;
-    transition: transform 0.5s, filter 0.5s, fill 0.5s;
-  }
-
-  /* Hover effects */
-  .btn:hover img {
-    transform: scale(15);
-  }
-
-  .btn:hover svg {
-    transform: scale(0.9);
-    fill: #333333;
-  }
-`;
 
 export default ConnectButton;
