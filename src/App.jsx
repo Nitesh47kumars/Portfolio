@@ -8,6 +8,7 @@ import useLenis from './Motions/UseLenis';
 import Banner from './UI/Banner'
 import BottomContent from './Components/Footer/BottomContent'
 import Project from './Components/Projects/Project'
+import Contact from './Components/Contact/Contact'
 
 function App() {
   useLenis();
@@ -21,6 +22,7 @@ function App() {
       <Banner/>
       <Skills/>
       <Project/>
+      <Contact/>
       <BottomContent/>
     </>
   )
