@@ -1,21 +1,26 @@
-import React from 'react'
-
+import React from 'react';
+import MagneticButton from './MagneticButton'
 const Contact = () => {
   return (
-    <div id='contact' className='relative h-[400px] w-screen overflow-hidden'>
-        <img
-        className='absolute top-0 left-0 h-full w-full  z-[-1]'
-        src='https://plus.unsplash.com/premium_photo-1679355750936-77b24a624ed2?q=80&w=740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
-        alt='image'
-        />
-        <div>
-            <h1>Nmae</h1>
-            <h1></h1>
-            <p>I'm available for full-time roles & freelance projects.</p>
-            <p></p>
-        </div>
-    </div>
-  )
-}
+    <div id="contact" className="relative h-screen w-screen overflow-hidden">
+      <img
+        className="w-full h-full object-cover absolute z-[-1]"
+        src="./Contact.jpeg"
+        alt="Contact background"
+      />
 
-export default Contact
+      <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-black via-transparent to-black z-0" />
+
+      <div className="relative flex flex-col items-center justify-center h-full text-white px-4 text-center">
+        <h1 className="text-4xl font-bold mb-4">Name</h1>
+        <MagneticButton/>
+        <p className="text-lg mb-2">
+          I'm available for full-time roles & freelance projects.
+        </p>
+        <p className="text-sm text-gray-300">Let's connect and create something great together.</p>
+      </div>
+    </div>
+  );
+};
+
+export default Contact;
