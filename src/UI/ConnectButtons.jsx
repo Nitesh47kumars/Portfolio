@@ -24,8 +24,8 @@ const StyledWrapper = styled.div`
     border: 1px solid rgba(0, 0, 0, 0);
     cursor: pointer;
     transition: transform 0.5s;
-    width: 48px;
-    height: 48px;
+    width: 35px;
+    height: 35px;
   }
 
   .btn:hover {
@@ -35,22 +35,21 @@ const StyledWrapper = styled.div`
                 0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
                 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
     border: 1px solid rgba(0, 0, 0, 0.1);
-    transform: translateY(0.5em);
+    transform: translateY(0.2em);
   }
 
   /* Image and SVG take full button size */
-  .btn img,
-  .btn svg {
+  .btn img{
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    transform:scale(13);
+    object-fit: cover;
     transition: transform 0.5s, filter 0.5s, fill 0.5s;
   }
 
   /* Hover effects */
   .btn:hover img {
-    transform: scale(0.9);
-    filter: brightness(0) saturate(100%) invert(14%) sepia(0%) saturate(0%) hue-rotate(174deg) brightness(91%) contrast(90%);
+    transform: scale(15);
   }
 
   .btn:hover svg {
