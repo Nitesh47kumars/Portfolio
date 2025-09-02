@@ -1,25 +1,46 @@
 import React from 'react';
-import MagneticButton from './MagneticButton'
+import MagneticButton from './MagneticButton';
+
 const Contact = () => {
   return (
-    <div id="contact" className="relative h-screen w-screen overflow-hidden">
+    <section id="contact" className="relative h-screen w-screen overflow-hidden">
+      {/* Background image */}
       <img
-        className="w-full h-full object-cover absolute z-[-1]"
         src="./Contact.jpeg"
-        alt="Contact background"
+        alt="Abstract contact background"
+        className="absolute inset-0 w-full h-full object-cover z-[-2]"
       />
 
-      <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-black via-transparent to-black z-0" />
+      {/* Overlay gradient */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black via-transparent to-black z-[-1]" />
 
-      <div className="relative flex flex-col items-center justify-center h-full text-white px-4 text-center">
-        <h1 className="text-4xl font-bold mb-4">Name</h1>
-        <MagneticButton/>
-        <p className="text-lg mb-2">
-          I'm available for full-time roles & freelance projects.
+      {/* Content */}
+      <div className="relative z-10 flex flex-col items-center justify-center h-full px-4 text-center text-white">
+        {/* Headline */}
+        <header className="mb-8">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl tracking-wide leading-tight">
+            FROM CONCEPT TO <span className="font-[900]">CREATION</span>
+          </h2>
+          <h3 className="mt-4 text-lg sm:text-3xl md:text-4xl lg:text-5xl tracking-wide">
+            LET&apos;S MAKE IT <span className="font-[900]">HAPPEN!</span>
+          </h3>
+        </header>
+
+        {/* CTA Button */}
+        <div className="mb-6">
+          <MagneticButton />
+        </div>
+
+        {/* Supporting Text */}
+        <p className="text-md mb-2 sm:text-xl">
+          I'm available for <span className="font-semibold">full-time roles</span> &{' '}
+          <span className="font-semibold">freelance projects</span>.
         </p>
-        <p className="text-sm text-gray-300">Let's connect and create something great together.</p>
+        <p className="text-[12px] sm:text-sm text-gray-300">
+          Let&apos;s connect and create something great together.
+        </p>
       </div>
-    </div>
+    </section>
   );
 };
 
