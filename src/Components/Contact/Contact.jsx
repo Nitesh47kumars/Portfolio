@@ -19,10 +19,10 @@ const Contact = () => {
         {/* Headline */}
         <header className="mb-8">
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl tracking-wide leading-tight">
-            FROM CONCEPT TO <span className="font-[900]">CREATION</span>
+            YOUR VISION, OUR <span className="font-[900]">MISSION</span>
           </h2>
           <h3 className="mt-4 text-lg sm:text-3xl md:text-4xl lg:text-5xl tracking-wide">
-            LET&apos;S MAKE IT <span className="font-[900]">HAPPEN!</span>
+            LET&apos;S BRING IT TO <span className="font-[900]">LIFE!</span>
           </h3>
         </header>
 
