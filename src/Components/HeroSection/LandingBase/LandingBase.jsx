@@ -1,15 +1,14 @@
 import React, { useMemo } from "react";
 import {motion} from "motion/react"
-import {animation} from "../../Motions/Animation"
+import {animation} from "../../../Motions/Animation"
 import {generateStars} from "./GenerateStars"
+import LandingCurve from "./LandingCurve";
 
 const LandingBase = () => {
   const stars = useMemo(()=>generateStars(150),[]);
   return (
-    <div className="absolute w-full min-h-[120%] top-0 left-0 -z-10 overflow-hidden"
-    >
+    <div className="absolute w-full min-h-[110%] top-0 left-0 -z-10 overflow-hidden">
       
-      {/* ✨ Star Field */}
       <div className="absolute inset-0 -z-1">
         {stars.map(([top, left, size, opacity], i) => (
           <motion.div
@@ -38,20 +37,8 @@ const LandingBase = () => {
         ))}
       </div>
 
-      {/* 🌗 Glowing Curved Horizon */}
-      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full h-[250px] rounded-full bg-transparent">
+      <LandingCurve/>
 
-        {/* 🌟 Bright Arc Line */}
-        <div className="relative w-full flex justify-center">
-          <div className="absolute top-8 max-md:top-11 left-1/2 -translate-x-1/2 w-[90%] sm:w-[80%] h-[4px] bg-gradient-to-r from-transparent via-white to-transparent rounded-full" />
-        </div>
-
-        {/* 🌫️ Soft Glow Beneath Arc */}
-        <div className="absolute top-1 left-[50%] translate-x-[-50%] w-[110%] h-[50%] bg-gradient-to-b from-white/40 to-transparent rounded-t-full blur-[5rem]" />
-      </div>
-
-      {/* 🕶️ Black Fade Overlay */}
-      <div className="absolute bottom-0 w-full h-[50%] bg-gradient-to-t from-black via-transparent to-transparent z-20" />
     </div>
   );
 };

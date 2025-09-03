@@ -2,7 +2,7 @@ import React from 'react'
 import HeroContent from './HeroContent'
 import HeroImg from './HeroImg'
 import HeroOverlay from './HeroOverlay'
-import LandingBase from '../LandingBase/LandingBase'
+import LandingBase from './LandingBase/LandingBase'
 
 const HeroSection = () => {
   return (
