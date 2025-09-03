@@ -3,7 +3,7 @@ import MagneticButton from './MagneticButton';
 
 const Contact = () => {
   return (
-    <section id="contact" className="relative h-screen w-screen overflow-hidden">
+    <section id="contact" className="relative h-[85vh] w-screen overflow-hidden">
       {/* Background image */}
       <img
         src="./Contact.jpeg"
