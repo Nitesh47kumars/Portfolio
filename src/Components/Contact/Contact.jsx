@@ -7,7 +7,7 @@ const Contact = () => {
       {/* Background image */}
       <img
         src="./Contact.jpeg"
-        alt="Abstract contact background"
+        alt="Contact background"
         className="absolute inset-0 w-full h-full object-cover z-[-2]"
       />
 
@@ -16,22 +16,19 @@ const Contact = () => {
 
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center justify-center h-full px-4 text-center text-white">
-        {/* Headline */}
-        <header className="mb-8">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl tracking-wide leading-tight">
+        <header>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl tracking-wide">
             YOUR VISION, OUR <span className="font-[900]">MISSION</span>
           </h2>
-          <h3 className="mt-4 text-lg sm:text-3xl md:text-4xl lg:text-5xl tracking-wide">
+          <h3 className="mt-4 text-lg sm:text-3xl md:text-4xl lg:text-5xl tracking-wide  ">
             LET&apos;S BRING IT TO <span className="font-[900]">LIFE!</span>
           </h3>
         </header>
 
-        {/* CTA Button */}
-        <div className="mb-6">
+        <div className="my-7">
           <MagneticButton />
         </div>
 
-        {/* Supporting Text */}
         <p className="text-md mb-2 sm:text-xl">
           I'm available for <span className="font-semibold">full-time roles</span> &{' '}
           <span className="font-semibold">freelance projects</span>.
