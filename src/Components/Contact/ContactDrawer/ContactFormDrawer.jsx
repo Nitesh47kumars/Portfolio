@@ -9,7 +9,6 @@ export default function ContactFormDrawer({ onClose }) {
   });
   const [messageCount, setMessageCount] = useState(0);
 
-  // Handle input change
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
@@ -25,11 +24,9 @@ export default function ContactFormDrawer({ onClose }) {
     return re.test(email);
   };
 
-  // Handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Basic validation
     if (!formData.name.trim()) {
       alert('Please enter your name.');
       return;
@@ -43,14 +40,10 @@ export default function ContactFormDrawer({ onClose }) {
       return;
     }
 
-    // Simulate form submission success
     alert('Form submitted! Thank you.');
 
-    // Reset form
     setFormData({ name: '', email: '', message: '' });
     setMessageCount(0);
-
-    // Close drawer
     onClose();
   };
 
@@ -59,7 +52,7 @@ export default function ContactFormDrawer({ onClose }) {
       
       <div className='flex max-sm:flex-col justify-between gap-4'>
 
-        <div className="flex flex-col gap-2 w-full">
+        <div className="flex flex-col w-full">
           <label htmlFor="name" className="text-sm font-semibold text-gray-700 dark:text-gray-200">
             Name <span className="text-red-500">*</span>
           </label>
@@ -77,7 +70,7 @@ export default function ContactFormDrawer({ onClose }) {
             />
         </div>
 
-        <div className="flex flex-col gap-2 w-full">
+        <div className="flex flex-col w-full">
           <label htmlFor="email" className="text-sm font-semibold text-gray-700 dark:text-gray-200">
             Email <span className="text-red-500">*</span>
           </label>
@@ -96,7 +89,7 @@ export default function ContactFormDrawer({ onClose }) {
 
       </div>
 
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col">
           <label
             htmlFor="message"
             className="text-sm font-semibold text-gray-700 dark:text-gray-200"
@@ -118,7 +111,6 @@ export default function ContactFormDrawer({ onClose }) {
             {messageCount} / 500 characters
           </p>
       </div>
-
 
       <button
         type="submit"

@@ -1,16 +1,16 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import ContactFormDrawer from './ContactFormDrawer';
-import SocialLinks from './SocialLink/SocialLinks';
-import TabIndex from './SocialLink/TabIndex';
+import SocialLinks from './SocialLinks';
+import TabIndex from './TabIndex';
 import QuickContact from './QuickContact';
+import Avalability from './Avalability';
 
 
 const ContactDrawer = ({ onClose }) => {
   // Tab Items
   const tabItems = ['Quick Connect', 'Fill a Form'];
   const [activeTab, setActiveTab] = useState(tabItems[0]);
-
 
   const backdropRef = useRef();
 
@@ -21,7 +21,6 @@ const ContactDrawer = ({ onClose }) => {
         onClose();
       }
     };
-
     window.addEventListener('click', handleClick);
     return () => window.removeEventListener('click', handleClick);
   }, [onClose]);
@@ -61,22 +60,15 @@ const ContactDrawer = ({ onClose }) => {
             )
           }
 
-          {/* Availability Note */}
-          <div className="mt-6 flex items-center justify-center rounded-md border border-green-400/20 bg-green-400/10 p-2 text-sm text-green-700 dark:text-green-300 dark:border-green-900/30 dark:bg-green-900/10">
-            <div className="relative mr-2 flex h-3 w-3 items-center justify-center">
-              <div className="h-2 w-2 rounded-full bg-green-600 dark:bg-green-500"></div>
-              <div className="absolute h-3 w-3 animate-ping rounded-full bg-green-600 opacity-75 dark:bg-green-500"></div>
-            </div>
-            Currently available for new opportunities
-          </div>
+          <Avalability/>
 
-          {/* Close button */}
           <button
             onClick={onClose}
             className="mt-4 block mx-auto text-sm text-gray-500 hover:text-black dark:text-gray-400 dark:hover:text-white"
           >
             Close
           </button>
+
         </motion.div>
       </motion.div>
     </AnimatePresence>
