@@ -1,11 +1,17 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import ContactFormDrawer from './ContactFormDrawer';
+import SocialLinks from './SocialLink/SocialLinks';
+import TabIndex from './SocialLink/TabIndex';
+import QuickContact from './QuickContact';
 
-const tabItems = ['Quick Connect', 'Fill a Form'];
 
 const ContactDrawer = ({ onClose }) => {
+  // Tab Items
+  const tabItems = ['Quick Connect', 'Fill a Form'];
   const [activeTab, setActiveTab] = useState(tabItems[0]);
+
+
   const backdropRef = useRef();
 
   // Close drawer when clicking outside the content (backdrop)
@@ -37,46 +43,23 @@ const ContactDrawer = ({ onClose }) => {
           className="w-full max-w-xl rounded-t-2xl bg-white dark:bg-neutral-900 p-6 shadow-lg"
         >
           {/* Drag handle */}
-          <div className="mx-auto mb-4 h-1.5 w-12 rounded-full bg-gray-300 dark:bg-gray-600" />
+          <div className="mx-auto mb-4 h-1.5 w-24 rounded-full bg-gray-300 dark:bg-gray-600" />
 
-          {/* Tabs */}
-          <div className="mb-4 flex justify-center space-x-2">
-            {tabItems.map((tab) => (
-              <button
-                key={tab}
-                onClick={() => setActiveTab(tab)}
-                className={`px-4 py-2 rounded-md text-sm font-medium transition ${
-                  activeTab === tab
-                    ? 'bg-black text-white dark:bg-white dark:text-black'
-                    : 'bg-gray-200 dark:bg-neutral-700 text-black dark:text-white'
-                }`}
-              >
-                {tab}
-              </button>
-            ))}
-          </div>
+          <SocialLinks/>
+
+          <TabIndex
+            tabItems={tabItems}
+            activeTab={activeTab}
+            setActiveTab={setActiveTab}
+          />
 
           {/* Tab Content */}
           {activeTab === 'Quick Connect' ? (
-            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-              <a
-                href="mailto:hello@example.com"
-                className="rounded-lg p-4 bg-blue-100 dark:bg-blue-900/30 text-center text-blue-700 dark:text-blue-300 hover:scale-105 transition"
-              >
-                Email
-              </a>
-              <a
-                href="https://calendly.com/your-link"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="rounded-lg p-4 bg-purple-100 dark:bg-purple-900/30 text-center text-purple-700 dark:text-purple-300 hover:scale-105 transition"
-              >
-                Book a Call
-              </a>
-            </div>
-          ) : (
-            <ContactFormDrawer onClose={onClose} />
-          )}
+              <QuickContact/>
+            ) : (
+              <ContactFormDrawer onClose={onClose} />
+            )
+          }
 
           {/* Availability Note */}
           <div className="mt-6 flex items-center justify-center rounded-md border border-green-400/20 bg-green-400/10 p-2 text-sm text-green-700 dark:text-green-300 dark:border-green-900/30 dark:bg-green-900/10">
