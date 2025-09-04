@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
+import ContactFormDrawer from './ContactFormDrawer';
 
 const tabItems = ['Quick Connect', 'Fill a Form'];
 
@@ -74,29 +75,7 @@ const ContactDrawer = ({ onClose }) => {
               </a>
             </div>
           ) : (
-            <form className="space-y-4 mt-2">
-              <input
-                type="text"
-                placeholder="Your Name"
-                className="w-full rounded-md p-2 bg-gray-100 dark:bg-neutral-800 text-black dark:text-white"
-              />
-              <input
-                type="email"
-                placeholder="Your Email"
-                className="w-full rounded-md p-2 bg-gray-100 dark:bg-neutral-800 text-black dark:text-white"
-              />
-              <textarea
-                rows={4}
-                placeholder="Your Message"
-                className="w-full rounded-md p-2 bg-gray-100 dark:bg-neutral-800 text-black dark:text-white"
-              />
-              <button
-                type="submit"
-                className="w-full bg-black text-white dark:bg-white dark:text-black p-2 rounded-md hover:opacity-90"
-              >
-                Send Message
-              </button>
-            </form>
+            <ContactFormDrawer onClose={onClose} />
           )}
 
           {/* Availability Note */}

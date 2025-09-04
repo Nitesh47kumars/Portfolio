@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import MagneticButton from './MagneticButton';
-import ContactDrawer from './ContactDrawer';
+import ContactDrawer from './ContactDrawer/ContactDrawer';
 import { motion } from 'framer-motion';
 import { animation } from '../../Motions/Animation';
 
