@@ -49,11 +49,10 @@ export default function ContactFormDrawer({ onClose }) {
   };
 
   return (
-    <form className="mx-auto max-w-2xl flex flex-col gap-2" onSubmit={handleSubmit}>
+    <form className="mx-auto max-w-2xl flex flex-col gap-5" onSubmit={handleSubmit}>
       
       <div className='flex max-sm:flex-col justify-between gap-4'>
-
-        <div className="flex flex-col w-full">
+        <div className="flex flex-col gap-1 w-full">
           <label htmlFor="name" className="text-sm font-semibold pl-0.5 text-gray-200">
             Name <span className="text-red-500">*</span>
           </label>
@@ -61,7 +60,8 @@ export default function ContactFormDrawer({ onClose }) {
             id="name"
             name="name"
             type="text"
-            className="rounded-lg shadow px-3 py-1 max-sm:py-2 text-white bg-neutral-800"
+            className="rounded-lg  px-3 py-1 max-sm:py-2 text-white bg-[#1b1b1b] shadow-[inset_0_0_5px_rgba(225,225,225,.2)]
+            focus:outline-none focus:shadow-[inset_0_0_10px_rgba(225,225,225,.2)]"
             placeholder="Your name"
             value={formData.name}
             onChange={handleChange}
@@ -71,7 +71,7 @@ export default function ContactFormDrawer({ onClose }) {
             />
         </div>
 
-        <div className="flex flex-col w-full">
+        <div className="flex flex-col gap-1 w-full">
           <label htmlFor="email" className="text-sm font-semibold pl-0.5 text-gray-200">
             Email <span className="text-red-500">*</span>
           </label>
@@ -79,7 +79,8 @@ export default function ContactFormDrawer({ onClose }) {
             id="email"
             name="email"
             type="email"
-            className="rounded-lg shadow-xl px-3 py-1 max-sm:py-2 text-white bg-neutral-800"
+            className="rounded-lg px-3 py-1 max-sm:py-2 text-white bg-[#1b1b1b] shadow-[inset_0_0_5px_rgba(225,225,225,.2)]
+            focus:outline-none focus:shadow-[inset_0_0_10px_rgba(225,225,225,.2)]"
             placeholder="Your email"
             value={formData.email}
             onChange={handleChange}
@@ -87,10 +88,10 @@ export default function ContactFormDrawer({ onClose }) {
             maxLength={50}
             />
         </div>
-
       </div>
 
-        <div className="flex flex-col">
+      <div className='flex flex-col gap-3'>
+        <div className="flex flex-col gap-1 ">
           <label
             htmlFor="message"
             className="text-sm font-semibold pl-0.5 text-gray-200"
@@ -98,10 +99,12 @@ export default function ContactFormDrawer({ onClose }) {
             Message <span className="text-red-500">*</span>
           </label>
           <textarea
+            style={{resize:"none"}}
             id="message"
             name="message"
             rows={5}
-            className="rounded-lg shadow-xl px-3 py-2 text-white bg-neutral-800"
+            className="rounded-lg px-3 py-2 text-white bg-[#1b1b1b] shadow-[inset_0_0_5px_rgba(225,225,225,.2)]
+            focus:outline-none focus:shadow-[inset_0_0_10px_rgba(225,225,225,.2)]"
             placeholder="Your message..."
             value={formData.message}
             onChange={handleChange}
@@ -111,9 +114,11 @@ export default function ContactFormDrawer({ onClose }) {
           <p className="text-xs text-gray-500">
             {messageCount} / 500 characters
           </p>
+        </div>
+
+        <SendButton/>
       </div>
 
-      <SendButton/>
     </form>
   );
 }

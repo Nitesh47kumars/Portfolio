@@ -24,7 +24,7 @@ const StyledWrapper = styled.div`
     width: 100%;
     font-family: inherit;
     font-size: 14px;
-    background: linear-gradient(to bottom, #4dc7d9 0%,#66a6ff 100%);
+    background: linear-gradient(to bottom, #8e2de2 0%, #4a00e0 100%);
     color: white;
     padding: 0.8em 1.2em;
     display: flex;
@@ -67,6 +67,7 @@ const StyledWrapper = styled.div`
     height: 30px;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.2);
+    padding-right: 2.2px;
     margin-right: 0.5em;
     transition: all 0.3s;
   }

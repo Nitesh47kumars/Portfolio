@@ -32,14 +32,14 @@ const ContactDrawer = ({ onClose }) => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
-        className="fixed inset-0 z-50 flex items-end justify-center bg-black/40 backdrop-blur-sm"
+        className="fixed inset-0 z-50 flex items-end justify-center bg-black/60 backdrop-blur-sm"
       >
         <motion.div
           initial={{ y: '100%' }}
           animate={{ y: 0 }}
           exit={{ y: '100%' }}
           transition={{ type: 'spring', stiffness: 400, damping: 30 }}
-          className="w-full max-w-xl rounded-t-2xl bg-white dark:bg-neutral-900 p-6 shadow-lg"
+          className="w-full max-w-xl rounded-t-2xl bg-white dark:bg-[#131314] p-6 shadow-lg"
         >
           {/* Drag handle */}
           <div className="mx-auto mb-4 h-1.5 w-24 rounded-full bg-gray-300 dark:bg-gray-600" />
