@@ -1,5 +1,7 @@
 import React from 'react';
 import MagneticButton from './MagneticButton';
+import {motion} from "motion/react"
+import { animation } from '../../Motions/Animation';
 
 const Contact = () => {
   return (
@@ -17,12 +19,22 @@ const Contact = () => {
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center justify-center h-full px-4 text-center text-white">
         <header>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl tracking-wide">
+          <motion.h2
+              variants={animation("right", 0.2)}
+              initial="hidden"
+              whileInView="show"
+              viewport={{once:true,amount:0}}
+          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl tracking-wide">
             YOUR VISION, OUR <span className="font-[900]">MISSION</span>
-          </h2>
-          <h3 className="mt-4 text-lg sm:text-3xl md:text-4xl lg:text-5xl tracking-wide  ">
+          </motion.h2>
+          <motion.h3
+              variants={animation("left", 0.3)}
+              initial="hidden"
+              whileInView="show"
+              viewport={{once:true,amount:0}}
+          className="mt-4 text-lg sm:text-3xl md:text-4xl lg:text-5xl tracking-wide  ">
             LET&apos;S BRING IT TO <span className="font-[900]">LIFE!</span>
-          </h3>
+          </motion.h3>
         </header>
 
         <div className="my-7">
