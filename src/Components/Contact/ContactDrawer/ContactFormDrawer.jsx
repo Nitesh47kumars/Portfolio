@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import SendButton from '../../../UI/SendButton';
 
 
 export default function ContactFormDrawer({ onClose }) {
@@ -48,19 +49,19 @@ export default function ContactFormDrawer({ onClose }) {
   };
 
   return (
-    <form className="mx-auto max-w-2xl flex flex-col gap-4" onSubmit={handleSubmit}>
+    <form className="mx-auto max-w-2xl flex flex-col gap-2" onSubmit={handleSubmit}>
       
       <div className='flex max-sm:flex-col justify-between gap-4'>
 
         <div className="flex flex-col w-full">
-          <label htmlFor="name" className="text-sm font-semibold text-gray-700 dark:text-gray-200">
+          <label htmlFor="name" className="text-sm font-semibold pl-0.5 text-gray-200">
             Name <span className="text-red-500">*</span>
           </label>
           <input
             id="name"
             name="name"
             type="text"
-            className="rounded border border-gray-300 px-3 py-2 text-black dark:text-white dark:bg-neutral-800"
+            className="rounded-lg shadow px-3 py-1 max-sm:py-2 text-white bg-neutral-800"
             placeholder="Your name"
             value={formData.name}
             onChange={handleChange}
@@ -71,14 +72,14 @@ export default function ContactFormDrawer({ onClose }) {
         </div>
 
         <div className="flex flex-col w-full">
-          <label htmlFor="email" className="text-sm font-semibold text-gray-700 dark:text-gray-200">
+          <label htmlFor="email" className="text-sm font-semibold pl-0.5 text-gray-200">
             Email <span className="text-red-500">*</span>
           </label>
           <input
             id="email"
             name="email"
             type="email"
-            className="rounded border border-gray-300 px-3 py-2 text-black dark:text-white dark:bg-neutral-800"
+            className="rounded-lg shadow-xl px-3 py-1 max-sm:py-2 text-white bg-neutral-800"
             placeholder="Your email"
             value={formData.email}
             onChange={handleChange}
@@ -92,7 +93,7 @@ export default function ContactFormDrawer({ onClose }) {
         <div className="flex flex-col">
           <label
             htmlFor="message"
-            className="text-sm font-semibold text-gray-700 dark:text-gray-200"
+            className="text-sm font-semibold pl-0.5 text-gray-200"
             >
             Message <span className="text-red-500">*</span>
           </label>
@@ -100,7 +101,7 @@ export default function ContactFormDrawer({ onClose }) {
             id="message"
             name="message"
             rows={5}
-            className="rounded border border-gray-300 px-3 py-2 text-black dark:text-white dark:bg-neutral-800"
+            className="rounded-lg shadow-xl px-3 py-2 text-white bg-neutral-800"
             placeholder="Your message..."
             value={formData.message}
             onChange={handleChange}
@@ -112,12 +113,7 @@ export default function ContactFormDrawer({ onClose }) {
           </p>
       </div>
 
-      <button
-        type="submit"
-        className="mt-6 rounded bg-black px-4 py-2 font-semibold text-white hover:bg-gray-900 dark:bg-white dark:text-black dark:hover:bg-gray-300"
-      >
-        Send Message
-      </button>
+      <SendButton/>
     </form>
   );
 }

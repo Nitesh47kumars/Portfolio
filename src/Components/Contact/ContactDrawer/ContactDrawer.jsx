@@ -54,21 +54,20 @@ const ContactDrawer = ({ onClose }) => {
 
           {/* Tab Content */}
           {activeTab === 'Quick Connect' ? (
+            <>
               <QuickContact/>
+              <Avalability/>
+              <button
+                onClick={onClose}
+                className="mt-4 block mx-auto text-sm text-gray-500 hover:text-black dark:text-gray-400 dark:hover:text-white"
+              >
+                Close
+              </button>
+            </>
             ) : (
               <ContactFormDrawer onClose={onClose} />
             )
           }
-
-          <Avalability/>
-
-          <button
-            onClick={onClose}
-            className="mt-4 block mx-auto text-sm text-gray-500 hover:text-black dark:text-gray-400 dark:hover:text-white"
-          >
-            Close
-          </button>
-
         </motion.div>
       </motion.div>
     </AnimatePresence>
