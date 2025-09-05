@@ -1,6 +1,6 @@
 import React from 'react'
 import AboutContent from './AboutContent'
-import AboutImage from './AboutImage'
+import AboutImage from './AboutVideo'
 
 const About = () => {
   return (

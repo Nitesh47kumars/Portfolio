@@ -1,13 +1,11 @@
 import React from 'react';
-import { motion } from 'motion/react';
-import { animation } from '../../Motions/Animation';
 
 const lang = [
   { name: "HTML", icon: "/Frontend/HTML5_Badge.svg.png" },
   { name: "CSS", icon: "/Frontend/CSS3_logo.svg.png" },
   { name: "JavaScript", icon: "/Frontend/Unofficial_JavaScript_logo_2.svg.png" },
   { name: "React", icon: "/Frontend/React-icon.svg.png" },
-  { name: "TailwindCSS", icon: "/Frontend/tailwind-icon-md.png"},
+  { name: "TailwindCSS", icon: "/Frontend/tailwind-icon-md.png" },
 ];
 
 const getItemStyle = (index) => {
@@ -21,50 +19,27 @@ const getItemStyle = (index) => {
 
 const Frontend = () => {
   return (
-    <motion.div
-      variants={animation("up", 0.2)}
-      initial="hidden"
-      whileInView="show"
-      viewport={{once:true,amount:0}}
-      style={{background:"linear-gradient(145deg,#444,#000 60%)"}}
-
-      className="relative md:col-span-3 lg:col-span-4 p-5 lg:h-[200px]  max-sm:h-[260px] max-lg:h-[320px] rounded bg-black group transition-shadow duration-500
-        shadow-[inset_0_0_40px_rgba(180,180,180,0.1)]"
+    <div
+      style={{ background: "linear-gradient(145deg,#444,#000 60%)" }}
+      className="relative md:col-span-3 lg:col-span-4 p-5 lg:h-[200px] max-sm:h-[260px] max-lg:h-[320px] rounded bg-black group transition-shadow duration-500 shadow-[inset_0_0_40px_rgba(180,180,180,0.1)]"
     >
-      <motion.h1
-        variants={animation("scale", 0.2)}
-        initial="hidden"
-        whileInView="show"
-        viewport={{once:true,amount:0}}
-        className="text-center text-white text-xl text-shadow-[1px_1px_10px_white]"
-      >
+      <h1 className="text-center text-white text-xl text-shadow-[1px_1px_10px_white]">
         Frontend Skills
-      </motion.h1>
+      </h1>
 
-      <ul className="flex justify-between items-center h-full lg:p-5 max-lg:py-3 max-lg:grid max-lg:grid-cols-3 ">
+      <ul className="flex justify-between items-center h-full lg:p-5 max-lg:py-3 max-lg:grid max-lg:grid-cols-3">
         {lang.map((curr, idx) => {
           const { size, delay } = getItemStyle(idx);
 
           return (
-            <motion.li
-              key={idx}
-              variants={animation("scale", 0.2)}
-              initial="hidden"
-              whileInView="show"
-              viewport={{once:true,amount:0}}
-              className="flex flex-col items-center"
-            >
+            <li key={idx} className="flex flex-col items-center">
               <div
-                className={`${size} max-sm:h-15 max-sm:w-15 max-lg:h-20 max-lg:w-20 ${delay} rounded-[15px] max-md:rounded-[10px] border-2 border-[#A5AEB81F] p-2 max-md:p-1
-                  transition-all duration-500 md:group-hover:-translate-y-2
-                  md:group-hover:border-indigo-400 hover:border-blue-600`}
+                className={`${size} max-sm:h-15 max-sm:w-15 max-lg:h-20 max-lg:w-20 ${delay} rounded-[15px] max-md:rounded-[10px] border-2 border-[#A5AEB81F] p-2 max-md:p-1 transition-all duration-500 md:group-hover:-translate-y-2 md:group-hover:border-indigo-400 hover:border-blue-600`}
               >
                 <div
-                  className="grid h-full place-items-center rounded-[10px] max-md:rounded-[8px] border-2 border-[#A5AEB81F]/10
-                    bg-[#EDEEF0] dark:border-[#5A5F661F]/10 dark:bg-[#1A1B1E]"
+                  className="grid h-full place-items-center rounded-[10px] max-md:rounded-[8px] border-2 border-[#A5AEB81F]/10 bg-[#1A1B1E]"
                   style={{
-                    boxShadow:
-                      "rgba(165, 174, 184, 0.32) 0px 2px 1.5px 0px inset",
+                    boxShadow: "rgba(165, 174, 184, 0.32) 0px 2px 1.5px 0px inset",
                   }}
                 >
                   <img
@@ -76,16 +51,15 @@ const Frontend = () => {
               </div>
 
               <h1
-                className={`text-white ${delay} lg:opacity-0 -translate-y-1
-                  group-hover:opacity-100 max-sm:text-[12px] max-lg:translate-y-1.5 transition-all duration-500`}
+                className={`text-white ${delay} lg:opacity-0 -translate-y-1 group-hover:opacity-100 max-sm:text-[12px] max-lg:translate-y-1.5 transition-all duration-500`}
               >
                 {curr.name}
               </h1>
-            </motion.li>
+            </li>
           );
         })}
       </ul>
-    </motion.div>
+    </div>
   );
 };
 

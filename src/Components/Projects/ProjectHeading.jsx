@@ -1,14 +1,8 @@
 import React from "react";
-import {motion} from 'motion/react'
-import {animation} from '../../Motions/Animation'
 
 const ProjectHeading = () => {
   return (
-    <motion.div
-      variants={animation("scale",0.2)}
-      initial={"hidden"}
-      whileInView={"show"}
-      viewport={{once:true,amount:0}}
+    <div
       className="relative text-center text-4xl sm:text-5xl md:text-6xl tracking-tight text-balance md:mb-20"
       style={{
         textShadow:
@@ -22,7 +16,7 @@ const ProjectHeading = () => {
         <span>Curated </span>
         <span className="text-colorfull tracking-wide">Work</span>
       </p>
-    </motion.div>
+    </div>
   );
 };
 
