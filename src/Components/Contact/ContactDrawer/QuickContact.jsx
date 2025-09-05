@@ -28,7 +28,7 @@ const contactItems = [
   },
   {
     label: 'Book a Call',
-    href: '/contact',
+    href: 'https://calendly.com/niteshshah028/30min',
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"

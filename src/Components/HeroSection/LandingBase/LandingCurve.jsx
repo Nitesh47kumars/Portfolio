@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 const LandingCurve = () => {
   return (
     <div
-      className="absolute bottom-0 left-1/2 z-0 h-[500px] w-[1200px] -translate-x-1/2 transform overflow-hidden"
+      className="absolute bottom-0 max-md:-bottom-22 max-lg:-bottom-10 left-1/2 z-0 h-[500px] w-[1200px] -translate-x-1/2 transform overflow-hidden"
       style={{
         maskImage: 'linear-gradient(to right, transparent, black 30%, black 70%, transparent)',
         WebkitMaskImage: 'linear-gradient(to right, transparent, black 30%, black 70%, transparent)',
