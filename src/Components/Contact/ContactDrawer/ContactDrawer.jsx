@@ -4,17 +4,14 @@ import ContactFormDrawer from './ContactFormDrawer';
 import SocialLinks from './SocialLinks';
 import TabIndex from './TabIndex';
 import QuickContact from './QuickContact/QuickContact';
-import Avalability from './Avalability';
-
+import Avalability from './QuickContact/Avalability';
 
 const ContactDrawer = ({ onClose }) => {
-  // Tab Items
   const tabItems = ['Quick Connect', 'Fill a Form'];
   const [activeTab, setActiveTab] = useState(tabItems[0]);
 
   const backdropRef = useRef();
 
-  // Close drawer when clicking outside the content (backdrop)
   useEffect(() => {
     const handleClick = (e) => {
       if (e.target === backdropRef.current) {
@@ -39,12 +36,12 @@ const ContactDrawer = ({ onClose }) => {
           animate={{ y: 0 }}
           exit={{ y: '100%' }}
           transition={{ type: 'spring', stiffness: 400, damping: 30 }}
-          className="w-full max-w-xl rounded-t-2xl bg-white dark:bg-[#131314] p-6 shadow-lg"
+          className="w-full max-w-xl rounded-t-2xl bg-[#131314] p-6 shadow-lg"
         >
           {/* Drag handle */}
-          <div className="mx-auto mb-4 h-1.5 w-24 rounded-full bg-gray-300 dark:bg-gray-600" />
+          <div className="mx-auto mb-4 h-1.5 w-24 rounded-full bg-gray-600" />
 
-          <SocialLinks/>
+          <SocialLinks />
 
           <TabIndex
             tabItems={tabItems}
@@ -55,19 +52,18 @@ const ContactDrawer = ({ onClose }) => {
           {/* Tab Content */}
           {activeTab === 'Quick Connect' ? (
             <>
-              <QuickContact/>
-              <Avalability/>
+              <QuickContact />
+              <Avalability />
               <button
                 onClick={onClose}
-                className="mt-4 block mx-auto text-sm text-gray-500 hover:text-black dark:text-gray-400 dark:hover:text-white"
+                className="mt-4 block mx-auto text-sm text-gray-400 hover:text-white"
               >
                 Close
               </button>
             </>
-            ) : (
-              <ContactFormDrawer onClose={onClose} />
-            )
-          }
+          ) : (
+            <ContactFormDrawer onClose={onClose} />
+          )}
         </motion.div>
       </motion.div>
     </AnimatePresence>

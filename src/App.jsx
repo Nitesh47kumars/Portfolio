@@ -7,7 +7,7 @@ import {
 
 import Layout from './Layout';
 import Home from './Home';
-import BookCall from './Components/Contact/BookCall';
+import BookCall from './Components/Contact/ContactDrawer/BookCall';
 
 const router = createBrowserRouter([
   {

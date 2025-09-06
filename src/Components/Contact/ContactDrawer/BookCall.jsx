@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
+import BookCallLoader from '../../../UI/BookCallLoader';
 
 const BookCall = () => {
   const calendlyRef = useRef(null);
@@ -14,7 +15,7 @@ const BookCall = () => {
       script.async = true;
       script.onload = () => {
         // Wait additional 2 seconds for the widget to fully initialize
-        setTimeout(() => setLoading(false), 2000);
+        setTimeout(() => setLoading(true), 2000);
       };
       document.body.appendChild(script);
     } else {
@@ -36,20 +37,19 @@ const BookCall = () => {
     <div className='absolute top-0 left-0 h-full w-full z-[-1] bg-gradient-to-b from-black/50 via-black/30 to-black/80' />
       {loading && (
         <div
-          style={{
-            position: 'absolute',
-            inset: 0,
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-            backgroundColor: '#1a1a1a', // same as your Calendly bg
-            color: 'white',
-            fontSize: '1.2rem',
-            zIndex: 10,
-          }}
-        >
-          Loading calendar...
-        </div>
+        style={{
+          position: 'absolute',
+          inset: 0,
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          paddingTop: "5rem",
+          backgroundColor: '#000000',
+          zIndex: 10,
+        }}
+      >
+        <BookCallLoader />
+      </div>
       )}
       <div
         ref={calendlyRef}
