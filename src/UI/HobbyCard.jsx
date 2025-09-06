@@ -17,31 +17,20 @@ const HobbyCard = () => {
       playingGame: {
         description:
           "Passionate about video games, enjoying the challenge, creativity, and strategic thinking they inspire.",
-        items: [
-          { name: "GTA 5", image: "/Hobbies_Icon/GTA_5.jpg" },
-          { name: "God of War", image: "/Hobbies_Icon/Kratos.jpg" },
-          { name: "Pubg", image: "/Hobbies_Icon/Pubg.jpg" },
-        ],
+        image: "/Hobbies_Icon/Gaming.png",
       },
     },
     {
       videoEditing: {
         description:
           "Enjoys video editing as a creative outlet to tell stories and bring ideas to life through visuals.",
-        items: [
-          { name: "Capcut", image: "/Hobbies_Icon/Capcut.jpg" },
-          { name: "Premium pro", image: "/Hobbies_Icon/Editing.jpg" },
-        ],
+        image: "/Hobbies_Icon/Editing.png",
       },
     },
     {
       listeningToMusic: {
-        description:
-          "Enjoys listening to music as a way to relax and stay inspired.",
-        items: [
-          { name: "Spotify", image: "/Hobbies_Icon/Spotify.4ae62b85-3d44-495f-a354-de1b0c447387" },
-          { name: "YouTube", image: "/Hobbies_Icon/Youtube.jpg" },
-        ],
+        description: "Enjoys listening to music as a way to relax and stay inspired.",
+        image: "/Hobbies_Icon/Music.png",
       },
     },
   ], []);
@@ -52,7 +41,7 @@ const HobbyCard = () => {
     <div className="flex flex-wrap justify-center gap-6 overflow-hidden">
       {hobbiesData.map((hobbyObj, idx) => {
         const key = Object.keys(hobbyObj)[0];
-        const { description, items } = hobbyObj[key];
+        const { description, image } = hobbyObj[key];
         const isActive = activeIndex === idx;
 
         const cardClass = `relative flex w-[95%] h-[90px] rounded overflow-hidden 
@@ -76,22 +65,19 @@ const HobbyCard = () => {
             onClick={() => isMobile && setActiveIndex(isActive ? null : idx)}
           >
             {/* Images */}
-            {items.map((img, i) => (
-              <div key={i} className="w-full h-full flex justify-center items-center z-0">
-                <img
-                  src={img.image}
-                  alt={img.name}
-                  style={{ zIndex: 5 - i }}
-                  className={`h-full w-full object-cover transform scale-130 rotate-[6deg] transition-all duration-500 ${
-                    isMobile
-                      ? isActive
-                        ? '-translate-y-[135%] rotate-0'
-                        : 'translate-y-[4%] scale-135'
-                      : 'group-hover:-translate-y-[116%] group-hover:rotate-0'
-                  }`}
-                />
-              </div>
-            ))}
+            <div className="w-full h-full flex justify-center items-center z-0">
+              <img
+                src={image}
+                alt={key}
+                className={`h-full w-full object-cover transform transition-all duration-500 ${
+                  isMobile
+                    ? isActive
+                      ? '-translate-y-[135%] rotate-0'
+                      : 'translate-y-[4%] scale-135'
+                    : 'group-hover:-translate-y-[116%] group-hover:rotate-0'
+                }`}
+              />
+            </div>
 
             {/* Description */}
             <div className={overlayClass}>
