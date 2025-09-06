@@ -14,12 +14,10 @@ const BookCall = () => {
       script.src = "https://assets.calendly.com/assets/external/widget.js";
       script.async = true;
       script.onload = () => {
-        // Wait additional 2 seconds for the widget to fully initialize
-        setTimeout(() => setLoading(true), 2000);
+        setTimeout(() => setLoading(false), 1000);
       };
       document.body.appendChild(script);
     } else {
-      // Script already loaded - wait a bit anyway to cover widget loading
       setTimeout(() => setLoading(false), 2000);
     }
   }, []);
