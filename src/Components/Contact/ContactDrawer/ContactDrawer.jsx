@@ -3,7 +3,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 import ContactFormDrawer from './ContactFormDrawer';
 import SocialLinks from './SocialLinks';
 import TabIndex from './TabIndex';
-import QuickContact from './QuickContact';
+import QuickContact from './QuickContact/QuickContact';
 import Avalability from './Avalability';
 
 
