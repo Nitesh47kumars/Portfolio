@@ -31,7 +31,7 @@ const Tools = () => {
                 className={`${sizeClass} max-md:h-15 max-md:w-15 ${delayClass} rounded-[15px] max-md:rounded-[10px] border-2 border-[#A5AEB81F] p-2 max-md:p-1 transition-all duration-500 md:group-hover:-translate-y-2 md:group-hover:border-indigo-400 hover:border-blue-600`}
               >
                 <div
-                  className="grid h-full place-items-center rounded-[10px] max-md:rounded-[8px] border-2 border-[#A5AEB81F]/10 bg-[#EDEEF0]"
+                  className="grid h-full place-items-center rounded-[10px] max-md:rounded-[8px] border-2 border-[#A5AEB81F]/10 bg-[#1A1B1E]"
                   style={{
                     boxShadow: "rgba(165, 174, 184, 0.32) 0px 2px 1.5px 0px inset",
                   }}

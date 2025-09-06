@@ -38,7 +38,7 @@ const Email = () => {
           onClick={handleCopy}
           type="button"
           style={{ textShadow: "1px 1px 1px rgba(0, 0, 0, 0.8)" }}
-          className="flex items-center justify-center w-[80%] gap-2 py-3 text-[clamp(0.75rem,1vw,1rem)] font-bold tracking-wide text-black cursor-pointer rounded-md bg-white/10 shadow-[inset_0_3px_10px_#ffffff3f] backdrop-blur-[1px] transition-all duration-500 hover:text-black/60"
+          className="flex items-center justify-center w-[80%] gap-2 py-3 text-[clamp(0.75rem,1vw,1rem)] font-bold tracking-wide text-white/80 cursor-pointer rounded-md bg-white/10 shadow-[inset_0_3px_10px_#ffffff3f] backdrop-blur-[1px] transition-all duration-500 hover:text-white"
         >
           {copied ? <Check /> : <Copy />}
           {EMAIL}
