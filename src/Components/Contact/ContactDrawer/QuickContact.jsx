@@ -1,9 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const contactItems = [
   {
     label: 'Email',
-    href: 'mailto:niteshshah028@gmail.com?subject=Let\'s%20catch%20up%20for%20a%20cool%20opportunity!',
+    to: 'mailto:niteshshah028@gmail.com?subject=Let\'s%20catch%20up%20for%20a%20cool%20opportunity!',
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -28,7 +29,7 @@ const contactItems = [
   },
   {
     label: 'Book a Call',
-    href: 'https://calendly.com/niteshshah028/30min',
+    to: '/bookcall',
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -59,11 +60,11 @@ export default function QuickContact() {
   return (
     <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
       {contactItems.map((item) => (
-        <a
+        <Link
           key={item.label}
-          href={item.href}
+          to={item.to}
           className="group block overflow-hidden rounded-lg shadow-xl bg-neutral-800/30 transition-all duration-300"
-          target={item.href.startsWith('mailto:') ? '_blank' : '_self'}
+          target={item.to.startsWith('mailto:') ? '_blank' : '_self'}
           rel="noopener noreferrer"
           aria-label={item.label}
         >
@@ -79,7 +80,7 @@ export default function QuickContact() {
             </div>
             <p className="mt-2 text-sm text-neutral-400">{item.description}</p>
           </div>
-        </a>
+        </Link>
       ))}
     </div>
   );

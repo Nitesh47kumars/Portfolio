@@ -1,27 +1,33 @@
-import About from './Components/About/About'
-import HeroSection from './Components/HeroSection/HeroSection'
-import Navbar from './Components/Navbar/Navbar'
-import Skills from './Components/Skills/Skills'
-import useLenis from './Motions/UseLenis';
-import Banner from './UI/Banner'
-import BottomContent from './Components/Footer/BottomContent'
-import Project from './Components/Projects/Project'
-import Contact from './Components/Contact/Contact'
+// App.jsx
+import React from 'react';
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from 'react-router-dom';
 
-function App() {
-  useLenis();
-  return (
-    <>
-      <Navbar/>
-      <HeroSection/>
-      <About/>
-      <Banner/>
-      <Skills/>
-      <Project/>
-      <Contact/>
-      <BottomContent/>
-    </>
-  )
-}
+import Layout from './Layout';
+import Home from './Home';
+import BookCall from './Components/Contact/BookCall';
 
-export default App
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <Layout />,
+    children: [
+      { index: true, element: <Home /> },
+    ],
+  },
+  {
+    path: '/bookcall',
+    element: <Layout />,
+    children: [
+      {index: true, element: <BookCall />},
+    ],
+  },
+]);
+
+const App = () => {
+  return <RouterProvider router={router} />;
+};
+
+export default App;
