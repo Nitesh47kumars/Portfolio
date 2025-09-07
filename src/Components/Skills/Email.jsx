@@ -1,12 +1,13 @@
 import React, { useState, useCallback } from "react";
-import { Copy } from "../../UI/Copy";
-import { Check } from "../../UI/Check";
+import { Copy } from "../../UI/Icons/Copy";
+import { Check } from "../../UI/Icons/Check";
+import { useAnimation } from "motion/react";
 
 const EMAIL = "niteshshah028@gmail.com";
 
 const Email = () => {
   const [copied, setCopied] = useState(false);
-
+  const controls = useAnimation();
   const handleCopy = useCallback(() => {
     setCopied(true);
     navigator.clipboard.writeText(EMAIL);
@@ -35,12 +36,14 @@ const Email = () => {
         </h1>
 
         <button
+          onMouseEnter={() => controls.start("animate")}
+          onMouseLeave={() => controls.start("normal")}
           onClick={handleCopy}
           type="button"
           style={{ textShadow: "1px 1px 1px rgba(0, 0, 0, 0.8)" }}
           className="flex items-center justify-center w-[80%] gap-2 py-3 text-[clamp(0.75rem,1vw,1rem)] font-bold tracking-wide text-white/80 cursor-pointer rounded-md bg-white/10 shadow-[inset_0_3px_10px_#ffffff3f] backdrop-blur-[1px] transition-all duration-500 hover:text-white"
         >
-          {copied ? <Check /> : <Copy />}
+          {copied ? <Check /> : <Copy controls={controls} />}
           {EMAIL}
         </button>
       </div>

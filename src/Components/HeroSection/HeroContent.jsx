@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FaArrowRight } from "react-icons/fa";
-import {Copy} from '../../UI/Copy'
-import {Check} from '../../UI/Check'
+import {Copy} from '../../UI/Icons/Copy'
+import {Check} from '../../UI/Icons/Check'
 import {motion, useAnimation} from "motion/react"
 import { animation } from '../../Motions/Animation';
 import { Link } from 'react-scroll';
