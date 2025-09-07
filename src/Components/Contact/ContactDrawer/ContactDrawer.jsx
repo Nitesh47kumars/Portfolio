@@ -35,9 +35,20 @@ const ContactDrawer = ({ onClose }) => {
           initial={{ y: '100%' }}
           animate={{ y: 0 }}
           exit={{ y: '100%' }}
-          transition={{ type: 'spring', stiffness: 400, damping: 30 }}
-          className="w-full max-w-xl rounded-t-2xl bg-[#131314] p-6 shadow-lg"
+          transition={{ type: 'spring', stiffness: 500, damping: 35 }}
+          drag="y"
+          dragElastic={0.2}
+          dragMomentum={false}
+          dragConstraints={{ top: 0 }}
+          onDragEnd={(event, info) => {
+            if (info.offset.y > 120) {
+              onClose();
+            }
+          }}
+          className="w-full max-w-xl rounded-t-2xl bg-[#131314] p-6 shadow-lg touch-none"
         >
+
+
           {/* Drag handle */}
           <div className="mx-auto mb-4 h-1.5 w-24 rounded-full bg-gray-600" />
 
