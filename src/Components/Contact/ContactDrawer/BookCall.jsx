@@ -11,7 +11,7 @@ const BookCall = () => {
     const existingScript = document.getElementById(scriptId);
 
     const hideLoader = () =>
-      setTimeout(() => setLoading(true), existingScript ? 2000 : 1000);
+      setTimeout(() => setLoading(false), existingScript ? 2000 : 1000);
 
     if (!existingScript) {
       const script = document.createElement('script');
