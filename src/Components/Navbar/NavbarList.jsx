@@ -1,54 +1,36 @@
-import React from 'react'
-import {Link} from 'react-scroll'
-import { useEffect } from 'react';
+import React from 'react';
+import { Link } from 'react-scroll';
 
-const NavbarList = ({setMobMenu}) => {
-    const links = [
-        {link: "Home",section:"home"},
-        {link: "About Me",section:"about"},
-        {link: "Skills",section:"skills"},
-        {link: "Projects",section:"projects"},
-        {link: "Contact Me",section:"contact"},
-    ]
+const NavbarList = ({ setMobMenu }) => {
+  const links = [
+    { link: 'Home', section: 'home' },
+    { link: 'About Me', section: 'about' },
+    { link: 'Skills', section: 'skills' },
+    { link: 'Projects', section: 'projects' },
+    { link: 'Contact Me', section: 'contact' },
+  ];
 
-    useEffect(() => {
-      // Force scroll detection for react-scroll spy
-      setTimeout(() => {
-        window.scrollTo({
-          top: 1,
-          behavior: 'auto',
-        });
-        window.scrollTo({
-          top: 0,
-          behavior: 'auto',
-        });
-      }, 100); // delay ensures DOM is fully mounted
-    }, []);
-    
-    
   return (
-    <div>
-        <ul className='flex gap-10 max-md:gap-6 z-1 font-bold md:flex-row max-md:flex-col max-md:absolute max-md:top-[80px] max-md:py-6 max-md:left-0 max-md:w-full max-md:text-center max-md:backdrop-blur-sm'>
-            {links.map((curr,idx)=>{
-                return <li key={idx} className='group'>
-                    <Link
-                        to={curr.section}
-                        activeClass="active"
-                        spy={true}
-                        smooth={true}
-                        duration={600}
-                        offset={-100}
-                        onClick={() => setMobMenu(false)}
-                        className="cursor-pointer group-hover:text-green-400 transition-all duration-500"
-                        >
-                        {curr.link}
-                    </Link>
-                    <div className='h-[1px] mx-auto bg-green-400 w-0 group-hover:w-full transition-all duration-500'/>
-                </li>
-            })}
-        </ul>
-    </div>
-  )
-}
+    <ul className="flex flex-col gap-6 text-center font-bold text-white md:flex-row md:gap-6 lg:gap-10">
+      {links.map((curr, idx) => (
+        <li key={idx} className="group text-nowrap">
+          <Link
+            to={curr.section}
+            activeClass="active"
+            spy={true}
+            smooth={true}
+            duration={600}
+            offset={-100}
+            onClick={() => setMobMenu(false)}
+            className="cursor-pointer group-hover:text-green-400 transition-all duration-500"
+          >
+            {curr.link}
+          </Link>
+          <div className="h-[1px] mx-auto bg-green-400 w-0 group-hover:w-full transition-all duration-500" />
+        </li>
+      ))}
+    </ul>
+  );
+};
 
-export default NavbarList
+export default NavbarList;
