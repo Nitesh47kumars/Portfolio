@@ -2,9 +2,8 @@ import React from 'react'
 
 const NavbarLogo = () => {
   return (
-    <div>
-      <h1 className='text-xl font-bold pb-0.5 max-md:hidden'>Legend</h1>
-      <img className='h-8 md:hidden' src='/Logo.jpg' alt=''/>
+    <div className='h-10 w-10 object-cover rounded-full overflow-hidden'>
+      <img className='h-full w-full' src='/Logo.jpg' alt=''/>
     </div>
   )
 }

@@ -4,6 +4,7 @@ import {Copy} from '../../UI/Copy'
 import {Check} from '../../UI/Check'
 import {motion, useAnimation} from "motion/react"
 import { animation } from '../../Motions/Animation';
+import { Link } from 'react-scroll';
 
 const HeroContent = () => {
   const [copy, setCopy] = useState(false);
@@ -44,10 +45,14 @@ const HeroContent = () => {
         viewport={{once:true,amount:0}}
         className="flex flex-col md:flex-row items-center w-full gap-2 max-md:gap-3">
 
-        <button className="w-40 max-md:w-full flex justify-center items-center gap-1 text-[clamp(0.75rem,2vw,1rem)] font-semibold py-2 px-4 rounded-full bg-gradient-to-r from-[#8e2de2] to-[#ff6a00] hover:scale-105 transition-transform duration-300 whitespace-nowrap">
+        <Link
+        to="contact"
+        smooth={600}
+        offset={-100}
+        className="w-40 max-md:w-full flex justify-center items-center gap-1 text-[clamp(0.75rem,2vw,1rem)] font-semibold py-2 px-4 rounded-full bg-gradient-to-r from-[#8e2de2] to-[#ff6a00] hover:scale-105 transition-transform duration-300 whitespace-nowrap">
           Contact Me
           <FaArrowRight className='inline align-middle mt-0.5'/>
-        </button>
+        </Link>
 
         <motion.button
           onClick={handleCopy}

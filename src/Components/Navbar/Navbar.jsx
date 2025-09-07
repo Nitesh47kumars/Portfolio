@@ -47,7 +47,7 @@ const Navbar = () => {
         viewport={{ once: true }}
         className="flex justify-center w-full max-md:justify-around fixed top-0 py-5 backdrop-blur-[2px] z-[50]"
       >
-        <div className="w-[80%] flex justify-between items-center border-2 rounded-full py-2 px-[9px] ps-4">
+        <div className="w-[80%] flex justify-between items-center border-2 rounded-full py-2 px-[10px]">
           <NavbarLogo />
           <div className="hidden md:block">
             <NavbarList setMobMenu={setMobMenu} />
