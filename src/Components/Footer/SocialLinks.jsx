@@ -37,7 +37,7 @@ const links = [
 const SocialLinks = () => (
   <section className="space-y-4">
     <h4 className="font-semibold">Connect</h4>
-    <div className="flex space-x-6">
+    <div className="flex space-x-6 lg:flex-col xl:flex-row space-y-8">
       {links.map(({ name, href, icon }) => (
         <a
           key={name}
@@ -48,7 +48,8 @@ const SocialLinks = () => (
         >
           <div className="relative">
             <ConnectButtons icon={icon} alt={name} />
-            <span className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 text-xs text-gray-400 opacity-0 transition-all duration-300 ease-out group-hover:opacity-100 group-hover:text-white whitespace-nowrap">
+            <span className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 text-xs text-gray-400 opacity-0 transition-all duration-300 ease-out
+            group-hover:opacity-100 group-hover:text-white whitespace-nowrap lg:left-6 xl:left-1/2 ">
               {name}
             </span>
           </div>
