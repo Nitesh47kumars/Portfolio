@@ -27,7 +27,7 @@ const Contact = () => {
               variants={animation('right', 0.2)}
               initial="hidden"
               whileInView="show"
-              viewport={{ once: true, amount: 0 }}
+              viewport={{ once: false, amount: 0 }}
               className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl tracking-wide"
             >
               YOUR VISION, OUR <span className="font-[900]">MISSION</span>
@@ -36,7 +36,7 @@ const Contact = () => {
               variants={animation('left', 0.3)}
               initial="hidden"
               whileInView="show"
-              viewport={{ once: true, amount: 0 }}
+              viewport={{ once: false, amount: 0 }}
               className="mt-4 text-lg sm:text-3xl md:text-4xl lg:text-5xl tracking-wide"
             >
               LET&apos;S BRING IT TO <span className="font-[900]">LIFE!</span>
