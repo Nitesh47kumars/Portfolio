@@ -15,17 +15,15 @@ const NavbarList = ({ setMobMenu }) => {
   ];
 
   const handleClick = (section) => {
-    setMobMenu(false); // Close mobile menu if open
+    setMobMenu(false);
 
     if (location.pathname === '/') {
-      // Already on homepage — scroll directly
       scroller.scrollTo(section, {
         smooth: true,
         duration: 600,
         offset: -100,
       });
     } else {
-      // Navigate to homepage and scroll after render
       navigate('/', { state: { scrollTo: section } });
     }
   };

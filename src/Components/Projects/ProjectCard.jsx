@@ -1,12 +1,13 @@
 import React from "react";
 import ProjectImage from "./ProjectImage";
 import ProjectDetails from "./ProjectDetails";
+import { Link } from "react-router-dom";
 
 const ProjectCard = (props) => {
   return (
     <div className="w-full flex flex-col md:flex-row justify-around items-center gap-10">
-      <a
-        href={props.Link}
+      <Link
+        to={`/projects/${props.title.toLowerCase().replace(/\s+/g, '-')}`}
         className="md:w-[60%] border border-white/50 rounded-3xl"
       >
         <ProjectImage
@@ -16,7 +17,7 @@ const ProjectCard = (props) => {
           background={props.background}
           title={props.title}
         />
-      </a>
+      </Link>
       <div className="md:w-[40%]">
         <ProjectDetails
           title={props.title}

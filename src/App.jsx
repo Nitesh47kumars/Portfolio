@@ -8,6 +8,7 @@ import {
 import Layout from './Layout';
 import Home from './Home';
 import BookCall from './Components/Contact/ContactDrawer/BookCall';
+import ProjectShowcase from './Components/Projects/ProjectShowCase/ProjectShowCase';
 
 const router = createBrowserRouter([
   {
@@ -22,6 +23,13 @@ const router = createBrowserRouter([
     element: <Layout />,
     children: [
       {index: true, element: <BookCall />},
+    ],
+  },
+  {
+    path: '/projects/:slug',
+    element: <Layout />,
+    children: [
+      {index: true, element: <ProjectShowcase />},
     ],
   },
 ]);

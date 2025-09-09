@@ -20,7 +20,6 @@ const Home = () => {
     const section = location.state?.scrollTo;
 
     if (section) {
-      // Scroll to the desired section
       setTimeout(() => {
         scroller.scrollTo(section, {
           smooth: true,
@@ -28,9 +27,8 @@ const Home = () => {
           offset: -100,
         });
 
-        // ✅ Clear scrollTo state by replacing it with undefined
         navigate(location.pathname, { replace: true, state: {} });
-      }, 100); // slight delay ensures DOM is rendered
+      }, 100);
     }
   }, [location.state, navigate, location.pathname]);
 
