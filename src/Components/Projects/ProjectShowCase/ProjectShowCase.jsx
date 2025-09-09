@@ -1,4 +1,3 @@
-// ProjectShowcase.jsx
 import React, { useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
@@ -13,8 +12,38 @@ const ProjectShowcase = () => {
   );
 
   useEffect(() => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    const scrollY = window.scrollY || window.pageYOffset;
+  
+    document.body.style.position = 'fixed';
+    document.body.style.top = `-${scrollY}px`;
+    document.body.style.left = '0';
+    document.body.style.right = '0';
+    document.body.style.overflowY = 'hidden';
+    document.body.style.width = '100%';
+  
+    window.scrollTo(0, 0);
+  
+    const timer = setTimeout(() => {
+      document.body.style.position = '';
+      document.body.style.top = '';
+      document.body.style.left = '';
+      document.body.style.right = '';
+      document.body.style.overflowY = '';
+      document.body.style.width = '';
+      window.scrollTo(0, 0);
+    }, 800);
+  
+    return () => {
+      clearTimeout(timer);
+      document.body.style.position = '';
+      document.body.style.top = '';
+      document.body.style.left = '';
+      document.body.style.right = '';
+      document.body.style.overflowY = '';
+      document.body.style.width = '';
+    };
   }, [slug]);
+  
 
   if (!project) {
     return <div className="flex items-center justify-center h-screen text-red-500">Project not found</div>;
