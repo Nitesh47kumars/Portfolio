@@ -7,7 +7,7 @@ const links = [
     href: "https://github.com/Nitesh47kumars",
     icon: (
       <img
-        src="./ToolsIcon/github.svg"
+        src="/ToolsIcon/github.svg"
         alt="LinkedIn"
       />
     ),
@@ -17,7 +17,7 @@ const links = [
     href: "https://www.linkedin.com/in/nitesh-kumar-b18348346/",
     icon: (
       <img
-        src="./Connect/LinkedIn.png"
+        src="/Connect/LinkedIn.png"
         alt="LinkedIn"
       />
     ),
@@ -27,7 +27,7 @@ const links = [
     href: "https://x.com/Niteshshah028",
     icon: (
       <img
-        src="./Connect/Twitter.svg"
+        src="/Connect/Twitter.svg"
         alt="Twitter"
       />
     ),
