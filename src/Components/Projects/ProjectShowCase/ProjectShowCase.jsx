@@ -60,17 +60,17 @@ const ProjectShowCase = () => {
   // Render project details
   return (
     <div className="relative w-screen min-h-screen mt-35 bg-black text-white overflow-hidden flex justify-center">
-      <div className="w-[90%] lg:max-w-[80%] flex justify-between gap-15">
+      <div className="w-[90%] lg:max-w-[70%] flex justify-between gap-15">
         <main className="flex-1">
           <ProjectHero project={project} />
-          <section className="relative z-20 container mx-auto px-6 py-16">
+          <section className="relative z-20 px-6 py-16">
             <FeatureHighlights features={project.features} />
             <TechStackList techs={project.technologies} />
           </section>
         </main>
 
         {/* Sidebar nav for large screens */}
-        <aside className="py-16 max-xl:hidden">
+        <aside className=" flex-1 py-16 max-xl:hidden">
           <ProjectNav />
         </aside>
       </div>
