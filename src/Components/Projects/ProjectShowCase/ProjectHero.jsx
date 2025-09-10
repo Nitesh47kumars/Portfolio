@@ -2,24 +2,22 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import GoBack from '../../../UI/Buttons/GoBack'
 
-const ProjectHero = ({ project, navigate }) => {
+const ProjectHero = ({ project}) => {
   return (
     <>
-      <div className="relative z-20 container mx-auto px-6 py-16">
+      <div className="relative flex flex-col ">
         <motion.div
           className="flex flex-col md:flex-row items-center justify-between gap-4 mb-12"
           initial={{ opacity: 0, y: -40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          {/* Back Button */}
-          <GoBack Navigate={navigate} />
-
           {/* Title */}
-          <h1 className="text-3xl md:text-4xl font-extrabold text-center md:text-left text-white">
+          <h1 className="font-serif text-3xl md:text-4xl font-extrabold text-center md:text-left text-white">
             {project.title}
           </h1>
 
+          
           {/* View Live Button */}
           {project.Link && (
             <a
@@ -32,6 +30,12 @@ const ProjectHero = ({ project, navigate }) => {
             </a>
           )}
         </motion.div>
+
+        <div className='h-full w-full  border border-white/30 rounded-2xl'>
+          <img
+             className='h-full w-full border-8 border-[#21212193] rounded-2xl'
+           src={project.image} alt='' />
+        </div>
 
         {/* Description */}
         <motion.p
