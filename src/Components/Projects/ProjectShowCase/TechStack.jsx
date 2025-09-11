@@ -1,29 +1,28 @@
-// components/TechStack.jsx
-
 import { motion } from 'framer-motion';
+import {animation} from '../../../Motions/Animation';
 
-/**
- * @param {{ tech: { title: string; description: string }[] }} props
- */
 export default function TechStack({ tech }) {
   return (
     <section className="max-w-3xl px-2">
       <motion.h2
-        initial={{ opacity: 0, y: 10 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.4 }}
-        className="text-2xl sm:text-3xl font-semibold mb-6 max-sm:text-center"
+        variants={animation("down",0.2)}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.3 }}
+        className="text-2xl sm:text-3xl font-semibold mb-8 max-sm:text-center"
       >
         🧪 Tech Stack
       </motion.h2>
 
-      <ul className="space-y-5">
+      <ul className="space-y-4">
         {tech.map((item, index) => (
           <motion.li
             key={item.title}
-            initial={{ opacity: 0, x: -15 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: index * 0.05 }}
+            custom={index}
+            variants={animation("right",(0.1 * index))}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.3 }}
             className="border-l-4 border-blue-500 pl-4"
           >
             <h3 className="text-base sm:text-lg font-semibold">

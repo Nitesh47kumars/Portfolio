@@ -18,9 +18,9 @@ const AboutContent = () => {
       >
         I'm Nitesh Kumar, A
         <br />
-        <span className="font-thin font-serif">
+        <span>
           Creative{' '}
-          <span className="bg-clip-text text-transparent italic tracking-tight animate-gradient-x font-instrument-serif bg-gradient-to-r from-[#ff8000] via-[#f0c] to-[#04f]">
+          <span className="bg-clip-text text-transparent italic tracking-tight animate-gradient-x bg-gradient-to-r from-[#ff8000] via-[#f0c] to-[#04f]">
             Frontend Developer
           </span>
         </span>

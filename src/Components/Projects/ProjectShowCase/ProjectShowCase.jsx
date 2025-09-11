@@ -6,6 +6,7 @@ import ProjectNav from './ProjectNav';
 import ProjectHero from './ProjectHero';
 import Accordion from './Accordion';
 import TechStack from './TechStack';
+import CalloutBox from './CallOutBox';
 
 const ProjectShowCase = () => {
   const { slug } = useParams();
@@ -67,6 +68,7 @@ const ProjectShowCase = () => {
           <section className="relative flex flex-col gap-25 my-20">
             <Accordion features={project.keyFeatures} />
             <TechStack tech={project.techStack} />
+            <CalloutBox project={project} />
           </section>
         </main>
 
