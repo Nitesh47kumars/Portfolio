@@ -53,6 +53,21 @@
         "title": "Visual Feedback on Interaction",
         "description": "Hover effects or click states to show which elements are interactive, improving confidence and engagement."
       }
+    ],
+
+    "techStack": [
+      {
+        "title": "React.js",
+        "description": "JavaScript library for building fast and interactive user interfaces with component-based architecture."
+      },
+      {
+        "title": "Pure CSS",
+        "description": "Lightweight and minimal CSS framework offering responsive grid and base styles without JavaScript dependencies."
+      },
+      {
+        "title": "Pokémon API",
+        "description": "Public RESTful API providing detailed data about Pokémon, moves, abilities, and types for dynamic UI rendering."
+      }
     ]
   }
   ,
@@ -110,6 +125,25 @@
       {
         "title": "Cross‑Browser Compatibility",
         "description": "Site renders correctly across different browsers, maintaining layout, styling, and functionality."
+      }
+    ],
+
+    "techStack": [
+      {
+        "title": "React.js",
+        "description": "JavaScript library for building fast and interactive user interfaces with component-based architecture."
+      },
+      {
+        "title": "React Router DOM",
+        "description": "Declarative routing library for React that enables dynamic, client-side routing and nested routes."
+      },
+      {
+        "title": "Country API",
+        "description": "RESTful API providing detailed data about countries including names, flags, regions, and populations."
+      },
+      {
+        "title": "JSONPlaceholder API",
+        "description": "Free fake API for prototyping and testing, offering dummy data for users, posts, comments, and more."
       }
     ]
   }
