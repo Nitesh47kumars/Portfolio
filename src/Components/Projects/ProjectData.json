@@ -23,6 +23,36 @@
       "PokéAPI",
       "Vercel",
       "Axios"
+    ],
+    "keyFeatures": [
+      {
+        "title": "Pokémon Catalogue Browsing",
+        "description": "Users can browse through a large collection of Pokémon, viewing images and basic information for each one."
+      },
+      {
+        "title": "Responsive Design",
+        "description": "Layout adapts smoothly for desktop, tablet, and mobile displays to ensure a good experience everywhere."
+      },
+      {
+        "title": "Search or Filter Capabilities",
+        "description": "Ability to quickly find particular Pokémon by name or type improves usability in exploring a large dataset."
+      },
+      {
+        "title": "Detail Page for Each Pokémon",
+        "description": "Clicking on a Pokémon shows more detailed info (stats, abilities, etc.), helping the user learn more than just the basics."
+      },
+      {
+        "title": "Fast Load Times",
+        "description": "Efficient loading of images and data helps reduce waiting, even when viewing many Pokémon entries or switching between them."
+      },
+      {
+        "title": "Intuitive Navigation",
+        "description": "Easy-to-use menus/buttons and clear pathways to move between browsing the list and viewing details enhance user flow."
+      },
+      {
+        "title": "Visual Feedback on Interaction",
+        "description": "Hover effects or click states to show which elements are interactive, improving confidence and engagement."
+      }
     ]
   }
   ,
@@ -51,6 +81,36 @@
       "CSS3",
       "REST APIs",
       "Vercel"
+    ],
+    "keyFeatures": [
+      {
+        "title": "Responsive Design",
+        "description": "Layout adapts seamlessly across devices — mobile, tablet, desktop — ensuring usability and aesthetics are preserved at various screen sizes."
+      },
+      {
+        "title": "Clean & Modern UI",
+        "description": "Minimalist visual style with consistent spacing, typography, and color palette giving a professional and uncluttered look."
+      },
+      {
+        "title": "Fast Load Times",
+        "description": "Optimized assets and minimal overhead ensure pages load quickly and smoothly, improving user experience."
+      },
+      {
+        "title": "Informative Data Cards",
+        "description": "Key metrics and statistics are displayed using well-structured cards, making it easy for users to digest complex information at a glance."
+      },
+      {
+        "title": "Interactive Navigation",
+        "description": "Navigation elements respond visually on hover/click, providing feedback to the user and enhancing engagement."
+      },
+      {
+        "title": "Accessible Layout",
+        "description": "Content structure and visual hierarchy support readability with adequate spacing, font sizes, and contrast."
+      },
+      {
+        "title": "Cross‑Browser Compatibility",
+        "description": "Site renders correctly across different browsers, maintaining layout, styling, and functionality."
+      }
     ]
   }
   ,
@@ -69,6 +129,7 @@
       "Reusable and modular components built in React for easier maintenance and scalability",
       "Visually engaging animated icons integrated and customized from Gradienty.codes for added interactivity"
     ],
+    
     "technologies": [
       "React",
       "Tailwind CSS",
@@ -77,6 +138,7 @@
       "React-Icons",
       "Gradienty Animated Icons"
     ],
+
     "keyFeatures": [
       {
         "title": "Responsive Design",
@@ -110,6 +172,37 @@
         "title": "Accessible Elements",
         "description": "Clear text, legible fonts, proper contrast, and well‑labelled clickable elements to support usability for more users."
       }
-    ]    
+    ],
+
+    "techStack": [
+      {
+        "title": "React.js",
+        "description": "JavaScript library for building fast and interactive user interfaces with component-based architecture."
+      },
+      {
+        "title": "Tailwind CSS",
+        "description": "Utility-first CSS framework enabling rapid UI development with responsive design and custom theming."
+      },
+      {
+        "title": "Framer Motion",
+        "description": "Animation library for React that enables smooth transitions, gestures, and layout animations."
+      },
+      {
+        "title": "Lenis.js",
+        "description": "Smooth scroll library offering better performance and feel compared to default browser scrolling."
+      },
+      {
+        "title": "React Icons",
+        "description": "Popular icon pack integration for React with access to thousands of scalable vector icons."
+      },
+      {
+        "title": "Uiverse Components",
+        "description": "Open-source animated UI components built with CSS and HTML, ideal for buttons, loaders, and cards."
+      },
+      {
+        "title": "Gradiently.codes",
+        "description": "Collection of animated SVG icons with gradients and motion effects for modern UI design."
+      }
+    ]
   }
 ]

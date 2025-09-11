@@ -5,6 +5,7 @@ import ProjectData from '../ProjectData.json';
 import ProjectNav from './ProjectNav';
 import ProjectHero from './ProjectHero';
 import Accordion from './Accordion';
+import TechStack from './TechStack';
 
 const ProjectShowCase = () => {
   const { slug } = useParams();
@@ -64,6 +65,7 @@ const ProjectShowCase = () => {
           <ProjectHero project={project} />
           <section className="relative z-20 py-16">
             <Accordion features={project.keyFeatures} />
+            <TechStack tech={project.techStack} />
           </section>
         </main>
 
