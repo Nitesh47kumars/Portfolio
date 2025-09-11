@@ -60,19 +60,23 @@ const Accordion = ({ features }) => {
 
   return (
     <>
-      <h1 className='text-3xl font-bold py-6 font-serif
-      max-md:text-2xl max-md:text-center'>Key Features</h1>
-      <div className="bg-white/10 font-serif backdrop-blur-md rounded-lg overflow-hidden border border-white/10 shadow-md">
-        {features.map((feature, index) => (
-          <AccordionItem
-          key={index}
-          title={feature.title}
-          description={feature.description}
-          isOpen={openIndex === index}
-          onClick={() => handleToggle(index)}
-          isLast={index === features.length - 1}
-          />
-        ))}
+      <div>
+        <h1 className='text-3xl font-bold py-6 font-serif
+          max-md:text-2xl max-md:text-center'>
+            Key Features
+        </h1>
+        <div className="bg-white/10 font-serif backdrop-blur-md rounded-lg overflow-hidden border border-white/10 shadow-md">
+          {features.map((feature, index) => (
+            <AccordionItem
+            key={index}
+            title={feature.title}
+            description={feature.description}
+            isOpen={openIndex === index}
+            onClick={() => handleToggle(index)}
+            isLast={index === features.length - 1}
+            />
+          ))}
+        </div>
       </div>
     </>
   );

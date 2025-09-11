@@ -3,7 +3,7 @@
 body{
     color: white;
     background-color: #000000;
-    font-family: outfit-fallback;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .active{

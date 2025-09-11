@@ -63,7 +63,8 @@ const ProjectShowCase = () => {
       <div className="w-[90%] lg:max-w-[70%] flex justify-between gap-15">
         <main className="flex-1">
           <ProjectHero project={project} />
-          <section className="relative z-20 py-16">
+
+          <section className="relative flex flex-col gap-25 my-20">
             <Accordion features={project.keyFeatures} />
             <TechStack tech={project.techStack} />
           </section>
