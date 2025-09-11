@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import GoBack from '../../../UI/Buttons/GoBack'
 import { FiGithub } from "react-icons/fi";
+import TechStackList from './TechStackList';
 
 const ProjectHero = ({ project}) => {
   return (
@@ -50,9 +51,6 @@ const ProjectHero = ({ project}) => {
           )}
         </motion.div>
 
-
-
-
         {/* Description */}
         <motion.p
           className="text-lg md:text-xl font-sans text-white/70"
@@ -62,6 +60,8 @@ const ProjectHero = ({ project}) => {
         >
           {project.header}
         </motion.p>
+        
+        <TechStackList techs={project.technologies} />
 
         <div className='h-full w-full xl:h-[500px] xl:w-[800px] border border-white/30 rounded-2xl'>
           <img

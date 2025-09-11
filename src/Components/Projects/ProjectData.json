@@ -76,6 +76,40 @@
       "Lenis.js",   
       "React-Icons",
       "Gradienty Animated Icons"
-    ]
+    ],
+    "keyFeatures": [
+      {
+        "title": "Responsive Design",
+        "description": "Layout adapts seamlessly across devices — mobile, tablet, desktop — ensuring usability and aesthetics are preserved at various screen sizes."
+      },
+      {
+        "title": "Clean & Modern UI",
+        "description": "Minimalist visual style with consistent spacing, typography, and color palette giving a professional and uncluttered look."
+      },
+      {
+        "title": "Interactive Navigation",
+        "description": "Navigation elements respond visually on hover/click, providing feedback to the user and enhancing engagement."
+      },
+      {
+        "title": "Fast Load Times",
+        "description": "Optimized assets and minimal overhead ensure pages load quickly and smoothly, improving user experience."
+      },
+      {
+        "title": "Detailed Project Showcases",
+        "description": "Each project includes images/screenshots, descriptions, tech used, and role/contribution to clearly communicate capability and process."
+      },
+      {
+        "title": "Contact & Connectivity",
+        "description": "Visible call‑to‑action/contact section enabling visitors to reach out easily; includes links to social profiles or email."
+      },
+      {
+        "title": "Cross‑Browser Compatibility",
+        "description": "Site renders correctly across different browsers, maintaining layout, styling, and functionality."
+      },
+      {
+        "title": "Accessible Elements",
+        "description": "Clear text, legible fonts, proper contrast, and well‑labelled clickable elements to support usability for more users."
+      }
+    ]    
   }
 ]

@@ -4,8 +4,7 @@ import { useParams } from 'react-router-dom';
 import ProjectData from '../ProjectData.json';
 import ProjectNav from './ProjectNav';
 import ProjectHero from './ProjectHero';
-import FeatureHighlights from './FeatureHighlights';
-import TechStackList from './TechStackList';
+import Accordion from './Accordion';
 
 const ProjectShowCase = () => {
   const { slug } = useParams();
@@ -63,9 +62,8 @@ const ProjectShowCase = () => {
       <div className="w-[90%] lg:max-w-[70%] flex justify-between gap-15">
         <main className="flex-1">
           <ProjectHero project={project} />
-          <section className="relative z-20 px-6 py-16">
-            <FeatureHighlights features={project.features} />
-            <TechStackList techs={project.technologies} />
+          <section className="relative z-20 py-16">
+            <Accordion features={project.keyFeatures} />
           </section>
         </main>
 
