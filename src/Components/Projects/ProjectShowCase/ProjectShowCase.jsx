@@ -1,12 +1,11 @@
 import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-
 import ProjectData from '../ProjectData.json';
 import ProjectNav from './ProjectNav';
 import ProjectHero from './ProjectHero';
 import Accordion from './Accordion';
 import TechStack from './TechStack';
-import CalloutBox from './CallOutBox';
+import CalloutBox from './CalloutBox';
 
 const ProjectShowCase = () => {
   const { slug } = useParams();
