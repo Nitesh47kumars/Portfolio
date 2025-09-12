@@ -60,7 +60,7 @@ const Accordion = ({ features }) => {
 
   return (
     <>
-      <div>
+      <div id='features' >
         <h1 className='text-3xl font-bold py-6 font-serif
           max-md:text-2xl max-md:text-center'>
             Key Features

@@ -3,7 +3,7 @@ import {animation} from '../../../Motions/Animation';
 
 export default function TechStack({ tech }) {
   return (
-    <section className="max-w-3xl px-2">
+    <section id='techstack' className="max-w-3xl px-2">
       <motion.h2
         variants={animation("down",0.2)}
         initial="hidden"
