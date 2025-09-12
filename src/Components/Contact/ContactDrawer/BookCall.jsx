@@ -35,7 +35,7 @@ const BookCall = () => {
       />
 
       {/* 📸 Gradient overlay */}
-      <div className="absolute top-0 left-0 h-full w-full z-[-1] bg-gradient-to-b from-black/50 via-black/30 to-black/80" />
+      <div className="absolute top-0 left-0 h-full w-full z-[-1] bg-gradient-to-b from-black/80 via-black/50 to-black" />
 
       {/* ⏳ Loader */}
       {loading && (
