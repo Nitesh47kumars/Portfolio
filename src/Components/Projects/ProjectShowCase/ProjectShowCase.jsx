@@ -59,7 +59,7 @@ const ProjectShowCase = () => {
 
   // Render project details
   return (
-    <div className="relative w-screen min-h-screen mt-35 bg-black text-white overflow-hidden flex justify-center">
+    <div className="relative w-screen min-h-screen mt-35 bg-black text-white overflow-visible flex justify-center">
       <div className="w-[90%] lg:max-w-[70%] flex justify-between gap-15">
         <main className="flex-1">
           <ProjectHero project={project} />
