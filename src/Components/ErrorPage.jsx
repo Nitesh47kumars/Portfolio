@@ -1,99 +1,65 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
-
-const containerVariants = {
-  hidden: { opacity: 0, y: 50 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.8, ease: 'easeOut' },
-  },
-  exit: { opacity: 0, y: -50, transition: { duration: 0.5 } },
-};
+import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const ErrorPage = () => {
+  const navigate = useNavigate();
+
   return (
-    <motion.div
-      className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-purple-900 via-indigo-900 to-blue-900 text-white px-6"
-      variants={containerVariants}
-      initial="hidden"
-      animate="visible"
-      exit="exit"
-    >
-      <div className="max-w-xl text-center">
-        <motion.h1
-          className="text-9xl font-extrabold tracking-wide mb-6 select-none"
-          initial={{ scale: 0.8, opacity: 0 }}
-          animate={{ scale: 1, opacity: 1 }}
-          transition={{ delay: 0.3, duration: 0.8, ease: 'easeOut' }}
-        >
-          404
-        </motion.h1>
-
-        <motion.p
-          className="text-2xl sm:text-3xl font-semibold mb-4"
-          initial={{ x: -100, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          transition={{ delay: 0.7, duration: 0.8, ease: 'easeOut' }}
-        >
-          Oops! Page Not Found
-        </motion.p>
-
-        <motion.p
-          className="text-lg sm:text-xl mb-8 text-gray-300"
-          initial={{ x: 100, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          transition={{ delay: 1.1, duration: 0.8, ease: 'easeOut' }}
-        >
-          The page you're looking for doesn't exist or has been moved.
-        </motion.p>
-
-        <motion.div
-          className="inline-flex space-x-6"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1.5, duration: 1 }}
-        >
-          <Link
-            to="/"
-            className="px-6 py-3 bg-indigo-600 hover:bg-indigo-700 rounded-lg font-semibold shadow-lg shadow-indigo-500/50 transition"
-          >
-            Go Home
-          </Link>
-
-          <a
-            href="mailto:support@example.com"
-            className="px-6 py-3 border border-indigo-600 hover:bg-indigo-600 hover:text-white rounded-lg font-semibold transition"
-          >
-            Contact Support
-          </a>
-        </motion.div>
-      </div>
-
-      <motion.div
-        className="absolute bottom-10 opacity-20 select-none"
-        initial={{ scale: 0.5, rotate: 10, opacity: 0 }}
-        animate={{ scale: 1, rotate: 0, opacity: 0.2 }}
-        transition={{ delay: 2, duration: 1 }}
-        aria-hidden="true"
-      >
+    <div className="relative flex min-h-svh w-full flex-col justify-center p-6 md:p-10">
+      <div className="relative mx-auto w-full max-w-5xl">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="w-72 h-72"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-          strokeWidth={1}
+          viewBox="0 0 362 145"
+          className="text-foreground absolute inset-0 h-[50vh] w-full opacity-[0.04] dark:opacity-[0.03]"
         >
           <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M12 9v3m0 0v3m0-3h3m-3 0H9m3-6a9 9 0 110 18 9 9 0 010-18z"
+            fill="currentColor"
+            d="M62.6 142c-2.133 0-3.2-1.067-3.2-3.2V118h-56c-2 0-3-1-3-3V92.8c0-1.333.4-2.733 1.2-4.2L58.2 4c.8-1.333 2.067-2 3.8-2h28c2 0 3 1 3 3v85.4h11.2c.933 0 1.733.333 2.4 1 .667.533 1 1.267 1 2.2v21.2c0 .933-.333 1.733-1 2.4-.667.533-1.467.8-2.4.8H93v20.8c0 2.133-1.067 3.2-3.2 3.2H62.6zM33 90.4h26.4V51.2L33 90.4zM181.67 144.6c-7.333 0-14.333-1.333-21-4-6.666-2.667-12.866-6.733-18.6-12.2-5.733-5.467-10.266-13-13.6-22.6-3.333-9.6-5-20.667-5-33.2 0-12.533 1.667-23.6 5-33.2 3.334-9.6 7.867-17.133 13.6-22.6 5.734-5.467 11.934-9.533 18.6-12.2 6.667-2.8 13.667-4.2 21-4.2 7.467 0 14.534 1.4 21.2 4.2 6.667 2.667 12.8 6.733 18.4 12.2 5.734 5.467 10.267 13 13.6 22.6 3.334 9.6 5 20.667 5 33.2 0 12.533-1.666 23.6-5 33.2-3.333 9.6-7.866 17.133-13.6 22.6-5.6 5.467-11.733 9.533-18.4 12.2-6.666 2.667-13.733 4-21.2 4zm0-31c9.067 0 15.6-3.733 19.6-11.2 4.134-7.6 6.2-17.533 6.2-29.8s-2.066-22.2-6.2-29.8c-4.133-7.6-10.666-11.4-19.6-11.4-8.933 0-15.466 3.8-19.6 11.4-4 7.6-6 17.533-6 29.8s2 22.2 6 29.8c4.134 7.467 10.667 11.2 19.6 11.2zM316.116 142c-2.134 0-3.2-1.067-3.2-3.2V118h-56c-2 0-3-1-3-3V92.8c0-1.333.4-2.733 1.2-4.2l56.6-84.6c.8-1.333 2.066-2 3.8-2h28c2 0 3 1 3 3v85.4h11.2c.933 0 1.733.333 2.4 1 .666.533 1 1.267 1 2.2v21.2c0 .933-.334 1.733-1 2.4-.667.533-1.467.8-2.4.8h-11.2v20.8c0 2.133-1.067 3.2-3.2 3.2h-27.2zm-29.6-51.6h26.4V51.2l-26.4 39.2z"
           />
         </svg>
-      </motion.div>
-    </motion.div>
+
+        <div className="relative z-[1] pt-52 text-center">
+          <h1 className="text-primary mt-4 text-5xl font-semibold tracking-tight text-balance sm:text-7xl">
+            Page not found
+          </h1>
+          <p className="mt-6 text-lg font-medium text-pretty sm:text-xl/8">
+            Well, this is awkward... the page you're looking for doesn’t exist.
+          </p>
+
+          <div className="mt-10 flex flex-col gap-x-6 gap-y-3 sm:flex-row sm:items-center sm:justify-center">
+            <button
+              onClick={() => navigate(-1)}
+              className="bg-white/20 whitespace-nowrap flex items-center justify-center py-2 px-3 rounded font-semibold group"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="lucide lucide-arrow-left ms-0 me-2 opacity-60 transition-transform group-hover:-translate-x-0.5"
+                aria-hidden="true"
+              >
+                <path d="m12 19-7-7 7-7" />
+                <path d="M19 12H5" />
+              </svg>
+              Go back
+            </button>
+
+            <button
+              onClick={() => navigate("/")}
+              className="bg-white text-black py-2 px-3 rounded"
+            >
+              Take me home
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 };
 

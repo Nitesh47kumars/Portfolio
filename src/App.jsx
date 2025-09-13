@@ -10,7 +10,6 @@ import Home from './Home';
 import BookCall from './Components/Contact/ContactDrawer/BookCall';
 import ProjectShowcase from './Components/Projects/ProjectShowCase/ProjectShowCase';
 import ErrorPage from './Components/ErrorPage';
-import StickyTest from './Components/StickyTest'
 
 const router = createBrowserRouter([
   {
