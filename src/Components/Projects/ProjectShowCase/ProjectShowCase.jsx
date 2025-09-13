@@ -56,7 +56,7 @@ const ProjectShowCase = () => {
         <main className="flex-1">
           <ProjectHero project={project} />
 
-          <section className="relative flex flex-col gap-25 my-20">
+          <section className="relative flex flex-col gap-15 my-30">
             <Accordion features={project.keyFeatures} />
             <TechStack tech={project.techStack} />
             <CalloutBox project={project} />
