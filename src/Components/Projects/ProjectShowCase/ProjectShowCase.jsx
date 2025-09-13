@@ -10,12 +10,14 @@ import CalloutBox from './CalloutBox';
 const ProjectShowCase = () => {
   const { slug } = useParams();
 
-  // Find project by slug
   const project = ProjectData.find(
     (p) => p.title.toLowerCase().replace(/\s+/g, '-') === slug
   );
 
-  // Handle scroll freeze on route change
+  if (!project) {
+    throw new Error('Project not found');
+  }
+
   useEffect(() => {
     const scrollY = window.scrollY || window.pageYOffset;
 
@@ -48,16 +50,6 @@ const ProjectShowCase = () => {
     };
   }, [slug]);
 
-  // Return fallback if project not found
-  if (!project) {
-    return (
-      <div className="flex items-center justify-center h-screen text-red-500">
-        Project not found
-      </div>
-    );
-  }
-
-  // Render project details
   return (
     <div className="relative w-screen min-h-screen mt-35 bg-black text-white overflow-visible flex justify-center">
       <div className="w-[90%] lg:max-w-[70%] flex justify-between gap-15">
@@ -72,7 +64,7 @@ const ProjectShowCase = () => {
         </main>
 
         {/* Sidebar nav for large screens */}
-        <aside className=" flex-1 py-16 max-xl:hidden">
+        <aside className="flex-1 py-16 max-xl:hidden">
           <ProjectNav />
         </aside>
       </div>
