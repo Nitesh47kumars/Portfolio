@@ -1,3 +1,4 @@
+// useLenis.js
 import { useEffect } from 'react';
 import Lenis from '@studio-freight/lenis';
 
@@ -6,8 +7,11 @@ const useLenis = () => {
     const lenis = new Lenis({
       smooth: true,
       duration: 1.2,
-      smoothTouch:false,
+      smoothTouch: false,
     });
+
+    // ✅ Make it globally accessible
+    window.lenis = lenis;
 
     function raf(time) {
       lenis.raf(time);
@@ -18,6 +22,7 @@ const useLenis = () => {
 
     return () => {
       lenis.destroy();
+      window.lenis = null; // cleanup
     };
   }, []);
 };

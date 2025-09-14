@@ -10,6 +10,7 @@ import Home from './Home';
 import BookCall from './Components/Contact/ContactDrawer/BookCall';
 import ProjectShowcase from './Components/Projects/ProjectShowCase/ProjectShowCase';
 import ErrorPage from './Components/ErrorPage';
+import useLenis from './Motions/UseLenis';
 
 const router = createBrowserRouter([
   {
@@ -38,6 +39,7 @@ const router = createBrowserRouter([
 ]);
 
 const App = () => {
+  useLenis();
   return <RouterProvider router={router} />;
 };
 

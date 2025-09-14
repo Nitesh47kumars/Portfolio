@@ -9,10 +9,7 @@ import Skills from './Components/Skills/Skills';
 import Project from './Components/Projects/Project';
 import Contact from './Components/Contact/Contact';
 
-import useLenis from './Motions/UseLenis';
-
 const Home = () => {
-  useLenis();
   const location = useLocation();
   const navigate = useNavigate();
 

@@ -5,7 +5,6 @@ const BookCall = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
 
     const scriptId = 'calendly-widget-script';
     const existingScript = document.getElementById(scriptId);
