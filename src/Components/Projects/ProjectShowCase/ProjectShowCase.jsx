@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import ProjectData from '../ProjectData.json';
-import ProjectNav from './ProjectNav';
 import ProjectHero from './ProjectHero';
 import Accordion from './Accordion';
 import TechStack from './TechStack';
 import CalloutBox from './CalloutBox';
+import WhatILearned from './WhatILearned';
 
 const ProjectShowCase = () => {
   const { slug } = useParams();
@@ -32,9 +32,9 @@ const ProjectShowCase = () => {
         </main>
 
         {/* Sidebar nav for large screens */}
-        <aside className="flex-1 py-16 max-xl:hidden">
-          <ProjectNav />
-        </aside>
+        <div className="flex-1 py-16 max-xl:hidden">
+          <WhatILearned learnings={project.whatILearned}/>
+        </div>
       </div>
     </div>
   );

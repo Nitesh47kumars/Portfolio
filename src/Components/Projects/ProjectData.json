@@ -8,6 +8,7 @@
     "color": "text-cyan-300",
     "background":"linear-gradient(195deg, #001D4A 30%, #006992 70%, #475569 100%)",
     "description": "A clean, searchable Pokémon showcase built with React and pure CSS. It fetches detailed data like type, stats, and abilities using complex API structures.",
+    
     "features": [
       "Search functionality to filter Pokémon by name instantly.",
       "Displays Pokémon info like type, size, stats, abilities, and experience.",
@@ -16,6 +17,7 @@
       "Loader/Spinner UI while data is being fetched.",
       "Error handling for invalid or failed API responses."
     ],
+
     "technologies": [
       "React",
       "JavaScript",
@@ -24,6 +26,14 @@
       "Vercel",
       "Axios"
     ],
+
+    "whatILearned": [
+      "Learned how to work with complex and nested REST APIs using the Pokémon API.",
+      "Improved skills in advanced CSS design and responsive layout techniques.",
+      "Implemented functional search and filtering UI logic in React.",
+      "Understood how to structure dynamic API data into clean, user-friendly components."
+    ],
+
     "keyFeatures": [
       {
         "title": "Pokémon Catalogue Browsing",
@@ -80,6 +90,7 @@
     "color": "text-purple-300",
     "background":"linear-gradient(185deg, #312E81 40%, #7C3AED 75%, #E9D5FF 105%)",
     "description": "A modular React project combining multiple small components like Country Explorer, API CRUD practice, Accordion, and more — all built with the latest React Router DOM.",
+    
     "features": [
       "Home: A simple landing page with header, footer, image, and link to Country section.",
       "Country: Fetches and displays all country data with search, sort (ASC/DESC), filter by region, and detailed country pages.",
@@ -89,6 +100,7 @@
       "API Practice: Add/Edit/Delete items using real APIs and controlled inputs styled with CSS3.",
       "GitHub: External link redirects to my GitHub profile."
     ],
+
     "technologies": [
       "React",
       "React Router DOM (v6+)",
@@ -97,6 +109,14 @@
       "REST APIs",
       "Vercel"
     ],
+
+    "whatILearned": [
+      "Gained practical experience with React Router DOM for multi-page navigation.",
+      "Worked with multiple APIs including Country API and JSONPlaceholder.",
+      "Built full CRUD functionality — including search, add, delete, and update operations.",
+      "Learned state management strategies for API-heavy applications using React hooks."
+    ],
+
     "keyFeatures": [
       {
         "title": "Responsive Design",
@@ -157,6 +177,7 @@
     "color":"text-yellow-200",
     "background":"linear-gradient(195deg, #FF8C61 30%, #E8C547 70%, #FF8C61 100%)",
     "description": "A modern, responsive personal portfolio built with React. It showcases my skills, projects, and includes smooth animations and interactions.",
+    
     "features": [
       "Seamless smooth scrolling across all sections using Lenis.js for an enhanced user experience",
       "Animated UI elements powered by Framer Motion, bringing components to life with smooth transitions",
@@ -173,6 +194,13 @@
       "Gradienty Animated Icons"
     ],
 
+    "whatILearned": [
+      "Built my first ever portfolio using React.js and Tailwind CSS.",
+      "Explored Lenis.js for the first time to implement smooth scrolling.",
+      "Integrated react-scroll for anchor-based navigation.",
+      "Learned how to use third-party UI components effectively within my own React portfolio."
+    ],
+    
     "keyFeatures": [
       {
         "title": "Responsive Design",
