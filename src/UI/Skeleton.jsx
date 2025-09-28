@@ -5,7 +5,6 @@ const Skeleton = () => {
   return (
     <StyledWrapper>
       <div className="card">
-        <div className="card__skeleton card__title" />
         <div className="card__skeleton card__description">       </div>
       </div>
     </StyledWrapper>
@@ -14,11 +13,12 @@ const Skeleton = () => {
 
 const StyledWrapper = styled.div`
   .card {
-    width: 18rem;
+    width: 100%;
     padding: 1rem;
     text-align: center;
     border-radius: .8rem;
-    background-color: white;
+    background-color: #111111;
+    border: 1px solid #505050;
   }
 
   .card__skeleton {
@@ -26,7 +26,7 @@ const StyledWrapper = styled.div`
   		90deg,
   		#ccc 0px,
   		rgb(229 229 229 / 90%) 40px,
-  		#ccc 80px
+  		#333 80px
   	);
     background-size: 300%;
     background-position: 100% 0;
@@ -34,13 +34,11 @@ const StyledWrapper = styled.div`
     animation: shimmer 1.5s infinite;
   }
 
-  .card__title {
-    height: 15px;
-    margin-bottom: 15px;
-  }
-
   .card__description {
-    height: 100px;
+    width: 93%;
+    min-height: 250px;
+    height: 400px;
+    margin: 0 2rem;
   }
 
   @keyframes shimmer {
