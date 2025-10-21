@@ -1,7 +1,7 @@
 [
   {
     "title": "Snippit",
-    "image": "/Project/Pokemon.png",
+    "image": "/Project/Snippit.png",
     "Link": "https://snippit-five.vercel.app/",
     "github": "https://github.com/Nitesh47kumars/Snippix",
     "header": "A customizable React code editor with syntax highlighting, theme control, and export options",
@@ -10,12 +10,14 @@
     "description": "A responsive web app for reading, writing, and modifying code with customizable fonts, text sizes, padding, and light/dark themes — supporting multiple languages and allowing export as PDF, JPG, or shareable links.",
     
     "features": [
-      "Search functionality to filter Pokémon by name instantly.",
-      "Displays Pokémon info like type, size, stats, abilities, and experience.",
-      "Utilizes nested `.map()` methods to extract data from complex API responses.",
-      "Responsive UI styled using pure CSS without any utility frameworks.",
-      "Loader/Spinner UI while data is being fetched.",
-      "Error handling for invalid or failed API responses."
+      "Real-time code editing with syntax highlighting using React Syntax Highlighter.",
+      "Customization options for font style, text size, padding, and background color.",
+      "Light and dark theme toggle for an adaptive editing experience.",
+      "Supports multiple programming languages for syntax highlighting.",
+      "Export code snippets as PDF or JPG using html2canvas.",
+      "Copy code, image, or shareable link directly with one click.",
+      "Responsive interface built with React and Tailwind CSS.",
+      "Integrated Google Fonts for enhanced typography customization."
     ],
 
     "technologies": [
@@ -23,7 +25,9 @@
       "JavaScript",
       "CSS3 (Pure)",
       "Tailwind CSS",
-      "html2canvas"
+      "React Syntax Highlighter",
+      "html2canvas",
+      "Google Fonts"
     ],
 
     "whatILearned": [
