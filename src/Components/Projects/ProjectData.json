@@ -1,10 +1,10 @@
 [
   {
-    "title": "Pokemon",
+    "title": "Snippit",
     "image": "/Project/Pokemon.png",
-    "Link": "https://pokemon-five-inky.vercel.app/",
-    "github": "https://github.com/Nitesh47kumars/Pokemon",
-    "header": "A responsive web app showcasing Pokémon stats using the PokéAPI with advanced data mapping and search functionality.",
+    "Link": "https://snippit-five.vercel.app/",
+    "github": "https://github.com/Nitesh47kumars/Snippix",
+    "header": "A responsive web app for reading, writing, and modifying code with customizable fonts, text sizes, padding, and light/dark themes — supporting multiple languages and allowing export as PDF, JPG, or shareable links.",
     "color": "text-cyan-300",
     "background":"linear-gradient(195deg, #001D4A 30%, #006992 70%, #475569 100%)",
     "description": "A clean, searchable Pokémon showcase built with React and pure CSS. It fetches detailed data like type, stats, and abilities using complex API structures.",
