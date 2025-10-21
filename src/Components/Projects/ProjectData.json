@@ -72,15 +72,31 @@
     "techStack": [
       {
         "title": "React.js",
-        "description": "JavaScript library for building fast and interactive user interfaces with component-based architecture."
+        "description": "JavaScript library for building dynamic and reusable user interface components efficiently."
       },
       {
-        "title": "Pure CSS",
-        "description": "Lightweight and minimal CSS framework offering responsive grid and base styles without JavaScript dependencies."
+        "title": "JavaScript (ES6+)",
+        "description": "Core programming language enabling interactivity, logic, and DOM manipulation in the application."
       },
       {
-        "title": "Pokémon API",
-        "description": "Public RESTful API providing detailed data about Pokémon, moves, abilities, and types for dynamic UI rendering."
+        "title": "CSS3 (Pure)",
+        "description": "Used for styling and layout, providing responsive design and visual consistency across the app."
+      },
+      {
+        "title": "Tailwind CSS",
+        "description": "Utility-first CSS framework that allows rapid UI development with flexible, responsive design classes."
+      },
+      {
+        "title": "React Syntax Highlighter",
+        "description": "Library for rendering syntax-highlighted code blocks in React, improving code readability and presentation."
+      },
+      {
+        "title": "html2canvas",
+        "description": "JavaScript library that captures and converts webpage sections into downloadable image formats seamlessly."
+      },
+      {
+        "title": "Google Fonts",
+        "description": "Provides clean and modern typography for a polished and professional visual appearance."
       }
     ]
   }
