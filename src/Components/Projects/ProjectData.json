@@ -4,10 +4,10 @@
     "image": "/Project/Pokemon.png",
     "Link": "https://snippit-five.vercel.app/",
     "github": "https://github.com/Nitesh47kumars/Snippix",
-    "header": "A responsive web app for reading, writing, and modifying code with customizable fonts, text sizes, padding, and light/dark themes — supporting multiple languages and allowing export as PDF, JPG, or shareable links.",
+    "header": "A customizable React code editor with syntax highlighting, theme control, and export options",
     "color": "text-cyan-300",
     "background":"linear-gradient(195deg, #001D4A 30%, #006992 70%, #475569 100%)",
-    "description": "A clean, searchable Pokémon showcase built with React and pure CSS. It fetches detailed data like type, stats, and abilities using complex API structures.",
+    "description": "A responsive web app for reading, writing, and modifying code with customizable fonts, text sizes, padding, and light/dark themes — supporting multiple languages and allowing export as PDF, JPG, or shareable links.",
     
     "features": [
       "Search functionality to filter Pokémon by name instantly.",
@@ -22,9 +22,8 @@
       "React",
       "JavaScript",
       "CSS3 (Pure)",
-      "PokéAPI",
-      "Vercel",
-      "Axios"
+      "Tailwind CSS",
+      "html2canvas"
     ],
 
     "whatILearned": [
