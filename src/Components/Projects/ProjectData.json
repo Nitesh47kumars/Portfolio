@@ -31,40 +31,41 @@
     ],
 
     "whatILearned": [
-      "Learned how to work with complex and nested REST APIs using the Pokémon API.",
-      "Improved skills in advanced CSS design and responsive layout techniques.",
-      "Implemented functional search and filtering UI logic in React.",
-      "Understood how to structure dynamic API data into clean, user-friendly components."
+      "Learned to capture webpage sections using html2canvas.",
+      "Understood how html2canvas renders styled DOM elements.",
+      "Integrated react-syntax-highlighter for clean code display.",
+      "Improved handling of async rendering in React components.",
+      "Enhanced UI by combining visuals with highlighted code."
     ],
 
     "keyFeatures": [
       {
-        "title": "Pokémon Catalogue Browsing",
-        "description": "Users can browse through a large collection of Pokémon, viewing images and basic information for each one."
+        "title": "Code Snippet Display",
+        "description": "Beautifully formatted code blocks using react-syntax-highlighter for better readability and presentation."
       },
       {
-        "title": "Responsive Design",
-        "description": "Layout adapts smoothly for desktop, tablet, and mobile displays to ensure a good experience everywhere."
+        "title": "Webpage Screenshot Capture",
+        "description": "Allows users to capture specific webpage sections as downloadable images using html2canvas."
       },
       {
-        "title": "Search or Filter Capabilities",
-        "description": "Ability to quickly find particular Pokémon by name or type improves usability in exploring a large dataset."
+        "title": "Customizable Capture Area",
+        "description": "Users can choose which part of the interface to screenshot for flexible content sharing."
       },
       {
-        "title": "Detail Page for Each Pokémon",
-        "description": "Clicking on a Pokémon shows more detailed info (stats, abilities, etc.), helping the user learn more than just the basics."
+        "title": "Real-Time Preview",
+        "description": "Instantly view generated screenshots or highlighted code without page reloads."
       },
       {
-        "title": "Fast Load Times",
-        "description": "Efficient loading of images and data helps reduce waiting, even when viewing many Pokémon entries or switching between them."
+        "title": "Responsive and Minimal UI",
+        "description": "Clean and responsive layout ensures smooth use across all device sizes."
       },
       {
-        "title": "Intuitive Navigation",
-        "description": "Easy-to-use menus/buttons and clear pathways to move between browsing the list and viewing details enhance user flow."
+        "title": "Efficient Rendering",
+        "description": "Optimized rendering process ensures fast and accurate image generation even with styled elements."
       },
       {
-        "title": "Visual Feedback on Interaction",
-        "description": "Hover effects or click states to show which elements are interactive, improving confidence and engagement."
+        "title": "Interactive Developer Experience",
+        "description": "Combines visual capture and syntax highlighting for an engaging, developer-focused tool experience."
       }
     ],
 
