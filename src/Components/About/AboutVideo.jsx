@@ -12,7 +12,7 @@ const AboutVideo = () => {
       {/* Video container - always rendered */}
       <div className='w-full lg:h-120 max-lg:h-140 max-md:h-100 max-sm:h-100 object-cover overflow-hidden max-lg:translate-y-[-1rem]'>
         <video
-          src='/video.mp4'
+          src='/Myself.mp4'
           poster='Logo.jpg'
           loop
           muted
