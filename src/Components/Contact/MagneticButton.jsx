@@ -33,7 +33,7 @@ const MagneticButton = () => {
     <div ref={wrapperRef} className="relative group">
       <button
         ref={buttonRef}
-        className="inline-flex items-center justify-between overflow-hidden rounded-full border border-white/10 bg-white/10 py-[3px] pr-[3px] pl-2 text-base font-medium text-white opacity-85 backdrop-blur-xs transition-all duration-400 ease-out hover:bg-transparent will-change-transform group-hover:scale-125"
+        className="cursor-pointer inline-flex items-center justify-between overflow-hidden rounded-full border border-white/10 bg-white/10 py-[3px] pr-[3px] pl-2 text-base font-medium text-white opacity-85 backdrop-blur-xs transition-all duration-400 ease-out hover:bg-transparent will-change-transform group-hover:scale-125"
       >
         <span className="z-10 px-3 transition-colors duration-300 group-hover:text-black">
           Get In Touch

@@ -49,7 +49,7 @@ const HeroContent = () => {
         to="contact"
         smooth={600}
         offset={-100}
-        className="w-40 max-md:w-full flex justify-center items-center gap-1 text-[clamp(0.75rem,2vw,1rem)] font-semibold py-2 px-4 rounded-full bg-gradient-to-r from-[#8e2de2] to-[#ff6a00] hover:scale-105 transition-transform duration-300 whitespace-nowrap">
+        className="cursor-pointer w-40 max-md:w-full flex justify-center items-center gap-1 text-[clamp(0.75rem,2vw,1rem)] font-semibold py-2 px-4 rounded-full bg-gradient-to-r from-[#8e2de2] to-[#ff6a00] hover:scale-105 transition-transform duration-300 whitespace-nowrap">
           Contact Me
           <FaArrowRight className='inline align-middle mt-0.5'/>
         </Link>
