@@ -58,7 +58,7 @@ const Navbar = () => {
           <button
             ref={buttonRef}
             onClick={onToggle}
-            className="md:hidden border-2 flex justify-center items-center w-15 rounded-full h-full hover:scale-105 transition-all duration-300"
+            className="cursor-pointer md:hidden border-2 flex justify-center items-center w-15 rounded-full h-full hover:scale-105 transition-all duration-300"
           >
             <GiHamburgerMenu />
           </button>
