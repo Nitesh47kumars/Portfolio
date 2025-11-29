@@ -5,8 +5,8 @@
     "Link": "https://snippit-five.vercel.app/",
     "github": "https://github.com/Nitesh47kumars/Snippix",
     "header": "A customizable React code editor with syntax highlighting, theme control, and export options",
-    "color": "text-cyan-300",
-    "background":"linear-gradient(195deg, #001D4A 30%, #006992 70%, #475569 100%)",
+    "color": "text-purple-200",
+    "background": "linear-gradient(195deg, #120C2C 25%, #3F1D83 70%, #120C2C 100%)",
     "description": "A responsive web app for reading, writing, and modifying code with customizable fonts, text sizes, padding, and light/dark themes — supporting multiple languages and allowing export as PDF, JPG, or shareable links.",
     
     "features": [
@@ -102,91 +102,84 @@
   }
   ,
   {
-    "title": "Info-Nation",
-    "image": "/Project/InfoNation.png",
-    "Link": "https://info-nation-eight.vercel.app/posts",
-    "github": "https://github.com/Nitesh47kumars/Country",
-    "header": "A multi-section React application using modern routing and real-world API practices.",
-    "color": "text-purple-300",
-    "background":"linear-gradient(185deg, #312E81 40%, #7C3AED 75%, #E9D5FF 105%)",
-    "description": "A modular React project combining multiple small components like Country Explorer, API CRUD practice, Accordion, and more — all built with the latest React Router DOM.",
+    "title": "Resumify",
+    "image": "/Project/Resumify.png",
+    "Link": "https://resumify-blush-six.vercel.app/",
+    "github": "https://github.com/Nitesh47kumars/Resumify",
+    "header": "Built Resumify — a free resume builder to create and download professional resumes effortlessly.",
+    "color": "text-orange-200",
+    "background": "linear-gradient(195deg, #1C1204 25%, #8B4A11 70%, #1C1204 100%)",
+    "description": "A modern resume builder web app that allows users to create, preview, and download resumes in PDF format with multiple templates, responsive layouts, editable fields, and session-based auto-save — completely free to use.",
     
     "features": [
-      "Home: A simple landing page with header, footer, image, and link to Country section.",
-      "Country: Fetches and displays all country data with search, sort (ASC/DESC), filter by region, and detailed country pages.",
-      "About: Shows interesting facts about 10 countries using modern CSS layout and animation.",
-      "Contact: A form to input name, email, and message — logs data to console instead of sending.",
-      "Accordion: Displays 5 React-related Q&A sections using interactive accordion UI.",
-      "API Practice: Add/Edit/Delete items using real APIs and controlled inputs styled with CSS3.",
-      "GitHub: External link redirects to my GitHub profile."
+      "Multiple resume templates with clean UI layouts",
+      "Live preview with instant updates while editing",
+      "Export high-quality PDF with working clickable links",
+      "SessionStorage support to auto-save user data until browser/tab closed",
+      "Mobile responsive design with improved UI/UX",
+      "Custom sections and structured input forms"
     ],
-
+  
     "technologies": [
-      "React",
-      "React Router DOM (v6+)",
+      "React.js",
       "JavaScript",
-      "CSS3",
-      "REST APIs",
+      "Tailwind CSS",
+      "HTML-to-Image",
+      "jsPDF",
+      "SessionStorage",
       "Vercel"
     ],
-
+  
     "whatILearned": [
-      "Gained practical experience with React Router DOM for multi-page navigation.",
-      "Worked with multiple APIs including Country API and JSONPlaceholder.",
-      "Built full CRUD functionality — including search, add, delete, and update operations.",
-      "Learned state management strategies for API-heavy applications using React hooks."
+      "Implementing PDF export with working hyperlinks",
+      "Managing application data using SessionStorage",
+      "Learned step-by-step route handling without sudden page jumps",
+      "Handling tricky browser rendering issues for print-ready views",
+      "Optimizing app layout for mobile users"
     ],
-
+  
     "keyFeatures": [
       {
-        "title": "Responsive Design",
-        "description": "Layout adapts seamlessly across devices — mobile, tablet, desktop — ensuring usability and aesthetics are preserved at various screen sizes."
+        "title": "Real-time Resume Preview",
+        "description": "Preview updates instantly as you type to maintain a smooth editing experience."
       },
       {
-        "title": "Clean & Modern UI",
-        "description": "Minimalist visual style with consistent spacing, typography, and color palette giving a professional and uncluttered look."
+        "title": "PDF Export Ready",
+        "description": "High-quality multipage PDF export without losing layout or clickable link functionality."
       },
       {
-        "title": "Fast Load Times",
-        "description": "Optimized assets and minimal overhead ensure pages load quickly and smoothly, improving user experience."
+        "title": "Responsive & Clean UI",
+        "description": "Optimized for mobile, tablet, and desktop experiences with modern and minimal UI."
       },
       {
-        "title": "Informative Data Cards",
-        "description": "Key metrics and statistics are displayed using well-structured cards, making it easy for users to digest complex information at a glance."
-      },
+        "title": "Structured Resume Sections",
+        "description": "Users can fill different resume fields step by step for organized content flow."
+      },      
       {
-        "title": "Interactive Navigation",
-        "description": "Navigation elements respond visually on hover/click, providing feedback to the user and enhancing engagement."
-      },
-      {
-        "title": "Accessible Layout",
-        "description": "Content structure and visual hierarchy support readability with adequate spacing, font sizes, and contrast."
-      },
-      {
-        "title": "Cross‑Browser Compatibility",
-        "description": "Site renders correctly across different browsers, maintaining layout, styling, and functionality."
+        "title": "Session Auto Save",
+        "description": "Data is saved temporarily using SessionStorage until the browser/tab is closed."
       }
     ],
-
+  
     "techStack": [
       {
         "title": "React.js",
-        "description": "JavaScript library for building fast and interactive user interfaces with component-based architecture."
+        "description": "Component-based architecture for building dynamic and reusable UI sections."
       },
       {
-        "title": "React Router DOM",
-        "description": "Declarative routing library for React that enables dynamic, client-side routing and nested routes."
+        "title": "jsPDF + HTML-to-Image",
+        "description": "Used to generate clean and crisp downloadable resume PDFs."
       },
       {
-        "title": "Country API",
-        "description": "RESTful API providing detailed data about countries including names, flags, regions, and populations."
+        "title": "Tailwind CSS",
+        "description": "Utility-first styling to build a modern, responsive interface quickly."
       },
       {
-        "title": "JSONPlaceholder API",
-        "description": "Free fake API for prototyping and testing, offering dummy data for users, posts, comments, and more."
+        "title": "SessionStorage",
+        "description": "Stores user data temporarily during active session without backend."
       }
     ]
-  }
+  }  
   ,
   {
     "title": "Reactfolio",
@@ -194,8 +187,8 @@
     "Link":"https://portfolio-ten-jade-21.vercel.app/",
     "github": "https://github.com/Nitesh47kumars/Portfolio",
     "header":"A platform for creating and sharing code snippets with a clean and intutive design.",
-    "color":"text-yellow-200",
-    "background":"linear-gradient(195deg, #FF8C61 30%, #E8C547 70%, #FF8C61 100%)",
+    "color": "text-red-200",
+    "background": "linear-gradient(195deg, #1A0A0A 25%, #5C1A1A 70%, #1A0A0A 100%)",
     "description": "A modern, responsive personal portfolio built with React. It showcases my skills, projects, and includes smooth animations and interactions.",
     
     "features": [
