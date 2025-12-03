@@ -1,12 +1,51 @@
-# React + Vite
+# 🌐 Personal Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive personal portfolio website built using **React.js**, **TailwindCSS**, **Lenis.js**, and **Framer Motion**.  
+Showcasing my work, skills, and projects as a front-end developer with smooth animations and clean UI components.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔗 Live Demo
 
-## Expanding the ESLint configuration
+🚀 **Live Website:** https://portfolio-ten-jade-21.vercel.app/  
+📂 **GitHub Repository:** https://github.com/Nitesh47kumars/Portfolio
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🚀 Features
+
+- Fully responsive modern UI
+- Smooth scrolling with **Lenis.js**
+- Beautiful animations using **Framer Motion**
+- Section-based structured layout (About, Skills, Projects, Contact)
+- Reusable components & clean folder structure
+- UI enhancements using **UIverse Components** and **React Icons**
+
+---
+
+## 🛠️ Tech Stack
+
+| Technology | Purpose |
+|-----------|---------|
+| **React.js** | Frontend framework |
+| **TailwindCSS** | Styling & layout |
+| **Framer Motion** | Animations |
+| **Lenis.js** | Smooth scrolling |
+| **Styled-Components** | Scoped component styling |
+| **React-Icons** | Icons |
+| **Bun** | Package Manager & Bundler |
+
+---
+
+## 📦 Installation & Setup (Using Bun)
+
+```bash
+# Clone the repository
+git clone https://github.com/Nitesh47kumars/Portfolio.git
+cd Portfolio
+
+# Install dependencies
+bun install
+
+# Run development server
+bun run dev
