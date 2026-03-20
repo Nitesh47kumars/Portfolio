@@ -1,40 +1,37 @@
 // App.jsx
-import React from 'react';
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from 'react-router-dom';
+import React from "react";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import Layout from './Layout';
-import Home from './Home';
-import BookCall from './Components/Contact/ContactDrawer/BookCall';
-import ProjectShowcase from './Components/Projects/ProjectShowCase/ProjectShowCase';
-import ErrorPage from './Components/ErrorPage';
-import useLenis from './Motions/UseLenis';
+import Layout from "./Layout";
+import Home from "./Home";
+import BookCall from "./Components/Contact/ContactDrawer/BookCall";
+import ProjectShowcase from "./Components/Projects/ProjectShowCase/ProjectShowCase";
+import ErrorPage from "./Components/ErrorPage";
+import useLenis from "./Motions/UseLenis";
+import Certificates from "./Components/Certificates/Certificates";
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: "/",
     element: <Layout />,
-    errorElement: <ErrorPage/>,
-    children: [
-      { index: true, element: <Home /> },
-    ],
+    errorElement: <ErrorPage />,
+    children: [{ index: true, element: <Home /> }],
   },
   {
-    path: '/bookcall',
+    path: "/bookcall",
     element: <Layout />,
-    children: [
-      {index: true, element: <BookCall />},
-    ],
+    children: [{ index: true, element: <BookCall /> }],
   },
   {
-    path: '/projects/:slug',
+    path: "/projects/:slug",
     element: <Layout />,
-    errorElement: <ErrorPage/>,
-    children: [
-      {index: true, element: <ProjectShowcase />},
-    ],
+    errorElement: <ErrorPage />,
+    children: [{ index: true, element: <ProjectShowcase /> }],
+  },
+  {
+    path: "/certificates/:slug",
+    element: <Certificates />,
+    errorElement: <ErrorPage />,
   },
 ]);
 
