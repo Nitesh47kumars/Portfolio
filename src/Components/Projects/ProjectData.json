@@ -8,7 +8,7 @@
     "color": "text-purple-200",
     "background": "linear-gradient(195deg, #120C2C 25%, #3F1D83 70%, #120C2C 100%)",
     "description": "A responsive web app for reading, writing, and modifying code with customizable fonts, text sizes, padding, and light/dark themes — supporting multiple languages and allowing export as PDF, JPG, or shareable links.",
-    
+
     "features": [
       "Real-time code editing with syntax highlighting using React Syntax Highlighter.",
       "Customization options for font style, text size, padding, and background color.",
@@ -99,8 +99,114 @@
         "description": "Provides clean and modern typography for a polished and professional visual appearance."
       }
     ]
-  }
-  ,
+  },
+  {
+    "title": "Banking System",
+    "image": "/Project/BankingSystem.png",
+    "Link": "https://banking-system-ten-zeta.vercel.app/",
+    "github": "https://github.com/Nitesh47kumars/Banking-System.git",
+    "header": "A full-stack banking system with secure authentication, fund transfers, and real-time transaction tracking.",
+    "color": "text-green-200",
+    "background": "linear-gradient(195deg, #041C0C 25%, #0F5C2E 70%, #041C0C 100%)",
+    "description": "A full-stack banking web application where users can register, log in securely, create accounts, transfer funds, and track transaction history — powered by a Node.js/Express REST API and MongoDB, with JWT-based authentication and a responsive React frontend.",
+
+    "features": [
+      "User registration and login with JWT-based authentication and Bcrypt password hashing.",
+      "Account creation and management with unique account identifiers per user.",
+      "Secure fund transfers between accounts with real-time balance updates.",
+      "Complete transaction history log for every account operation.",
+      "Admin dashboard to monitor and manage all users and accounts.",
+      "Protected routes on both frontend and backend for authorized access only.",
+      "RESTful API built with Node.js and Express connected to MongoDB via Mongoose.",
+      "Responsive UI built with React, Tailwind CSS, and React Router for smooth navigation."
+    ],
+
+    "technologies": [
+      "React.js",
+      "Tailwind CSS",
+      "CreateBrowserRouter",
+      "Axios",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Mongoose",
+      "JWT",
+      "Bcrypt",
+      "Dotenv",
+      "Vercel"
+    ],
+
+    "whatILearned": [
+      "Built my first full-stack app by integrating React frontend with a Node.js/Express backend.",
+      "Implemented JWT-based authentication with protected routes on both client and server.",
+      "Used Bcrypt for secure password hashing before storing in MongoDB.",
+      "Designed RESTful APIs and connected them to the frontend using Axios.",
+      "Structured MongoDB schemas using Mongoose for users, accounts, and transactions.",
+      "Managed environment variables securely using Dotenv across the project."
+    ],
+
+    "keyFeatures": [
+      {
+        "title": "JWT Authentication",
+        "description": "Secure login and registration system using JSON Web Tokens to protect user sessions and routes."
+      },
+      {
+        "title": "Account Creation",
+        "description": "Users can open bank accounts linked to their profile with unique account details and starting balance."
+      },
+      {
+        "title": "Fund Transfer",
+        "description": "Transfer money between accounts with validation ensuring sufficient balance and valid recipients."
+      },
+      {
+        "title": "Transaction History",
+        "description": "Every credit, debit, and transfer is recorded and displayed in a structured per-account history view."
+      },
+      {
+        "title": "Protected Routes",
+        "description": "Both frontend and backend routes are secured — only authenticated users can access sensitive operations."
+      },
+      {
+        "title": "REST API Backend",
+        "description": "Fully structured Express.js API handles all business logic, connected to MongoDB for persistent data storage."
+      }
+    ],
+
+    "techStack": [
+      {
+        "title": "React.js",
+        "description": "Frontend library for building a dynamic, component-based banking interface with smooth user interactions."
+      },
+      {
+        "title": "Tailwind CSS",
+        "description": "Utility-first CSS framework for building a clean, responsive, and modern UI rapidly."
+      },
+      {
+        "title": "CreateBrowserRouter",
+        "description": "Handles client-side navigation and protected route management across the application."
+      },
+      {
+        "title": "Axios",
+        "description": "HTTP client used to communicate between the React frontend and the Express REST API."
+      },
+      {
+        "title": "Node.js & Express.js",
+        "description": "Backend runtime and framework powering the REST API, routing, middleware, and server-side logic."
+      },
+      {
+        "title": "MongoDB & Mongoose",
+        "description": "NoSQL database with Mongoose ODM for defining schemas and managing users, accounts, and transactions."
+      },
+      {
+        "title": "JWT & Bcrypt",
+        "description": "JWT handles secure token-based authentication while Bcrypt ensures passwords are safely hashed before storage."
+      },
+      {
+        "title": "Dotenv",
+        "description": "Manages sensitive environment variables like database URIs and JWT secrets securely outside the codebase."
+      }
+    ]
+  },
   {
     "title": "Resumify",
     "image": "/Project/Resumify.png",
@@ -110,7 +216,7 @@
     "color": "text-orange-200",
     "background": "linear-gradient(195deg, #1C1204 25%, #8B4A11 70%, #1C1204 100%)",
     "description": "A modern resume builder web app that allows users to create, preview, and download resumes in PDF format with multiple templates, responsive layouts, editable fields, and session-based auto-save — completely free to use.",
-    
+
     "features": [
       "Multiple resume templates with clean UI layouts",
       "Live preview with instant updates while editing",
@@ -119,7 +225,7 @@
       "Mobile responsive design with improved UI/UX",
       "Custom sections and structured input forms"
     ],
-  
+
     "technologies": [
       "React.js",
       "JavaScript",
@@ -129,7 +235,7 @@
       "SessionStorage",
       "Vercel"
     ],
-  
+
     "whatILearned": [
       "Implementing PDF export with working hyperlinks",
       "Managing application data using SessionStorage",
@@ -137,7 +243,7 @@
       "Handling tricky browser rendering issues for print-ready views",
       "Optimizing app layout for mobile users"
     ],
-  
+
     "keyFeatures": [
       {
         "title": "Real-time Resume Preview",
@@ -154,13 +260,13 @@
       {
         "title": "Structured Resume Sections",
         "description": "Users can fill different resume fields step by step for organized content flow."
-      },      
+      },
       {
         "title": "Session Auto Save",
         "description": "Data is saved temporarily using SessionStorage until the browser/tab is closed."
       }
     ],
-  
+
     "techStack": [
       {
         "title": "React.js",
@@ -179,30 +285,29 @@
         "description": "Stores user data temporarily during active session without backend."
       }
     ]
-  }  
-  ,
+  },
   {
     "title": "Reactfolio",
-    "image":"/Project/ReactFolio.png",
-    "Link":"https://portfolio-ten-jade-21.vercel.app/",
+    "image": "/Project/ReactFolio.png",
+    "Link": "https://portfolio-ten-jade-21.vercel.app/",
     "github": "https://github.com/Nitesh47kumars/Portfolio",
-    "header":"A platform for creating and sharing code snippets with a clean and intutive design.",
+    "header": "A platform for creating and sharing code snippets with a clean and intutive design.",
     "color": "text-red-200",
     "background": "linear-gradient(195deg, #1A0A0A 25%, #5C1A1A 70%, #1A0A0A 100%)",
     "description": "A modern, responsive personal portfolio built with React. It showcases my skills, projects, and includes smooth animations and interactions.",
-    
+
     "features": [
       "Seamless smooth scrolling across all sections using Lenis.js for an enhanced user experience",
       "Animated UI elements powered by Framer Motion, bringing components to life with smooth transitions",
       "Reusable and modular components built in React for easier maintenance and scalability",
       "Visually engaging animated icons integrated and customized from Gradienty.codes for added interactivity"
     ],
-    
+
     "technologies": [
       "React",
       "Tailwind CSS",
       "Framer Motion",
-      "Lenis.js",   
+      "Lenis.js",
       "React-Icons",
       "Gradienty Animated Icons"
     ],
@@ -213,7 +318,7 @@
       "Integrated react-scroll for anchor-based navigation.",
       "Learned how to use third-party UI components effectively within my own React portfolio."
     ],
-    
+
     "keyFeatures": [
       {
         "title": "Responsive Design",
