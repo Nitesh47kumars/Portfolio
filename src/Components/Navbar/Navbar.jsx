@@ -45,9 +45,9 @@ const Navbar = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: true }}
-        className="flex justify-center w-full max-md:justify-around fixed top-0 py-5 backdrop-blur-[2px] z-[50]"
+        className="flex justify-center w-full max-md:justify-around fixed top-0 py-5 backdrop-blur-[2px] z-50"
       >
-        <div className="w-[80%] flex justify-between items-center border-2 rounded-full py-2 px-[10px]">
+        <div className="w-[80%] flex justify-between items-center border-2 rounded-full py-2 px-2.5">
           <NavbarLogo />
           <div className="hidden md:block">
             <NavbarList setMobMenu={setMobMenu} />
@@ -69,7 +69,7 @@ const Navbar = () => {
       {mobMenu && (
         <div
           ref={menuRef}
-          className="fixed inset-0 top-[80px] h-65 backdrop-blur-[4px] z-[40] flex flex-col items-center justify-start pt-6 space-y-6"
+          className="fixed inset-0 top-20 h-65 backdrop-blur-xs z-40 flex flex-col items-center justify-start pt-6 space-y-6"
         >
           <NavbarList setMobMenu={setMobMenu} />
         </div>
