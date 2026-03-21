@@ -1,5 +1,5 @@
 import React from 'react'
-import Tools from './Tools'
+import BackendSkills from './BackendSkills'
 import Hobbies from './Hobbies'
 import Email from './Email'
 import Frontend from './Frontend'
@@ -13,7 +13,7 @@ const Skills = () => {
             <SoftSkills/>
             <Hobbies/>
             <Email/>
-            <Tools/>
+            <BackendSkills/>
         </div>
     </div>
   )
